@@ -1,6 +1,6 @@
 # Tema 11 — Contenido Teórico
 
-> **Título oficial**: Informática básica. Representación y comunicación de la información: elementos constitutivos de un sistema de información. Características y funciones. Arquitectura de ordenadores. Componentes internos de los equipos microinformaticos.
+> **Título oficial**: Informática básica. Representación y comunicación de la información: elementos constitutivos de un sistema de información. Características y funciones. Arquitectura de ordenadores. Componentes internos de los equipos microinformáticos.
 >
 > **Bloque**: Parte II — Técnico
 > **Nivel**: C1 — Técnico Auxiliar TIC, Ayuntamiento de Madrid
@@ -17,15 +17,15 @@
 
 Este tema incluye cuatro tipos de **cajas callout** para facilitar el estudio:
 
-> **[DATO CLAVE EXAMEN]** Información de alta densidad memoristica, con alta probabilidad de aparecer en el test oficial.
+> **[DATO CLAVE EXAMEN]** Información de alta densidad memorística, con alta probabilidad de aparecer en el test oficial.
 
-> **[EJERCICIO RESUELTO]** Problema + solución paso a paso. Útil para secciones con calculos.
+> **[EJERCICIO RESUELTO]** Problema + solución paso a paso. Útil para secciónes con cálculos.
 
-> **[EJEMPLO AYTO MADRID]** Aplicación real de la teoría al entorno municipal (SIMA, Padron, sede electrónica, Portal del ciudadano).
+> **[EJEMPLO AYTO MADRID]** Aplicación real de la teoría al entorno municipal (SIMA, Padrón, sede electrónica, Portal del ciudadano).
 
 > **[REFERENCIA CRUZADA]** Enlace conceptual a otros temas del temario oficial.
 
-Los mnemonicos de instrucciones maquina se muestran en **castellano** (`SUMA A, B`). Los registros, estándares y productos se mantienen en su nomenclatura original (CP, MAR, FLAGS, DDR5...). Las fuentes se referencian con etiquetas breves tipo `[STALLINGS-COA, Cap. 2]` — el registro completo esta en `tema-11-fuentes.md`.
+Los mnemónicos de instrucciones máquina se muestran en **castellano** (`SUMA A, B`). Los registros, estándares y productos se mantienen en su nomenclatura original (CP, MAR, FLAGS, DDR5...). Las fuentes se referencian con etiquetas breves tipo `[STALLINGS-COA, Cap. 2]` — el registro completo está en `tema-11-fuentes.md`.
 
 ---
 
@@ -33,9 +33,9 @@ Los mnemonicos de instrucciones maquina se muestran en **castellano** (`SUMA A, 
 
 ### 1.1. Definición de dato
 
-Un **dato** es una representación simbolica (numérica, alfabética, alfanumérica) de un atributo o variable cuantitativa o cualitativa. Los datos describen hechos empiricos, sucesos y entidades. [ISO-2382]
+Un **dato** es una representación simbólica (numérica, alfabética, alfanumérica) de un atributo o variable cuantitativa o cualitativa. Los datos describen hechos empíricos, sucesos y entidades. [ISO-2382]
 
-Los datos constituyen la **mínima unidad semantica** y se corresponden con elementos primarios de información que, por si solos, son **irrelevantes**: no contienen significado contextual ni orientan la toma de decisiones. Un dato aislado es un simbolo sin significado atribuido.
+Los datos constituyen la **mínima unidad semántica** y se corresponden con elementos primarios de información que, por sí solos, son **irrelevantes**: no contienen significado contextual ni orientan la toma de decisiones. Un dato aislado es un símbolo sin significado atribuido.
 
 > **Ejemplo**: El valor "42" es un dato. Por si solo no aporta información útil: podría ser una edad, un peso, un número de aula, la respuesta a la vida.
 
@@ -58,11 +58,11 @@ Adicionalmente, para que la información sea útil debe ser: **relevante** (apor
 Información = Datos + Contexto (añadir valor) + Utilidad (disminuir la incertidumbre)
 ```
 
-### 1.3. Piramide DIKW: dato, información, conocimiento, sabiduría
+### 1.3. Pirámide DIKW: dato, información, conocimiento, sabiduría
 
 La clasificación tradicional en informática opera sobre dato e información, pero la literatura sobre gestión del conocimiento añade dos niveles superiores: **conocimiento** y **sabiduría**. El modelo resultante se conoce como **pirámide DIKW** (Data-Information-Knowledge-Wisdom), atribuida a Russell Ackoff (1989) y ampliamente adoptada por organismos como la ONU y la OCDE para documentar sus sistemas de gestión del conocimiento.
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" role="img" aria-label="Piramide DIKW con ejemplo Ayto Madrid">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" role="img" aria-label="Pirámide DIKW con ejemplo Ayto Madrid">
   <style>
     .dikw-label{font:600 14px system-ui,sans-serif;fill:#fff}
     .dikw-example{font:12px system-ui,sans-serif;fill:#1a1a1a}
@@ -72,7 +72,7 @@ La clasificación tradicional en informática opera sobre dato e información, p
   <polygon points="265,70 345,70 365,120 245,120" fill="#0055a0"/>
   <polygon points="245,120 365,120 390,180 220,180" fill="#3378b9"/>
   <polygon points="220,180 390,180 420,250 190,250" fill="#6ea3d2"/>
-  <text x="305" y="56" text-anchor="middle" class="dikw-label">Sabiduria</text>
+  <text x="305" y="56" text-anchor="middle" class="dikw-label">Sabiduría</text>
   <text x="305" y="99" text-anchor="middle" class="dikw-label">Conocimiento</text>
   <text x="305" y="155" text-anchor="middle" class="dikw-label">Información</text>
   <text x="305" y="220" text-anchor="middle" class="dikw-label">Dato</text>
@@ -83,12 +83,12 @@ La clasificación tradicional en informática opera sobre dato e información, p
   <text x="480" y="40" class="dikw-title">Decisión</text>
   <text x="480" y="55" class="dikw-example">"subir el IBI?"</text>
   <text x="480" y="94" class="dikw-title">Tendencia</text>
-  <text x="480" y="109" class="dikw-example">"crece la poblacion"</text>
+  <text x="480" y="109" class="dikw-example">"crece la población"</text>
   <text x="480" y="150" class="dikw-title">Contexto</text>
   <text x="480" y="165" class="dikw-example">"3,45 M habitantes"</text>
   <text x="480" y="215" class="dikw-title">Bruto</text>
   <text x="480" y="230" class="dikw-example">"3.450.000"</text>
-  <text x="305" y="285" text-anchor="middle" font="italic 11px system-ui,sans-serif" fill="#666">+ contexto, + analisis, + experiencia</text>
+  <text x="305" y="285" text-anchor="middle" font="italic 11px system-ui,sans-serif" fill="#666">+ contexto, + análisis, + experiencia</text>
 </svg>
 
 Los cuatro niveles responden a preguntas distintas:
@@ -98,7 +98,7 @@ Los cuatro niveles responden a preguntas distintas:
 3. **Conocimiento** — responde a *¿como funciona?*: patrones, relaciones, correlaciones.
 4. **Sabiduría** — responde a *¿que hacemos?*: decisiones fundamentadas, principios de acción.
 
-> **[EJEMPLO AYTO MADRID]** Aplicado al **Padron Municipal**: el valor "3.450.000" es dato; "3.450.000 habitantes empadronados a 31-12-2025" es información; "la población crece al 0,8% anual y envejece" es conocimiento; "hay que reforzar los servicios sociales en distritos envejecidos" es sabiduría (decisión).
+> **[EJEMPLO AYTO MADRID]** Aplicado al **Padrón Municipal**: el valor "3.450.000" es dato; "3.450.000 habitantes empadronados a 31-12-2025" es información; "la población crece al 0,8% anual y envejece" es conocimiento; "hay que reforzar los servicios sociales en distritos envejecidos" es sabiduría (decisión).
 
 ### 1.4. Ciclo de vida del dato
 
@@ -108,10 +108,10 @@ Las **seis fases canónicas** del ciclo de vida son:
 
 | Fase | Acción | Ejemplo Ayto Madrid |
 |---|---|---|
-| **1. Captura** | Adquisición desde la fuente | Alta en Padron (formulario presencial o online) |
+| **1. Captura** | Adquisición desde la fuente | Alta en Padrón (formulario presencial o online) |
 | **2. Almacenamiento** | Persistencia en sistema controlado | Base de datos corporativa (Oracle, PostgreSQL) |
-| **3. Procesamiento** | Transformación, limpieza, calculos | Calculo del porcentaje de empadronados por distrito |
-| **4. Uso** | Explotación por usuarios/aplicaciones | Portal del ciudadano, Informes estadisticos |
+| **3. Procesamiento** | Transformación, limpieza, cálculos | Cálculo del porcentaje de empadronados por distrito |
+| **4. Uso** | Explotación por usuarios/aplicaciones | Portal del ciudadano, Informes estadísticos |
 | **5. Publicación/Comunicación** | Distribución controlada | Open Data Madrid, boletines, web municipal |
 | **6. Archivo o eliminación** | Retención legal o destrucción segura | Archivo histórico (5 años) o borrado RGPD |
 
@@ -119,16 +119,16 @@ El ciclo incluye puntos de control transversales: **seguridad** (cifrado, contro
 
 ### 1.5. Calidad del dato
 
-Un dato tecnicamente correcto pero de baja calidad puede generar información enganosa y decisiones incorrectas. Las **cuatro dimensiones canónicas de calidad del dato** son:
+Un dato técnicamente correcto pero de baja calidad puede generar información engañosa y decisiones incorrectas. Las **cuatro dimensiones canónicas de calidad del dato** son:
 
-- **Exactitud** (*accuracy*): el dato refleja fielmente la realidad. Un NIF erroneo en Padron tiene exactitud cero.
-- **Completitud** (*completeness*): no faltan atributos obligatorios. Un registro de ciudadano sin fecha de nacimiento esta incompleto.
-- **Consistencia** (*consistency*): el mismo dato tiene el mismo valor en todos los sistemas. Si en Padron figura "Juan Perez" y en Tributos "J. Perez", hay inconsistencia.
-- **Oportunidad** (*timeliness*): el dato esta actualizado en el momento en que se usa. Una dirección desactualizada provoca notificaciones no entregadas.
+- **Exactitud** (*accuracy*): el dato refleja fielmente la realidad. Un NIF erróneo en Padrón tiene exactitud cero.
+- **Completitud** (*completeness*): no faltan atributos obligatorios. Un registro de ciudadano sin fecha de nacimiento está incompleto.
+- **Consistencia** (*consistency*): el mismo dato tiene el mismo valor en todos los sistemas. Si en Padrón figura "Juan Perez" y en Tributos "J. Perez", hay inconsistencia.
+- **Oportunidad** (*timeliness*): el dato está actualizado en el momento en que se usa. Una dirección desactualizada provoca notificaciones no entregadas.
 
-Normas adicionales como **ISO 8000** (Data Quality) amplian estas a 10-14 dimensiones (unicidad, validez, precisión, plausibilidad, etc.), usadas en auditorías de calidad masivas.
+Normas adicionales como **ISO 8000** (Data Quality) amplían estas a 10-14 dimensiones (unicidad, validez, precisión, plausibilidad, etc.), usadas en auditorías de calidad masivas.
 
-> **[DATO CLAVE EXAMEN]** Las 4 dimensiones mínimas de calidad del dato son: **exactitud, completitud, consistencia y oportunidad**. ISO 8000 amplia a 10+ dimensiones.
+> **[DATO CLAVE EXAMEN]** Las 4 dimensiones mínimas de calidad del dato son: **exactitud, completitud, consistencia y oportunidad**. ISO 8000 amplía a 10+ dimensiones.
 
 ### 1.6. Metadatos
 
@@ -136,7 +136,7 @@ Los **metadatos** son "datos sobre los datos": describen el contexto, contenido 
 
 Tres tipos principales:
 
-- **Metadatos descriptivos**: identifican y describen el dato (título, autor, palabras clave). Ej: autor del dataset del Padron, fecha de última actualización.
+- **Metadatos descriptivos**: identifican y describen el dato (título, autor, palabras clave). Ej: autor del dataset del Padrón, fecha de última actualización.
 - **Metadatos estructurales**: describen como se organiza el dato (relaciones, campos, tipos). Ej: esquema de tabla SQL, definición XML/JSON Schema.
 - **Metadatos administrativos**: gobiernan el uso, retención y acceso (permisos, copyright, fechas). Ej: nivel ENS, clasificación RGPD, retención legal.
 
@@ -144,13 +144,13 @@ Tres tipos principales:
 
 ### 1.7. Tipos y clasificación de datos
 
-La clasificación de los datos en informática no responde a un único criterio. Las clasificaciones son complementarias, no excluyentes. La norma de referencia para tipos de datos independientes del lenguaje es **ISO/IEC 11404** (Language-independent datatypes).
+La clasificación de los datos en informática no responde a un único criterio. Las clasificaciónes son complementarias, no excluyentes. La norma de referencia para tipos de datos independientes del lenguaje es **ISO/IEC 11404** (Language-independent datatypes).
 
 #### 1.7.1. Según su función en el sistema de información (la más relevante para examen)
 
 | Tipo | Descripción | Origen/Destino |
 |---|---|---|
-| **Datos de entrada** | Se introducen en el sistema para su tratamiento | Usuarios o dispositivos de entrada (teclado, escaner, sensores) |
+| **Datos de entrada** | Se introducen en el sistema para su tratamiento | Usuarios o dispositivos de entrada (teclado, escáner, sensores) |
 | **Datos intermedios** | Se generan durante el procesamiento | Memoria de trabajo, no visibles al usuario final |
 | **Datos de salida** | Resultado final del procesamiento | Dispositivos de salida (pantalla, impresora, fichero) |
 
@@ -162,7 +162,7 @@ La clasificación de los datos en informática no responde a un único criterio.
 - **Datos lógicos/booleanos**: dos valores posibles (verdadero/falso, 1/0).
 - **Datos multimedia**: imágenes, audio, vídeo.
 
-#### 1.7.3. Según su variabilidad
+#### 1.7.3. Según su varíabilidad
 
 - **Datos fijos o constantes**: su valor no cambia durante la ejecución (π, velocidad de la luz).
 - **Datos variables**: pueden modificarse durante el proceso.
@@ -233,8 +233,8 @@ El estándar **SQL:2016 (ISO/IEC 9075)** define el catálogo de tipos para bases
 | Binarios | BLOB | Binary Large Object (imágenes, ficheros) |
 | Fecha y hora | DATE, TIME, TIMESTAMP, INTERVAL | Datos temporales con precisión configurable |
 | Lógico | BOOLEAN | TRUE / FALSE / UNKNOWN (lógica trivaluada por NULL) |
-| Colección | ARRAY, MULTISET | Tipos colección (extensiones SQL:1999) |
-| Documento | JSON, XML | Tipos semi-estructurados (extensiones del estándar) |
+| Colección | ARRAY, MULTISET | Tipos colección (extensiónes SQL:1999) |
+| Documento | JSON, XML | Tipos semi-estructurados (extensiónes del estándar) |
 
 #### 1.7.9. Tipado en lenguajes de programación
 
@@ -244,9 +244,9 @@ La forma en que un lenguaje gestiona los tipos define dos ejes de clasificación
   - *Estático*: en tiempo de compilación. Java, C, C++, Rust, Go, TypeScript.
   - *Dinámico*: en tiempo de ejecución. Python, JavaScript, Ruby, PHP.
 
-- **Tipado fuerte vs débil** (si hay conversiones implícitas):
+- **Tipado fuerte vs débil** (si hay conversiónes implícitas):
   - *Fuerte*: prohíbe operaciones entre tipos incompatibles sin conversión explícita. Python, Java, Rust.
-  - *Débil*: permite conversiones implícitas (`"5" + 3 = "53"` o `8` según lenguaje). C, JavaScript, PHP.
+  - *Débil*: permite conversiónes implícitas (`"5" + 3 = "53"` o `8` según lenguaje). C, JavaScript, PHP.
 
 | Lenguaje | Estático / Dinámico | Fuerte / Débil |
 |---|---|---|
@@ -270,7 +270,7 @@ Un **sistema de información** (SI) es un conjunto de elementos (aplicaciones, m
 
 Los sistemas de información ayudan a administrar, recolectar, recuperar, procesar, almacenar y distribuir información relevante para los procesos de una organización, ya sea una empresa privada, una administración pública o una entidad del tercer sector.
 
-> **Nota importante**: El término "sistema de información" **no es sinonimo** de "sistema informático". Un sistema de información no requiere necesariamente componentes informáticos, aunque en la práctica la mayoria los incorporan. Un archivador físico con fichas de papel es un sistema de información perfectamente válido. Los sistemas de información informatizados son un subconjunto del conjunto general.
+> **Nota importante**: El término "sistema de información" **no es sinonimo** de "sistema informático". Un sistema de información no requiere necesariamente componentes informáticos, aunque en la práctica la mayoría los incorporan. Un archivador físico con fichas de papel es un sistema de información perfectamente válido. Los sistemas de información informatizados son un subconjunto del conjunto general.
 
 ### 2.2. Componentes básicos de un SI
 
@@ -303,7 +303,7 @@ Los sistemas de información se componen de tres partes principales: **personas,
   <text x="450" y="202" class="si-sub">mejora continua</text>
   <rect x="140" y="250" width="160" height="60" rx="6" class="si-human"/>
   <text x="220" y="274" class="si-label">Procedimientos</text>
-  <text x="220" y="292" class="si-sub">reglas, politicas</text>
+  <text x="220" y="292" class="si-sub">reglas, políticas</text>
   <rect x="340" y="250" width="160" height="60" rx="6" class="si-human"/>
   <text x="420" y="274" class="si-label">Usuarios</text>
   <text x="420" y="292" class="si-sub">operadores, decisores</text>
@@ -315,7 +315,7 @@ Los sistemas de información se componen de tres partes principales: **personas,
 | **Software** | Aplicaciones destinadas a recoger, almacenar, procesar y analizar datos. |
 | **Datos** | Porciones de información donde reside el valor del sistema. |
 | **Procedimientos** | Políticas y reglas de negocio aplicables a los procesos de la organización. |
-| **Usuarios** | Personas que interactuan con la información — componente decisivo para el exito. |
+| **Usuarios** | Personas que interactúan con la información — componente decisivo para el éxito. |
 | **Red** | Infraestructura que permite compartir recursos entre dispositivos. |
 | **Retroalimentación** | Base para la mejora continua del sistema. |
 
@@ -324,9 +324,9 @@ Los sistemas de información se componen de tres partes principales: **personas,
 **1. Hardware** — soporte físico del SI. Se descompone en:
 
 - *Equipos centrales*: servidores (rack, blade, torre), mainframes, estaciones de trabajo.
-- *Equipos cliente*: ordenadores personales, portatiles, terminales ligeros, dispositivos móviles.
+- *Equipos cliente*: ordenadores personales, portátiles, terminales ligeros, dispositivos móviles.
 - *Almacenamiento*: discos HDD, SSD, NAS, SAN, librerias de cintas.
-- *Dispositivos de entrada*: teclado, raton, escaner, sensores IoT, lectores RFID, camaras.
+- *Dispositivos de entrada*: teclado, ratón, escáner, sensores IoT, lectores RFID, cámaras.
 - *Dispositivos de salida*: monitores, impresoras, plotters, altavoces.
 - *Equipos de red*: routers, switches, firewalls, puntos de acceso WiFi, balanceadores de carga.
 
@@ -374,7 +374,7 @@ Los sistemas de información se componen de tres partes principales: **personas,
 - *Encuestas de satisfacción al ciudadano y al usuario interno*.
 - *Registros de incidencias y peticiones (ITSM)*: alimentan el plan de mejora.
 - *Auditorías internas y externas*: detectan no conformidades y oportunidades.
-- *Ciclo PDCA / Deming* (Plan-Do-Check-Act): marco metodologico de mejora iterativa.
+- *Ciclo PDCA / Deming* (Plan-Do-Check-Act): marco metodológico de mejora iterativa.
 
 > **[DATO CLAVE EXAMEN]** Los siete componentes pueden agruparse en tres bloques: **TI** (hardware, software, datos, red), **organización** (procedimientos, retroalimentación) y **personas** (usuarios). Esta visión tripartita es la usada en frameworks como **COBIT 2019** y en la gestión de servicios **ITIL v4** (las "cuatro dimensiones": organizaciones y personas, información y tecnología, partners y proveedores, flujos de valor y procesos).
 
@@ -382,55 +382,55 @@ Los sistemas de información se componen de tres partes principales: **personas,
 
 Para que un sistema de información sea considerado como tal, debe cumplir las siguientes **diez características**. La norma de referencia para la calidad de los productos software (y por extensión de los SI) es la **ISO/IEC 25010** (modelo de calidad SQuaRE).
 
-| # | Característica | Como se mide | Norma de referencia |
+| # | Carácterística | Cómo se mide | Norma de referencia |
 |---|---|---|---|
 | 1 | Disponibilidad | Uptime (%), MTBF, RTO, RPO | ISO/IEC 25010, ENS |
 | 2 | Selección adecuada | Ratio precisión/recall, encuestas | ISO/IEC 25010 |
 | 3 | Adaptabilidad | N.º perfiles soportados, accesibilidad | UNE-EN 301 549, WCAG 2.1 |
-| 4 | Capacidad de relación | N.º referencias cruzadas, tasa de exito en busqueda | DCAT-AP, ISO 11179 |
+| 4 | Capacidad de relación | N.º referencias cruzadas, tasa de éxito en búsqueda | DCAT-AP, ISO 11179 |
 | 5 | Tiempo de respuesta | P50/P95/P99, throughput | ISO/IEC 25010 |
 | 6 | Exactitud y calidad | 4 dimensiones DAMA-DMBOK | ISO 8000 |
-| 7 | Flexibilidad | Time-to-market de cambios, complejidad ciclomatica | ISO/IEC 25010 |
+| 7 | Flexibilidad | Time-to-market de cambios, complejidad ciclomática | ISO/IEC 25010 |
 | 8 | Fiabilidad | MTTR, tasa de fallos, defectos por mil líneas | ISO/IEC 25010 |
-| 9 | Seguridad | Triada CIA + trazabilidad + autenticidad | ISO 27001, ENS, RGPD |
+| 9 | Seguridad | Tríada CIA + trazabilidad + autenticidad | ISO 27001, ENS, RGPD |
 | 10 | Copias de seguridad | RPO, frecuencia, prueba periódica de restore | ISO/IEC 27040, ENS |
 
 ##### Detalle de cada característica
 
-**1. Disponibilidad** — la información esta accesible cuando se precise y a traves del medio requerido. Se mide en porcentaje de tiempo activo (*uptime*): el SLA típico de "tres nueves" (99,9%) admite 8,76 horas de caida al año; "cinco nueves" (99,999%) solo 5,26 minutos. **MTBF** (Mean Time Between Failures) y **MTTR** (Mean Time To Repair) son las dos métricas operativas clave. **Ejemplo Ayto Madrid**: la Sede Electrónica debe estar disponible 24x7 — una caida durante el periodo voluntario de IBI tendría impacto económico y reputacional directo.
+**1. Disponibilidad** — la información está accesible cuando se precise y a través del medio requerido. Se mide en porcentaje de tiempo activo (*uptime*): el SLA típico de "tres nueves" (99,9%) admite 8,76 horas de caída al año; "cinco nueves" (99,999%) solo 5,26 minutos. **MTBF** (Mean Time Between Failures) y **MTTR** (Mean Time To Repair) son las dos métricas operativas clave. **Ejemplo Ayto Madrid**: la Sede Electrónica debe estar disponible 24x7 — una caída durante el periodo voluntario de IBI tendría impacto económico y reputacional directo.
 
-**2. Selección adecuada** — el SI entrega solo información relevante, evitando sobrecarga (*information overload*). Las herramientas de busqueda y filtrado, los gestores documentales con etiquetado y los buscadores con relevancia (TF-IDF, BM25) materializan esta característica. **Ejemplo Ayto Madrid**: el portal **datos.madrid.es** filtra los 600+ datasets por categoría, organismo, formato y licencia para que el ciudadano encuentre lo que busca sin recorrer todo el catálogo.
+**2. Selección adecuada** — el SI entrega solo información relevante, evitando sobrecarga (*information overload*). Las herramientas de búsqueda y filtrado, los gestores documentales con etiquetado y los buscadores con relevancia (TF-IDF, BM25) materializan esta característica. **Ejemplo Ayto Madrid**: el portal **datos.madrid.es** filtra los 600+ datasets por categoría, organismo, formato y licencia para que el ciudadano encuentre lo que busca sin recorrer todo el catálogo.
 
 **3. Adaptación y personalización** — el SI se ajusta al perfil del usuario (idioma, rol, dispositivo, accesibilidad). La norma **UNE-EN 301 549** y las **WCAG 2.1** (Web Content Accessibility Guidelines) son obligatorias en webs de organismos públicos españoles según el **Real Decreto 1112/2018**. **Ejemplo Ayto Madrid**: la web municipal soporta múltiples idiomas y modo alto contraste, navegación por teclado y compatibilidad con lectores de pantalla (NVDA, JAWS, VoiceOver).
 
 **4. Capacidad de relación** — el SI permite enlazar datos de fuentes distintas (*linked data*). El estándar **DCAT-AP** (Data Catalog Application Profile) define como describir datasets con relaciones explícitas. **Ejemplo Ayto Madrid**: el dataset de "tributos por distrito" puede cruzarse con el de "población empadronada por distrito" para obtener "tributo medio por habitante" — la relación es posible porque ambos comparten una clave común (código de distrito).
 
-**5. Tiempos de respuesta adecuados** — el SI responde en plazos compatibles con el caso de uso. Los percentiles **P50/P95/P99** son la métrica estándar (P95 = 95% de las peticiones se sirven por debajo de ese tiempo). El **throughput** mide peticiones por segundo. **Ejemplo Ayto Madrid**: una consulta del Padron debe responder en menos de 2 segundos (P95) para no degradar la experiencia del operador en ventanilla.
+**5. Tiempos de respuesta adecuados** — el SI responde en plazos compatibles con el caso de uso. Los percentiles **P50/P95/P99** son la métrica estándar (P95 = 95% de las peticiones se sirven por debajo de ese tiempo). El **throughput** mide peticiones por segundo. **Ejemplo Ayto Madrid**: una consulta del Padrón debe responder en menos de 2 segundos (P95) para no degradar la experiencia del operador en ventanilla.
 
-**6. Exactitud y calidad** — los datos del SI son veraces y actualizados. Se evalua por las **cuatro dimensiones canónicas** (ver §1.5): exactitud, completitud, consistencia, oportunidad. La norma **ISO 8000** (Data Quality) y el cuerpo de conocimiento **DAMA-DMBOK** son los marcos de referencia. **Ejemplo Ayto Madrid**: la dirección postal en el Padron debe coincidir exactamente con el callejero oficial; un error de calle invalida la notificación fehaciente.
+**6. Exactitud y calidad** — los datos del SI son veraces y actualizados. Se evalúa por las **cuatro dimensiones canónicas** (ver §1.5): exactitud, completitud, consistencia, oportunidad. La norma **ISO 8000** (Data Quality) y el cuerpo de conocimiento **DAMA-DMBOK** son los marcos de referencia. **Ejemplo Ayto Madrid**: la dirección postal en el Padrón debe coincidir exactamente con el callejero oficial; un error de calle invalida la notificación fehaciente.
 
-**7. Flexibilidad** — el SI se adapta a nuevas necesidades sin reconstruirse. Se mide por el **time-to-market** de los cambios (cuanto tarda implementar una nueva normativa) y por la **complejidad ciclomatica** del código. Arquitecturas modulares (microservicios, API-first) y desacoplamiento (event-driven, cola de mensajes) materializan la flexibilidad. **Ejemplo Ayto Madrid**: un cambio en la normativa de IBI debe poder reflejarse en el sistema en dias, no en meses.
+**7. Flexibilidad** — el SI se adapta a nuevas necesidades sin reconstruirse. Se mide por el **time-to-market** de los cambios (cuánto tarda implementar una nueva normativa) y por la **complejidad ciclomática** del código. Arquitecturas modulares (microservicios, API-first) y desacoplamiento (event-driven, cola de mensajes) materializan la flexibilidad. **Ejemplo Ayto Madrid**: un cambio en la normativa de IBI debe poder reflejarse en el sistema en días, no en meses.
 
 **8. Fiabilidad** — el SI funciona de forma correcta y continua. Se mide por el **MTTR** (tiempo medio de reparación), la tasa de fallos y los defectos por mil líneas de código. La fiabilidad incluye la **tolerancia a fallos**: redundancia de hardware, replicación de datos, balanceadores activo-activo. **Ejemplo Ayto Madrid**: el sistema de cita previa debe poder seguir operando aunque uno de los servidores caiga — la replicación en tiempo real de la base de datos es el mecanismo habitual.
 
-**9. Seguridad** — la información esta protegida frente a accesos no autorizados, modificaciones indebidas y perdida. La **triada CIA** (Confidencialidad, Integridad, Disponibilidad) se complementa con dos atributos adicionales en el modelo **AAA** (Authentication, Authorization, Accounting) y con la **trazabilidad** y la **autenticidad** del **Esquema Nacional de Seguridad** (Real Decreto 311/2022). **Ejemplo Ayto Madrid**: el acceso al Padron requiere autenticación fuerte (certificado digital o cl@ve), autorización según rol y registro de toda acción en logs auditables (trazabilidad).
+**9. Seguridad** — la información está protegida frente a accesos no autorizados, modificaciones indebidas y pérdida. La **tríada CIA** (Confidencialidad, Integridad, Disponibilidad) se complementa con dos atributos adicionales en el modelo **AAA** (Authentication, Authorization, Accounting) y con la **trazabilidad** y la **autenticidad** del **Esquema Nacional de Seguridad** (Real Decreto 311/2022). **Ejemplo Ayto Madrid**: el acceso al Padrón requiere autenticación fuerte (certificado digital o cl@ve), autorización según rol y registro de toda acción en logs auditables (trazabilidad).
 
-**10. Copias de seguridad** — el SI dispone de copias periódicas que permiten recuperar la operación ante fallos, errores humanos o ciberataques. Las métricas son el **RPO** (Recovery Point Objective: cuantos datos se pueden perder) y el **RTO** (Recovery Time Objective: cuanto se puede tardar en restaurar). La norma **ISO/IEC 27040** rige la seguridad del almacenamiento. **Ejemplo Ayto Madrid**: política de backups 3-2-1 — tres copias, en dos medios distintos, una de ellas externa (off-site) — con prueba mensual de restauración.
+**10. Copias de seguridad** — el SI dispone de copias periódicas que permiten recuperar la operación ante fallos, errores humanos o ciberataques. Las métricas son el **RPO** (Recovery Point Objective: cuántos datos se pueden perder) y el **RTO** (Recovery Time Objective: cuánto se puede tardar en restaurar). La norma **ISO/IEC 27040** rige la seguridad del almacenamiento. **Ejemplo Ayto Madrid**: política de backups 3-2-1 — tres copias, en dos medios distintos, una de ellas externa (off-site) — con prueba mensual de restauración.
 
-> **[DATO CLAVE EXAMEN]** La **triada CIA** (Confidencialidad, Integridad, Disponibilidad) es el principio fundamental de seguridad de la información, recogido en **ISO 27001** y en el **Esquema Nacional de Seguridad** (Real Decreto 311/2022, ENS). El ENS extiende la triada con dos dimensiones adicionales: **Trazabilidad** y **Autenticidad**.
+> **[DATO CLAVE EXAMEN]** La **tríada CIA** (Confidencialidad, Integridad, Disponibilidad) es el principio fundamental de seguridad de la información, recogido en **ISO 27001** y en el **Esquema Nacional de Seguridad** (Real Decreto 311/2022, ENS). El ENS extiende la tríada con dos dimensiones adicionales: **Trazabilidad** y **Autenticidad**.
 
-> **[DATO CLAVE EXAMEN]** El modelo **ISO/IEC 25010 (SQuaRE)** distingue ocho características de calidad de software: adecuación funcional, eficiencia de desempeno, compatibilidad, **usabilidad**, **fiabilidad**, **seguridad**, mantenibilidad y portabilidad. Las negritas son las que coinciden con la lista de características del SI.
+> **[DATO CLAVE EXAMEN]** El modelo **ISO/IEC 25010 (SQuaRE)** distingue ocho características de calidad de software: adecuación funcional, eficiencia de desempeño, compatibilidad, **usabilidad**, **fiabilidad**, **seguridad**, mantenibilidad y portabilidad. Las negritas son las que coinciden con la lista de características del SI.
 
 ### 2.4. Elementos funcionales
 
 Un sistema de información estándar se estructura en los siguientes elementos:
 
-- **Base de datos**: almacena toda la información requerida para la toma de decisiones. La información se organiza en registros especificos e identificables.
+- **Base de datos**: almacena toda la información requerida para la toma de decisiones. La información se organiza en registros específicos e identificables.
 - **Transacciones**: elementos de interfaz que permiten al usuario consultar, agregar, modificar o eliminar registros.
-- **Informes**: elementos mediante los cuales el usuario obtiene registros o información estadistica (contar, sumar) según criterios de busqueda definidos.
+- **Informes**: elementos mediante los cuáles el usuario obtiene registros o información estadística (contar, sumar) según criterios de búsqueda definidos.
 - **Procesos**: elementos que, según una lógica predefinida, obtienen información de la base de datos y generan nuevos registros.
-- **Usuario**: todas las personas que interactuan con el sistema, desde el nivel ejecutivo hasta el operativo.
-- **Procedimientos administrativos**: reglas y políticas que rigen el comportamiento de los usuarios frente al sistema. Nunca un usuario tiene acceso directo a la base de datos; siempre a traves de transacciones autorizadas.
+- **Usuario**: todas las personas que interactúan con el sistema, desde el nivel ejecutivo hasta el operativo.
+- **Procedimientos administrativos**: reglas y políticas que rigen el comportamiento de los usuarios frente al sistema. Nunca un usuario tiene acceso directo a la base de datos; siempre a través de transacciones autorizadas.
 
 **Módulos funcionales internos**:
 
@@ -439,13 +439,13 @@ Un sistema de información estándar se estructura en los siguientes elementos:
 | Definición del SI | Define la estructura de las bases de datos y formatos de documentos |
 | Entrada | Dota al SI de elementos de entrada adecuados a la información |
 | Análisis | Aplica algoritmos para procesar datos y obtener información |
-| Busqueda | Gestiona las fuentes para busquedas coordinadas y sencillas |
+| Búsqueda | Gestiona las fuentes para búsquedas coordinadas y sencillas |
 | Difusión | Notificaciones de información relevante a los usuarios |
-| Evaluación | Recopila estadisticas y opiniones para mejora del SI |
+| Evaluación | Recopila estadísticas y opiniones para mejora del SI |
 
 ### 2.5. Funciones principales del SI
 
-La función principal de un SI es **ofrecer información relevante, eliminando datos superfluos**, filtrada y ordenada para busquedas eficientes.
+La función principal de un SI es **ofrecer información relevante, eliminando datos superfluos**, filtrada y ordenada para búsquedas eficientes.
 
 Se distinguen **cuatro funciones básicas** (regla nemotécnica: **EAPS** — Entrada, Almacenamiento, Procesamiento, Salida):
 
@@ -453,7 +453,7 @@ Se distinguen **cuatro funciones básicas** (regla nemotécnica: **EAPS** — En
 
 2. **Almacenamiento de información**: capacidad del sistema para recordar la información guardada, tanto en memoria principal como en memoria secundaria. Es una de las funciones más importantes.
 
-3. **Procesamiento de información**: capacidad para efectuar calculos según una secuencia de operaciones preestablecida. Permite la transformación de datos fuente en información útil para la toma de decisiones.
+3. **Procesamiento de información**: capacidad para efectuar cálculos según una secuencia de operaciones preestablecida. Permite la transformación de datos fuente en información útil para la toma de decisiones.
 
 4. **Salida de información**: capacidad para sacar la información procesada al exterior. La salida de un SI puede constituir la entrada a otro SI (integración).
 
@@ -498,12 +498,12 @@ Se distinguen **cuatro funciones básicas** (regla nemotécnica: **EAPS** — En
 
 | Tipo | Sigla | Nivel | Función | Ejemplo |
 |---|---|---|---|---|
-| Sistema de Procesamiento de Transacciones | **TPS** | Operativo | Gestiona transacciones diarias | Alta en Padron, cobro de tributo |
+| Sistema de Procesamiento de Transacciones | **TPS** | Operativo | Gestiona transacciones diarias | Alta en Padrón, cobro de tributo |
 | Sistema de Información Gerencial | **MIS** | Tactico | Informes regulares para mandos medios | Informe mensual de ingresos por distrito |
 | Sistema de Soporte a la Decisión | **DSS** | Analítico | Análisis y simulaciones para decisiones no rutinarias | Simulación de impacto de subida de IBI |
 | Sistema de Información Ejecutiva | **EIS** | Estratégico | Cuadro de mando para dirección | Cuadro de mando del Alcalde |
 
-> **[EJEMPLO AYTO MADRID]** La arquitectura de sistemas del Ayuntamiento de Madrid combina los cuatro niveles: el **Padron Municipal** funciona como TPS (procesa altas/bajas en tiempo real), alimenta un MIS estadistico (informes demográficos mensuales), que a su vez nutre un DSS de **planificación urbana** (¿donde construir un nuevo colegio?), cuyos resultados llegan al EIS del **Cuadro de Mando Integral municipal** que consulta el equipo de gobierno.
+> **[EJEMPLO AYTO MADRID]** La arquitectura de sistemas del Ayuntamiento de Madrid combina los cuatro niveles: el **Padrón Municipal** funciona como TPS (procesa altas/bajas en tiempo real), alimenta un MIS estadístico (informes demográficos mensuales), que a su vez nutre un DSS de **planificación urbana** (¿donde construir un nuevo colegio?), cuyos resultados llegan al EIS del **Cuadro de Mando Integral municipal** que consulta el equipo de gobierno.
 
 ### 2.7. SI empresariales transversales
 
@@ -511,20 +511,20 @@ Más alla de la clasificación por nivel, existen sistemas que atraviesan todos 
 
 - **ERP** (Enterprise Resource Planning): integra procesos de negocio (finanzas, RRHH, compras, producción, ventas) en un único sistema. Ejemplos: SAP S/4HANA, Oracle Fusión, Microsoft Dynamics 365. En el sector público: **Sorolla2** (SEC) o **GEISER**.
 - **CRM** (Customer Relationship Management): gestiona la relación con clientes/ciudadanos. Ejemplos: Salesforce, HubSpot, Zoho. En el sector público: **CAU** (Centro de Atención al Usuario).
-- **SCM** (Supply Chain Management): gestiona la cadena de suministro. Menos relevante en administración pública, salvo en logistica de servicios municipales.
+- **SCM** (Supply Chain Management): gestiona la cadena de suministro. Menos relevante en administración pública, salvo en logística de servicios municipales.
 - **BPM** (Business Process Management): modela, automatiza y optimiza procesos de negocio.
 - **BI** (Business Intelligence): analítica, cuadros de mando, reporting.
 - **DWH** (Data Warehouse): almacen integrado de datos históricos para análisis (ver §2.8).
 
 ### 2.8. Herramientas complementarias
 
-- **Cuadro de Mando Integral (CMI / Balanced Scorecard / BSC)**: herramienta de control empresarial que permite establecer y monitorizar los objetivos de una empresa y sus areas. Muestra de forma continuada el cumplimiento del plan estratégico, articulado en cuatro perspectivas: **financiera, clientes, procesos internos, aprendizaje**. [Kaplan & Norton, 1992]
+- **Cuadro de Mando Integral (CMI / Balanced Scorecard / BSC)**: herramienta de control empresarial que permite establecer y monitorizar los objetivos de una empresa y sus áreas. Muestra de forma continuada el cumplimiento del plan estratégico, articulado en cuatro perspectivas: **financiera, clientes, procesos internos, aprendizaje**. [Kaplan & Norton, 1992]
 
 - **Datawarehouse (DWH)**: base de datos corporativa que integra y depura información de una o más fuentes distintas, para luego procesarla permitiendo su análisis desde múltiples perspectivas (**OLAP** — On-Line Analytical Processing) y con grandes velocidades de respuesta. Alimenta a los DSS y EIS.
 
 - **Data Lake**: repositorio de datos en bruto, sin esquema predefinido, escalable horizontalmente. Complementa al DWH permitiendo almacenar datos no estructurados (logs, imágenes, texto libre) para posterior análisis con Big Data.
 
-- **Data Lakehouse**: arquitectura hibrida (Databricks, 2020) que combina las garantías transaccionales del DWH con la flexibilidad del Data Lake.
+- **Data Lakehouse**: arquitectura híbrida (Databricks, 2020) que combina las garantías transaccionales del DWH con la flexibilidad del Data Lake.
 
 ### 2.9. Metodologías de implantación
 
@@ -541,18 +541,18 @@ Implantar un SI en una organización no es solo comprar software: requiere metod
 
 ## 3. Arquitectura de ordenadores
 
-La arquitectura de ordenadores se define como el **conjunto de reglas, normas y procedimientos que especifican las interrelaciones entre los componentes lógicos y físicos** que forman parte de un sistema informático, así como las características que debe cumplir cada componente. [STALLINGS-COA, Cap. 1]
+La arquitectura de ordenadores se define como el **conjunto de reglas, normas y procedimientos que específican las interrelaciones entre los componentes lógicos y físicos** que forman parte de un sistema informático, así como las características que debe cumplir cada componente. [STALLINGS-COA, Cap. 1]
 
 Es útil distinguir entre:
 
 - **Arquitectura** (*Instruction Set Architecture*, ISA): la visión del programador — que instrucciones existen, que registros son visibles, como se direcciona memoria.
-- **Organización**: la visión del ingeniero — como se implementa la ISA en el hardware, que buses hay, como esta estructurada la cache.
+- **Organización**: la visión del ingeniero — como se implementa la ISA en el hardware, que buses hay, como está estructurada la cache.
 
 Dos procesadores con la misma **arquitectura** (p.ej. Intel i9 y Intel i3) tienen organizaciones distintas pero son compatibles a nivel de código.
 
 ### 3.1. Arquitectura Von Neumann
 
-También conocida como **modelo de Von Neumann** o **arquitectura Princeton**. Propuesta por John von Neumann en el celebre **"First Draft of a Report on the EDVAC"** (1945), que sistematizo las ideas del equipo de Eckert y Mauchly (ENIAC, 1945) en un documento formal. El EDVAC (1949) fue la primera implementación del modelo. [STALLINGS-COA, Cap. 2]
+También conocida como **modelo de Von Neumann** o **arquitectura Princeton**. Propuesta por John von Neumann en el célebre **"First Draft of a Report on the EDVAC"** (1945), que sistematizó las ideas del equipo de Eckert y Mauchly (ENIAC, 1945) en un documento formal. El EDVAC (1949) fue la primera implementación del modelo. [STALLINGS-COA, Cap. 2]
 
 **Componentes** (los cuatro elementos canónicos):
 
@@ -561,9 +561,9 @@ También conocida como **modelo de Von Neumann** o **arquitectura Princeton**. P
 - **Mecanismos de entrada/salida (E/S)**.
 - **Buses** que conectan los elementos anteriores.
 
-**Característica fundamental**: datos e instrucciones comparten la misma memoria y el mismo bus. Esto permite el concepto de **programa almacenado** — las instrucciones se pueden modificar como si fuesen datos (base de compiladores, ensambladores y sistemas operativos modernos).
+**Carácterística fundamental**: datos e instrucciones comparten la misma memoria y el mismo bus. Esto permite el concepto de **programa almacenado** — las instrucciones se pueden modificar como si fuesen datos (base de compiladores, ensambladores y sistemas operativos modernos).
 
-> **[DATO CLAVE EXAMEN]** El **cuello de botella de Von Neumann** (Von Neumann bottleneck): no pueden darse simultaneamente una busqueda de instrucciones y una operación de datos, ya que comparten un bus común. La velocidad de la CPU ha crecido mucho más rápido que la velocidad de la memoria principal, ampliando este cuello de botella. Las caches y el pipelining lo mitigan parcialmente.
+> **[DATO CLAVE EXAMEN]** El **cuello de botella de Von Neumann** (Von Neumann bottleneck): no pueden darse simultáneamente una búsqueda de instrucciones y una operación de datos, ya que comparten un bus común. La velocidad de la CPU ha crecido mucho más rápido que la velocidad de la memoria principal, amplíando este cuello de botella. Las caches y el pipelining lo mitigan parcialmente.
 
 ### 3.2. Arquitectura Harvard
 
@@ -581,13 +581,13 @@ Debe su nombre al ordenador **Harvard Mark I** (Howard Aiken, 1944), anterior in
   <text x="110" y="103" class="arch-label">CPU</text>
   <text x="110" y="118" class="arch-sub">fetch + exec</text>
   <rect x="220" y="80" width="130" height="50" rx="4" fill="#d6e4f0" stroke="#0055a0" stroke-width="1.5"/>
-  <text x="285" y="101" class="arch-label">Memoria unica</text>
+  <text x="285" y="101" class="arch-label">Memoria única</text>
   <text x="285" y="117" class="arch-sub">datos + instrucciones</text>
   <line x1="160" y1="105" x2="220" y2="105" stroke="#0055a0" stroke-width="3"/>
   <text x="190" y="97" class="arch-sub">bus compartido</text>
   <rect x="60" y="160" width="290" height="60" rx="4" fill="#fce4e4" stroke="#d13c3c" stroke-width="1.5" stroke-dasharray="5 3"/>
   <text x="205" y="185" class="arch-label" fill="#d13c3c">Cuello de botella Von Neumann</text>
-  <text x="205" y="205" class="arch-sub">no se lee dato e instruccion a la vez</text>
+  <text x="205" y="205" class="arch-sub">no se lee dato e instrucción a la vez</text>
   <line x1="360" y1="40" x2="360" y2="320" stroke="#c0c7cf" stroke-width="1" stroke-dasharray="3 3"/>
   <text x="510" y="32" class="arch-title" fill="#2d8659">Arquitectura Harvard</text>
   <text x="510" y="50" class="arch-sub">Harvard Mark I 1944</text>
@@ -604,29 +604,29 @@ Debe su nombre al ordenador **Harvard Mark I** (Howard Aiken, 1944), anterior in
   <text x="540" y="134" class="arch-sub">bus D</text>
   <rect x="400" y="180" width="270" height="60" rx="4" fill="#d8f0dc" stroke="#2d8659" stroke-width="1.5" stroke-dasharray="5 3"/>
   <text x="535" y="205" class="arch-label" fill="#2d8659">Acceso paralelo</text>
-  <text x="535" y="225" class="arch-sub">instruccion y dato simultaneos</text>
+  <text x="535" y="225" class="arch-sub">instrucción y dato simultáneos</text>
   <rect x="60" y="295" width="610" height="50" rx="4" fill="#f5f5f5" stroke="#c0c7cf"/>
   <text x="70" y="314" font="600 12px system-ui,sans-serif" fill="#0055a0">Harvard modificada (actual):</text>
-  <text x="70" y="332" font="11px system-ui,sans-serif" fill="#555">x86-64, ARM · cache L1 separada (I/D) pero memoria principal unica · combina lo mejor</text>
+  <text x="70" y="332" font="11px system-ui,sans-serif" fill="#555">x86-64, ARM · cache L1 separada (I/D) pero memoria principal única · combina lo mejor</text>
 </svg>
 
-**Ventaja clave de Harvard**: al tener buses separados, se pueden simultanear operaciones sobre datos e instrucciones, eliminando el cuello de botella de Von Neumann y aumentando el rendimiento.
+**Ventaja clave de Harvard**: al tener buses separados, se pueden simultánear operaciones sobre datos e instrucciones, eliminando el cuello de botella de Von Neumann y aumentando el rendimiento.
 
-| Característica | Von Neumann | Harvard |
+| Carácterística | Von Neumann | Harvard |
 |---|---|---|
 | Memoria | Única (datos + instrucciones) | Separada (datos / instrucciones) |
 | Buses | Bus compartido | Buses independientes |
-| Acceso simultaneo | No | Si |
+| Acceso simultáneo | No | Si |
 | Cuello de botella | Si | No (o reducido) |
 | Complejidad | Menor | Mayor |
-| Aplicaciones típicas | PCs de proposito general | DSPs, microcontroladores (AVR, PIC) |
+| Aplicaciones típicas | PCs de propósito general | DSPs, microcontroladores (AVR, PIC) |
 
 ### 3.3. Arquitectura Harvard modificada
 
-En la actualidad, la mayoria de los procesadores de proposito general (x86-64, ARM Cortex-A) implementan una **arquitectura Harvard modificada**, que combina lo mejor de ambos mundos:
+En la actualidad, la mayoría de los procesadores de propósito general (x86-64, ARM Cortex-A) implementan una **arquitectura Harvard modificada**, que combina lo mejor de ambos mundos:
 
-- La **memoria principal** es única (como Von Neumann), lo que permite que los contenidos de la memoria de instrucciones sean accedidos como si fuesen datos — posibilita cargar un programa desde disco para su ejecución, compilar y enlazar dinamicamente, etc.
-- La **cache L1** esta separada en dos: cache L1 de instrucciones (L1i) y cache L1 de datos (L1d). Esto proporciona la ventaja de paralelismo de Harvard en el nivel más cercano a la CPU, donde más importa.
+- La **memoria principal** es única (como Von Neumann), lo que permite que los contenidos de la memoria de instrucciones sean accedidos como si fuesen datos — posibilita cargar un programa desde disco para su ejecución, compilar y enlazar dinámicamente, etc.
+- La **cache L1** está separada en dos: cache L1 de instrucciones (L1i) y cache L1 de datos (L1d). Esto proporciona la ventaja de paralelismo de Harvard en el nivel más cercano a la CPU, donde más importa.
 - La **cache L2 y L3** vuelven a ser unificadas (datos + instrucciones).
 
 Características de la Harvard modificada:
@@ -635,7 +635,7 @@ Características de la Harvard modificada:
 - Acceden a la CPU por **buses L1 distintos**, pero comparten bus en niveles inferiores.
 - Pueden ser accedidas de **diferente manera** (la cache L1i solo se lee, la L1d se lee y escribe).
 
-> **[DATO CLAVE EXAMEN]** En un examen C1, recordar esta jerarquía: **Von Neumann** (memoria única, histórico) vs **Harvard** (memorias separadas, microcontroladores) vs **Harvard modificada** (PCs actuales, hibrido).
+> **[DATO CLAVE EXAMEN]** En un examen C1, recordar esta jerarquía: **Von Neumann** (memoria única, histórico) vs **Harvard** (memorias separadas, microcontroladores) vs **Harvard modificada** (PCs actuales, híbrido).
 
 ---
 
@@ -655,7 +655,7 @@ Las generaciones se definen por tres aspectos principales: la **tecnología vige
   <circle cx="110" cy="170" r="18" fill="#0055a0"/>
   <text x="110" y="175" class="gen-num">1ª</text>
   <text x="110" y="130" class="gen-year">1940-1952</text>
-  <text x="110" y="200" class="gen-tech">Valvulas</text>
+  <text x="110" y="200" class="gen-tech">Válvulas</text>
   <text x="110" y="240" class="gen-ex">ENIAC</text>
   <circle cx="220" cy="170" r="18" fill="#0055a0"/>
   <text x="220" y="175" class="gen-num">2ª</text>
@@ -684,40 +684,40 @@ Las generaciones se definen por tres aspectos principales: la **tecnología vige
   <text x="640" y="240" class="gen-ex">IBM Q</text>
 </svg>
 
-### 4.1. Primera generación (1940-1952) — Valvulas de vacio
+### 4.1. Primera generación (1940-1952) — Válvulas de vacío
 
 | Aspecto | Detalle |
 |---|---|
-| Tecnología | Reles electromagneticos, valvulas y tubos de vacio |
-| Memoria | Tarjetas y cintas perforadas, líneas de demora de mercurio, tambores magneticos |
+| Tecnología | Relés electromagnéticos, válvulas y tubos de vacío |
+| Memoria | Tarjetas y cintas perforadas, líneas de demora de mercurio, tambores magnéticos |
 | Velocidad | Milisegundos |
 | Tamaño | Ocupaban habitaciones enteras. ENIAC: 30 toneladas, 167 m² |
 | Consumo | Decenas de kW (ENIAC: 150 kW) |
-| Uso | Aplicaciones cientificas y militares |
-| Programación | Lenguaje maquina directo (interruptores manuales, cables) |
+| Uso | Aplicaciones científicas y militares |
+| Programación | Lenguaje máquina directo (interruptores manuales, cables) |
 | Ejemplos | **ENIAC** (Eckert-Mauchly, 1945), **Mark I** (Harvard, 1944), **UNIVAC I** (1951), **Colossus** (Bletchley, 1943) |
 
 ### 4.2. Segunda generación (1952-1964) — Transistores
 
 | Aspecto | Detalle |
 |---|---|
-| Tecnología | **Transistor** sustituye a la valvula de vacio (invención: Bardeen, Brattain, Shockley, Bell Labs 1947 — Nobel 1956) |
-| Memoria | Nucleos de ferrita, soportes magneticos, tambores mejorados |
+| Tecnología | **Transistor** sustituye a la válvula de vacío (invención: Bardeen, Brattain, Shockley, Bell Labs 1947 — Nobel 1956) |
+| Memoria | Núcleos de ferrita, soportes magnéticos, tambores mejorados |
 | Mejoras | Reducción de tamaño (1/10), consumo (1/100) y coste; aumento de fiabilidad (10x) |
 | Uso | Se extienden a empresas y universidades (administración, gestión) |
 | Programación | Lenguajes de alto nivel: **Fortran** (1957), **Cobol** (1959), **Algol** (1960) |
-| Otros avances | Circuitos impresos sustituyen al cableado; primeros perifericos modernos |
+| Otros avances | Circuitos impresos sustituyen al cableado; primeros periféricos modernos |
 | Ejemplos | **TRADIC** (Bell Labs 1954, primer ordenador con transistores), **IBM 1401** (1959), **IBM 7090** |
 
-> **[EJEMPLO AYTO MADRID]** El primer ordenador que llego a España fue un **IBM 650** adquirido por **RENFE en 1959** para gestión de reservas. Con 2.000 valvulas (era un hibrido tardio de 1ª gen), ocupaba una sala de 50 m². En la administración pública española, la mecanización masiva llegaria en los años 70 con ordenadores IBM de 3ª gen.
+> **[EJEMPLO AYTO MADRID]** El primer ordenador que llegó a España fue un **IBM 650** adquirido por **RENFE en 1959** para gestión de reservas. Con 2.000 válvulas (era un híbrido tardío de 1ª gen), ocupaba una sala de 50 m². En la administración pública española, la mecanización masiva llegaría en los años 70 con ordenadores IBM de 3ª gen.
 
 ### 4.3. Tercera generación (1964-1970) — Circuitos integrados
 
 | Aspecto | Detalle |
 |---|---|
 | Tecnología | **Circuitos integrados** (Kilby 1958, Noyce 1959) — SSI (Small-Scale Integration, ~10 transistores/chip), luego MSI (Medium-Scale, hasta 1.000) |
-| Memoria | Semiconductores (DRAM IBM 1966) y discos magneticos mejorados |
-| Mejoras | Miniaturización drastica, primeras minicomputadoras |
+| Memoria | Semiconductores (DRAM IBM 1966) y discos magnéticos mejorados |
+| Mejoras | Miniaturización drástica, primeras minicomputadoras |
 | Software | Sistemas operativos con **multiprogramación**, tiempo real, modo interactivo (time-sharing) |
 | Programación | Aparece **BASIC** (Dartmouth, 1964) |
 | Ejemplos | **IBM System/360** (1964, familia compatible de ordenadores), **PDP-11** (DEC, 1970), superordenador **CDC-6600** (Cray, 1964) |
@@ -731,7 +731,7 @@ Las generaciones se definen por tres aspectos principales: la **tecnología vige
 | Conmutación | 10 nanosegundos |
 | Almacenamiento | Disquete (Floppy Disk 8", luego 5,25", 3,5") |
 | Uso | Primeros **ordenadores personales**: **Altair 8800** (1975), **Apple I** (1976), **IBM PC 5150** (1981) |
-| Otros | Redes de ordenadores (Ethernet 1973, TCP/IP 1974), teleinformatica |
+| Otros | Redes de ordenadores (Ethernet 1973, TCP/IP 1974), teleinformática |
 
 ### 4.5. Quinta generación (1981-1991) — IA, GUI, redes
 
@@ -743,51 +743,51 @@ Las generaciones se definen por tres aspectos principales: la **tecnología vige
 | Programación | Lenguajes cercanos al natural (Prolog, Lisp para IA); OOP (C++ 1985, Smalltalk) |
 | Interfaces | Sistemas operativos con **interfaces gráficas** (Xerox Star 1981, Apple Lisa 1983, Mac 1984, Windows 1.0 1985, X Window 1984) |
 | Redes | Internet consolidada (ARPANET → NSFNET 1986), World Wide Web inventada (Tim Berners-Lee, CERN, 1989-1991) |
-| Impacto | Expansión masiva de la microinformatica a hogares y oficinas |
+| Impacto | Expansión masiva de la microinformática a hogares y oficinas |
 
-### 4.6. Sexta generación (1991 → actualidad) — Computación distribuida, cuantica, neuromorfica
+### 4.6. Sexta generación (1991 → actualidad) — Computación distribuida, cuántica, neuromórfica
 
-Aunque la literatura clasica cierra las generaciones con la 5ª, la mayoria de autores actuales reconocen una **sexta generación** que cubre el periodo 1991-actualidad, caracterizada por:
+Aunque la literatura clásica cierra las generaciones con la 5ª, la mayoría de autores actuales reconocen una **sexta generación** que cubre el periodo 1991-actualidad, caracterizada por:
 
-- **Multinucleo y paralelismo masivo**: desde ~2005 todos los procesadores de proposito general son multinucleo. GPUs con miles de nucleos (NVIDIA H100: 18.432 cores CUDA).
+- **Multinúcleo y paralelismo masivo**: desde ~2005 todos los procesadores de propósito general son multinúcleo. GPUs con miles de núcleos (NVIDIA H100: 18.432 cores CUDA).
 - **Computación en la nube**: AWS (2006), Azure (2010), Google Cloud (2011). Ordenadores virtualizados, escalables bajo demanda.
 - **Dispositivos ubicuos**: smartphones (iPhone 2007), tablets, IoT, wearables. Más dispositivos conectados que humanos.
 - **Inteligencia artificial moderna**: redes neuronales profundas (AlexNet 2012), transformers (2017), GPT (2018-2024), Claude, Gemini.
-- **Computación cuantica**: primeros ordenadores cuanticos comerciales (IBM Q 2016, Google Sycamore 2019). Potencial disruptivo.
-- **Computación neuromorfica**: chips inspirados en el cerebro (Intel Loihi 2017, IBM TrueNorth 2014). Muy eficientes energeticamente.
+- **Computación cuántica**: primeros ordenadores cuánticos comerciales (IBM Q 2016, Google Sycamore 2019). Potencial disruptivo.
+- **Computación neuromórfica**: chips inspirados en el cerebro (Intel Loihi 2017, IBM TrueNorth 2014). Muy eficientes energéticamente.
 
-> **[REFERENCIA CRUZADA]** La computación en la nube se amplia en el **Tema 28** (Cloud computing) y la IA en el **Tema 36** (Inteligencia artificial y Big Data).
+> **[REFERENCIA CRUZADA]** La computación en la nube se amplía en el **Tema 28** (Cloud computing) y la IA en el **Tema 36** (Inteligencia artificial y Big Data).
 
 ---
 
-## 5. Componentes internos de los equipos microinformaticos
+## 5. Componentes internos de los equipos microinformáticos
 
 El hardware de un ordenador se estructura en tres subsistemas: [STALLINGS-COA, Cap. 3]
 
 1. **Unidad Central de Proceso (UCP/CPU)**
 2. **Memoria central**
-3. **Unidades de entrada/salida (perifericos)**
+3. **Unidades de entrada/salida (periféricos)**
 
-Todos ellos se comunican mediante **buses**.
+Todos ellos se comúnican mediante **buses**.
 
 ### 5.1. Buses
 
-Un **bus** es un conjunto de circuitos que se encargan de la conexión y comunicación entre los diversos componentes del ordenador. La comunicación se realiza mediante líneas electricas paralelas (o en serie en buses modernos como PCIe). [STALLINGS-COA, Cap. 3]
+Un **bus** es un conjunto de circuitos que se encargan de la conexión y comunicación entre los diversos componentes del ordenador. La comunicación se realiza mediante líneas eléctricas paralelas (o en serie en buses modernos como PCIe). [STALLINGS-COA, Cap. 3]
 
-**Tipos funcionales** (los **tres buses** clasicos):
+**Tipos funcionales** (los **tres buses** clásicos):
 
-| Tipo de bus | Direccionalidad | Función |
+| Tipo de bus | Direcciónalidad | Función |
 |---|---|---|
-| **Bus de control** | Unidireccional (UC → componentes) | Transmite senales de la Unidad de Control interpretadas como órdenes |
-| **Bus de direcciones** | Unidireccional (CPU → memoria) | Transporta las direcciones de memoria sobre las que se va a actuar (lectura/escritura) |
+| **Bus de control** | Unidireccional (UC → componentes) | Transmite señales de la Unidad de Control interpretadas como órdenes |
+| **Bus de direcciónes** | Unidireccional (CPU → memoria) | Transporta las direcciónes de memoria sobre las que se va a actuar (lectura/escritura) |
 | **Bus de datos** | Bidireccional | Traslada datos hacia/desde la memoria y otros dispositivos |
 
-**Parametros de un bus**:
+**Parámetros de un bus**:
 
 - **Anchura (bits)**: número de líneas paralelas. Un bus de datos de 64 bits transfiere 8 bytes por ciclo.
 - **Frecuencia (MHz/GHz)**: número de ciclos por segundo.
 - **Ancho de banda** (MB/s o GB/s) = anchura × frecuencia / 8.
-- **Protocolo**: sincrono (reloj común) o asincrono (handshake).
+- **Protocolo**: síncrono (reloj común) o asíncrono (handshake).
 
 **Buses reales modernos**: PCIe 5.0 (32 GT/s por lane, hasta 128 GB/s bidireccional x16), USB 4 (40 Gbps), Thunderbolt 5 (80-120 Gbps).
 
@@ -799,11 +799,11 @@ El procesador, también denominado **CPU** (*Central Processing Unit*), es el su
 1. Extraer de memoria una instrucción del programa en ejecución.
 2. Analizar (decodificar) dicha instrucción.
 3. Realizar las operaciones necesarias para su ejecución.
-4. Actualizar el estado y pasar a la siguiente instrucción.
+4. Actúalizar el estado y pasar a la siguiente instrucción.
 
-Actualmente, la CPU esta integrada en un **microprocesador** (chip), montado sobre la **placa base** en un socket especifico (Intel LGA1851, AMD AM5) y acompanado de un **disipador** de calor y (habitualmente) **ventilador** o refrigeración liquida.
+Actúalmente, la CPU está integrada en un **microprocesador** (chip), montado sobre la **placa base** en un socket específico (Intel LGA1851, AMD AM5) y acompañado de un **disipador** de calor y (habitualmente) **ventilador** o refrigeración líquida.
 
-> **Nota**: Los términos UCP, CPU, microprocesador y procesador son equivalentes en la práctica, aunque tecnicamente "microprocesador" se refiere al chip físico y "CPU" al concepto lógico.
+> **Nota**: Los términos UCP, CPU, microprocesador y procesador son equivalentes en la práctica, aunque técnicamente "microprocesador" se refiere al chip físico y "CPU" al concepto lógico.
 
 #### 5.2.1. Tecnologías: CISC vs RISC
 
@@ -833,7 +833,7 @@ Ventajas CISC:
 Ventajas RISC:
 - CPU más rápida por ciclo (menos trabajo por instrucción).
 - Favorece segmentación (pipelining) y paralelismo (superescalar).
-- Menor consumo energetico por operación (razón por la que domina en móviles).
+- Menor consumo energético por operación (razón por la que domina en móviles).
 - Diseño más simple — menos transistores dedicados a decodificar.
 
 **Tabla comparativa**:
@@ -846,39 +846,39 @@ Ventajas RISC:
 | Número de registros | Pocos (8-16) | Muchos (32+) |
 | Paralelismo pipeline | Difícil (requiere uops) | Favorable |
 | Consumo | Mayor (por ciclo) | Menor |
-| Uso típico | PCs de escritorio, servidores | Moviles, consolas, servidores ARM, embebidos |
+| Uso típico | PCs de escritorio, servidores | Móviles, consolas, servidores ARM, embebidos |
 | Ejemplos | Intel Core, AMD Ryzen | ARM Cortex-A, Apple M, AWS Graviton, RISC-V |
 
 > **[DATO CLAVE EXAMEN]** El procesador x86-64 (el más común en PCs de escritorio) es **CISC**, pero internamente traduce instrucciones CISC a microinstrucciones RISC (uops) antes de ejecutarlas. Este proceso se llama **decodificación x86** y ocupa hardware significativo (~15% del die).
 
 #### 5.2.2. Medidas de potencia de la CPU
 
-- **FLOPS** (*Floating-Point Operations Per Second*): número de operaciones de coma flotante por segundo. Relevante para calculo cientifico, IA, gráficos. Superordenador El Capitan (2024): 1,74 **ExaFLOPS** (10^18 FLOPS).
+- **FLOPS** (*Floating-Point Operations Per Second*): número de operaciones de coma flotante por segundo. Relevante para cálculo científico, IA, gráficos. Superordenador El Capitan (2024): 1,74 **ExaFLOPS** (10^18 FLOPS).
 - **MIPS** (*Millions of Instructions Per Second*): millones de instrucciones por segundo. **Solo comparable entre CPUs con el mismo conjunto de instrucciones** (no se puede comparar MIPS de x86 con MIPS de ARM directamente).
-- **IPC** (*Instructions Per Cycle*): cuantas instrucciones ejecuta la CPU en cada ciclo de reloj. Procesadores modernos pueden superar 4 IPC gracias al paralelismo superescalar.
+- **IPC** (*Instructions Per Cycle*): cuántas instrucciones ejecuta la CPU en cada ciclo de reloj. Procesadores modernos pueden superar 4 IPC gracias al paralelismo superescalar.
 - **Frecuencia** (GHz): ciclos de reloj por segundo. Un i9-14900K funciona a 5,8 GHz en turbo.
-- **TDP** (*Thermal Design Power*, W): potencia termica máxima. Proxy del consumo electrico.
+- **TDP** (*Thermal Design Power*, W): potencia térmica máxima. Proxy del consumo eléctrico.
 
-#### 5.2.3. Multiprocesamiento, multinucleo y multithreading
+#### 5.2.3. Multiprocesamiento, multinúcleo y multithreading
 
 Tres conceptos que conviene no confundir:
 
-- **Multiprocesamiento** (multi-CPU): un equipo con **más de una CPU física** (múltiples sockets). Típico en servidores de alta gama. Puede ser **SMP** (simetrico, CPUs iguales) o **NUMA** (no uniforme, cada CPU con su propia memoria).
+- **Multiprocesamiento** (multi-CPU): un equipo con **más de una CPU física** (múltiples sockets). Típico en servidores de alta gama. Puede ser **SMP** (simétrico, CPUs iguales) o **NUMA** (no uniforme, cada CPU con su propia memoria).
 
-- **Multinucleo** (multi-core): un único circuito integrado con **más de una CPU lógica** dentro. No confundir con multiprocesamiento. Un Intel Core i9-14900K tiene 24 nucleos (8 performance + 16 efficiency) en un solo chip.
+- **Multinúcleo** (multi-core): un único circuito integrado con **más de una CPU lógica** dentro. No confundir con multiprocesamiento. Un Intel Core i9-14900K tiene 24 núcleos (8 performance + 16 efficiency) en un solo chip.
 
-- **Multithreading (HyperThreading / SMT)**: tecnología que permite **duplicar las unidades lógicas de cada nucleo**, permitiendo a un nucleo ejecutar **dos hilos simultaneos**. Patente original de Sun Microsystems (1994).
+- **Multithreading (HyperThreading / SMT)**: tecnología que permite **duplicar las unidades lógicas de cada núcleo**, permitiendo a un núcleo ejecutar **dos hilos simultáneos**. Patente original de Sun Microsystems (1994).
   - Intel lo denomina **HyperThreading Technology (HTT)** — lanzado en Pentium 4 (2002).
   - AMD lo denomina **SMT (Simultaneous Multi-Threading)** — en Zen desde 2017.
-  - Ambas tecnologías son virtualmente identicas en concepto. Aportan ~20-30% rendimiento adicional con ~5% más silicio.
+  - Ambas tecnologías son virtualmente idénticas en concepto. Aportan ~20-30% rendimiento adicional con ~5% más silicio.
 
-> **[DATO CLAVE EXAMEN]** Un **Intel Core i9-14900K con 24 nucleos y HyperThreading** presenta al sistema operativo **32 hilos lógicos** (8 nucleos-P con HT×2 + 16 nucleos-E sin HT = 16 + 16 = 32). Los nucleos-E (Efficiency) no tienen HT para ahorrar energía.
+> **[DATO CLAVE EXAMEN]** Un **Intel Core i9-14900K con 24 núcleos y HyperThreading** presenta al sistema operativo **32 hilos lógicos** (8 núcleos-P con HT×2 + 16 núcleos-E sin HT = 16 + 16 = 32). Los núcleos-E (Efficiency) no tienen HT para ahorrar energía.
 
 #### 5.2.4. Pipelining (segmentación de instrucciones)
 
-El **pipelining** es la técnica fundamental para acelerar una CPU sin aumentar su frecuencia. Divide la ejecución de cada instrucción en **etapas** y permite que varias instrucciones se solapen en distintas etapas simultaneamente. Es analoga a una cadena de montaje industrial.
+El **pipelining** es la técnica fundamental para acelerar una CPU sin aumentar su frecuencia. Divide la ejecución de cada instrucción en **etapas** y permite que varías instrucciones se solapen en distintas etapas simultáneamente. Es análoga a una cadena de montaje industrial.
 
-**Pipeline RISC clasico de 5 etapas** (modelo MIPS, base de muchos libros de texto):
+**Pipeline RISC clásico de 5 etapas** (modelo MIPS, base de muchos libros de texto):
 
 1. **IF** (*Instruction Fetch*): busca la instrucción en memoria.
 2. **ID** (*Instruction Decode*): decodifica la instrucción y lee operandos de registros.
@@ -886,7 +886,7 @@ El **pipelining** es la técnica fundamental para acelerar una CPU sin aumentar 
 4. **MEM** (*Memory Access*): lectura/escritura en memoria de datos (solo LOAD/STORE).
 5. **WB** (*Write Back*): escribe el resultado en el registro destino.
 
-Sin pipeline, una instrucción ocupa 5 ciclos. Con pipeline, **en estado estacionario se completa una instrucción por ciclo** (IPC=1), porque las etapas están trabajando en instrucciones diferentes simultaneamente.
+Sin pipeline, una instrucción ocupa 5 ciclos. Con pipeline, **en estado estacionario se completa una instrucción por ciclo** (IPC=1), porque las etapas están trabajando en instrucciones diferentes simultáneamente.
 
 Procesadores modernos tienen pipelines mucho más profundos:
 - Intel Core (Golden Cove, 2021): ~19 etapas.
@@ -902,7 +902,7 @@ Procesadores modernos tienen pipelines mucho más profundos:
 Soluciones modernas:
 
 - **Forwarding / bypassing**: cortocircuito interno para pasar resultados entre etapas sin esperar al WB.
-- **Predicción de saltos** (*branch prediction*): la CPU "adivina" si un salto se tomara y empieza a buscar instrucciones desde el destino predicho. Aciertos >95% en procesadores modernos.
+- **Predicción de saltos** (*branch prediction*): la CPU "adivina" si un salto se tomará y empieza a buscar instrucciones desde el destino predicho. Aciertos >95% en procesadores modernos.
 - **Ejecución especulativa**: ejecuta instrucciones asumiendo una predicción de salto; si falla, descarta resultados.
 - **Ejecución fuera de orden** (*out-of-order execution*): reordena instrucciones para aprovechar huecos del pipeline.
 
@@ -910,7 +910,7 @@ Soluciones modernas:
 
 #### 5.2.5. CPU superescalar
 
-Una CPU **escalar** ejecuta una instrucción por ciclo en el mejor caso. Una CPU **superescalar** ejecuta **varias instrucciones por ciclo** replicando unidades funcionales (múltiples ALUs, múltiples unidades de punto flotante, etc.).
+Una CPU **escalar** ejecuta una instrucción por ciclo en el mejor caso. Una CPU **superescalar** ejecuta **varías instrucciones por ciclo** replicando unidades funcionales (múltiples ALUs, múltiples unidades de punto flotante, etc.).
 
 El procesador despacha instrucciones a las unidades disponibles en paralelo, respetando las dependencias de datos. Intel Golden Cove despacha hasta **6 instrucciones por ciclo**; Apple M3 hasta **8**.
 
@@ -918,12 +918,12 @@ El procesador despacha instrucciones a las unidades disponibles en paralelo, res
 
 #### 5.2.6. Ley de Moore y su crisis
 
-La **Ley de Moore** (Gordon Moore, Intel, 1965) observaba que el número de transistores en un chip se duplicaba cada ~18-24 meses a coste constante. Se cumplio con notable precisión desde 1965 hasta ~2015.
+La **Ley de Moore** (Gordon Moore, Intel, 1965) observaba que el número de transistores en un chip se duplicaba cada ~18-24 meses a coste constante. Se cumplió con notable precisión desde 1965 hasta ~2015.
 
-Desde ~2015 la ley se ha ralentizado: las dificultades físicas de miniaturizar por debajo de 5 nm (efectos cuanticos, fugas de corriente, disipación termica) han frenado el ritmo. La industria ha respondido con:
+Desde ~2015 la ley se ha ralentizado: las dificultades físicas de miniaturizar por debajo de 5 nm (efectos cuánticos, fugas de corriente, disipación térmica) han frenado el ritmo. La industria ha respondido con:
 
-- **Arquitecturas heterogéneas**: big.LITTLE (ARM), nucleos P-E (Intel), combinando nucleos rápidos con nucleos eficientes.
-- **Chiplets**: divisiones del chip en múltiples dies interconectados (AMD EPYC/Ryzen, Intel Meteor Lake).
+- **Arquitecturas heterogéneas**: big.LITTLE (ARM), núcleos P-E (Intel), combinando núcleos rápidos con núcleos eficientes.
+- **Chiplets**: divisiónes del chip en múltiples dies interconectados (AMD EPYC/Ryzen, Intel Meteor Lake).
 - **3D stacking**: apilar transistores en capas (3D V-Cache de AMD, memoria HBM).
 - **Aceleradores especializados**: GPUs, NPUs (Neural Processing Units), TPUs para IA.
 
@@ -933,10 +933,10 @@ Panorama actual del mercado de procesadores:
 
 | Fabricante | Arquitectura | Familia | Mercado |
 |---|---|---|---|
-| **Intel** | x86-64 CISC | Core Ultra (Meteor/Lunar Lake), Xeon 6 | PCs escritorio/portatil, servidores |
-| **AMD** | x86-64 CISC | Ryzen 9000, EPYC 9005 Turin | PCs escritorio/portatil, servidores |
+| **Intel** | x86-64 CISC | Core Ultra (Meteor/Lunar Lake), Xeon 6 | PCs escritorio/portátil, servidores |
+| **AMD** | x86-64 CISC | Ryzen 9000, EPYC 9005 Turin | PCs escritorio/portátil, servidores |
 | **Apple** | ARM64 RISC | Apple M4 (2024), M4 Pro/Max/Ultra | Mac, iPad, Visión Pro |
-| **Qualcomm** | ARM64 RISC | Snapdragon 8 Gen 4, Snapdragon X Elite | Smartphones, portatiles Copilot+ |
+| **Qualcomm** | ARM64 RISC | Snapdragon 8 Gen 4, Snapdragon X Elite | Smartphones, portátiles Copilot+ |
 | **NVIDIA** | ARM64 + GPU | Grace Hopper, Blackwell | Servidores IA, HPC |
 | **AWS** | ARM64 RISC | Graviton 4 | Servidores cloud AWS |
 
@@ -944,7 +944,7 @@ Panorama actual del mercado de procesadores:
 
 ### 5.3. Unidad Central de Proceso — Componentes internos
 
-La CPU esta formada por tres subsistemas principales: [STALLINGS-COA, Cap. 12]
+La CPU está formada por tres subsistemas principales: [STALLINGS-COA, Cap. 12]
 
 1. **Registros de acceso rápido**
 2. **Unidad de Control (UC)**
@@ -961,7 +961,7 @@ La CPU esta formada por tres subsistemas principales: [STALLINGS-COA, Cap. 12]
   <text x="70" y="82" class="cpu-chip">CPU / MICROPROCESADOR</text>
   <rect x="80" y="100" width="150" height="65" rx="4" fill="#0055a0"/>
   <text x="155" y="125" class="cpu-heading">ALU</text>
-  <text x="155" y="145" class="cpu-sub" fill="#cde4f0">aritmetico-logica</text>
+  <text x="155" y="145" class="cpu-sub" fill="#cde4f0">aritmético-lógica</text>
   <text x="155" y="158" class="cpu-sub" fill="#cde4f0">+ − × ÷ AND OR XOR</text>
   <rect x="250" y="100" width="160" height="65" rx="4" fill="#0055a0"/>
   <text x="330" y="125" class="cpu-heading">Unidad de Control</text>
@@ -980,14 +980,14 @@ La CPU esta formada por tres subsistemas principales: [STALLINGS-COA, Cap. 12]
   <line x1="430" y1="120" x2="470" y2="105" stroke="#d13c3c" stroke-width="2.5"/>
   <text x="450" y="100" class="cpu-bus" fill="#d13c3c">control</text>
   <line x1="430" y1="170" x2="470" y2="175" stroke="#2d8659" stroke-width="2.5"/>
-  <text x="450" y="166" class="cpu-bus" fill="#2d8659">direcciones</text>
+  <text x="450" y="166" class="cpu-bus" fill="#2d8659">direcciónes</text>
   <line x1="430" y1="240" x2="470" y2="245" stroke="#0055a0" stroke-width="2.5"/>
   <text x="450" y="236" class="cpu-bus" fill="#0055a0">datos</text>
 </svg>
 
 #### 5.3.1. Registros
 
-Un **registro** es una pequeña zona de memoria de acceso muy rápido y directo por parte del procesador, que almacena un dato, instrucción o dirección de memoria. Característica: **mínima capacidad, máxima velocidad** (~0,3 ns de latencia).
+Un **registro** es una pequeña zona de memoria de acceso muy rápido y directo por parte del procesador, que almacena un dato, instrucción o dirección de memoria. Carácterística: **mínima capacidad, máxima velocidad** (~0,3 ns de latencia).
 
 **Tipos de registros**:
 
@@ -996,24 +996,24 @@ Un **registro** es una pequeña zona de memoria de acceso muy rápido y directo 
 | Datos | **Registros de datos** | Almacenan valores numéricos y caracteres |
 | Datos | **Acumulador (ACC)** | Almacena temporalmente resultados aritméticos/lógicos intermedios para la ALU |
 | Datos | **Registro de pila (SP, Stack Pointer)** | Mantiene la posición actual de la cima de la pila |
-| Direcciones | **Registro índice (IX)** | Direcciona datos hacia/desde la RAM mediante offset |
+| Direcciónes | **Registro índice (IX)** | Direccióna datos hacia/desde la RAM mediante offset |
 | Memoria | **MBR (Memory Buffer Register)** | Conectado al bus de datos. Lee/escribe datos del bus dirigidos a memoria o E/S |
-| Memoria | **MAR (Memory Address Register)** | Contiene la dirección del dato a leer/escribir. Conectado al bus de direcciones |
+| Memoria | **MAR (Memory Address Register)** | Contiene la dirección del dato a leer/escribir. Conectado al bus de direcciónes |
 | Instrucción | **CP (Contador de Programa)** | Dirección de la siguiente instrucción a ejecutar |
 | Instrucción | **RI (Registro de Instrucción)** | Instrucción actualmente decodificada y en ejecución |
-| General | **GPRs (General-Purpose Registers)** | Almacenan direcciones o datos generales — sin función especifica |
-| Especifico | **SPRs (Special-Purpose Registers)** | Guardan datos del estado del sistema |
+| General | **GPRs (General-Purpose Registers)** | Almacenan direcciónes o datos generales — sin función específica |
+| Específico | **SPRs (Special-Purpose Registers)** | Guardan datos del estado del sistema |
 | Estado | **CCR / Registro de estado** | Códigos de condición de la última operación. Incluye el registro FLAGS |
 | Punto flotante | **Registros FP / SIMD** | Números reales IEEE-754 y operaciones vectoriales (XMM, YMM, ZMM, NEON) |
 | Constantes | **Registros constantes** | Valores de solo lectura: cero, uno, PI |
 
-> **[DATO CLAVE EXAMEN]** **Capacidad de direccionamiento**: si el MAR tiene **n bits**, se pueden direccionar un máximo de **2^n palabras** de memoria. Con MAR de 32 bits se direccionan 4 GB (2^32 = 4.294.967.296 bytes); con MAR de 64 bits se direccionan 16 EB (limite teórico practicamente inalcanzable).
+> **[DATO CLAVE EXAMEN]** **Capacidad de direccionamiento**: si el MAR tiene **n bits**, se pueden direccionar un máximo de **2^n palabras** de memoria. Con MAR de 32 bits se direccionan 4 GB (2^32 = 4.294.967.296 bytes); con MAR de 64 bits se direccionan 16 EB (límite teórico prácticamente inalcanzable).
 
 #### 5.3.1.1. Registros FLAGS, EFLAGS y RFLAGS (x86)
 
-El **registro FLAGS** es el registro de estado en la familia x86. Su evolución acompana a la de la propia arquitectura:
+El **registro FLAGS** es el registro de estado en la familia x86. Su evolución acompaña a la de la propia arquitectura:
 
-| Registro | Ancho | Arquitectura | Epoca |
+| Registro | Ancho | Arquitectura | Época |
 |---|---|---|---|
 | **FLAGS** | 16 bits | 8086, 80286 (modo real) | 1978-1985 |
 | **EFLAGS** | 32 bits | 80386, 80486, Pentium | 1985-presente (compat.) |
@@ -1052,30 +1052,30 @@ La Unidad de Control es la **parte más importante del microprocesador** desde e
 
 | Componente | Función |
 |---|---|
-| **Reloj** | Proporciona impulsos con frecuencia constante que marcan los ciclos básicos. Ej: Pentium IV a 2 GHz = 2.000 millones de pulsos/segundo. No equivale a instrucciones/segundo, ya que muchas requieren múltiples pulsos o el pipeline entrega varias por ciclo |
+| **Reloj** | Proporciona impulsos con frecuencia constante que marcan los ciclos básicos. Ej: Pentium IV a 2 GHz = 2.000 millones de pulsos/segundo. No equivale a instrucciones/segundo, ya que muchas requieren múltiples pulsos o el pipeline entrega varías por ciclo |
 | **Contador de Programa (CP)** | Registro que contiene la dirección de memoria de la siguiente instrucción a ejecutar. Al encender el ordenador toma un valor por defecto donde se encuentra la primera instrucción (vector de reset) |
 | **Registro de Instrucción (RI)** | Contiene la instrucción en ejecución. Tiene dos partes: **código de operación** (que hacer) y **operandos** (sobre que hacerlo) |
-| **Decodificador** | Extrae el código de operación del RI, lo analiza y lo comunica al controlador |
-| **Controlador/Secuenciador** | Interpreta el código de operación y genera las **microordenes** que actúan sobre el sistema en sincronia con el reloj |
+| **Decodificador** | Extrae el código de operación del RI, lo analiza y lo comúnica al controlador |
+| **Controlador/Secuenciador** | Interpreta el código de operación y genera las **microórdenes** que actúan sobre el sistema en sincronía con el reloj |
 
 #### 5.3.3. Unidad Aritmético-Lógica (ALU)
 
-La ALU es el componente del procesador encargado de ejecutar las **operaciones elementales de tipo aritmético y lógico**. Se comunica con el sistema mediante el bus de datos. [STALLINGS-COA, Cap. 9]
+La ALU es el componente del procesador encargado de ejecutar las **operaciones elementales de tipo aritmético y lógico**. Se comúnica con el sistema mediante el bus de datos. [STALLINGS-COA, Cap. 9]
 
 **Componentes de la ALU**:
 
 | Componente | Función |
 |---|---|
-| **Circuito Operacional (COP)** | Contiene los circuitos digitales para realizar las operaciones. Es el elemento más importante de la ALU |
+| **Circuito Operaciónal (COP)** | Contiene los circuitos digitales para realizar las operaciones. Es el elemento más importante de la ALU |
 | **Registros de Entrada (REN)** | Almacenan los operandos sobre los que se ejecuta la operación |
-| **Acumulador** | Almacena los resultados finales. Conectado directamente al bus de datos para envio a memoria |
+| **Acumulador** | Almacena los resultados finales. Conectado directamente al bus de datos para envío a memoria |
 | **Registro de Estado** | Almacena información sobre condiciones de la última operación (FLAGS, §5.3.1.1) |
 
 **Tipos de operaciones**:
 
-1. **Aritméticas sobre enteros**: suma, resta, multiplicación, división (incluyendo variantes con signo/sin signo).
+1. **Aritméticas sobre enteros**: suma, resta, multiplicación, división (incluyendo varíantes con signo/sin signo).
 2. **Lógicas a nivel de bit**: AND, OR, NOT, XOR, NAND, NOR, XNOR.
-3. **Desplazamiento y rotación de bits**: desplazan bits a izquierda/derecha. Equivalencia aritmética: desplazar n posiciones a izquierda equivale a multiplicar por 2^n (si no hay desbordamiento).
+3. **Desplazamiento y rotación de bits**: desplazan bits a izquierda/derecha. Equivalencia aritmética: desplazar n posiciónes a izquierda equivale a multiplicar por 2^n (si no hay desbordamiento).
 4. **Comparación**: resta sin guardar resultado, solo actualiza FLAGS.
 
 Las operaciones de **coma flotante** (reales IEEE-754) y **vectoriales/SIMD** (SSE, AVX, NEON) suelen estar en unidades separadas (FPU, SIMD unit) pero conceptualmente forman parte del bloque ALU extendido.
@@ -1106,7 +1106,7 @@ El **ciclo de instrucción** (*instruction cycle* o *fetch-execute cycle*) es el
   </style>
   <text x="320" y="28" text-anchor="middle" font="700 16px system-ui,sans-serif" fill="#0055a0">Ciclo Fetch-Execute</text>
   <rect x="30" y="50" width="330" height="150" rx="6" fill="#eef4fa" stroke="#0055a0" stroke-width="1.5" stroke-dasharray="4 3"/>
-  <text x="45" y="68" class="fe-phase" fill="#0055a0">FASE 1 · FETCH (busqueda)</text>
+  <text x="45" y="68" class="fe-phase" fill="#0055a0">FASE 1 · FETCH (búsqueda)</text>
   <rect x="50" y="90" width="90" height="45" rx="3" fill="#0055a0"/>
   <text x="95" y="110" class="fe-step">1. CP → MAR</text>
   <rect x="160" y="90" width="90" height="45" rx="3" fill="#0055a0"/>
@@ -1118,24 +1118,24 @@ El **ciclo de instrucción** (*instruction cycle* o *fetch-execute cycle*) es el
   <rect x="220" y="150" width="120" height="40" rx="3" fill="#0055a0"/>
   <text x="280" y="170" class="fe-step">5. CP + 1</text>
   <rect x="380" y="50" width="230" height="150" rx="6" fill="#d8f0dc" stroke="#2d8659" stroke-width="1.5" stroke-dasharray="4 3"/>
-  <text x="395" y="68" class="fe-phase" fill="#2d8659">FASE 2 · EXECUTE (ejecucion)</text>
+  <text x="395" y="68" class="fe-phase" fill="#2d8659">FASE 2 · EXECUTE (ejecución)</text>
   <rect x="400" y="90" width="90" height="45" rx="3" fill="#2d8659"/>
   <text x="445" y="110" class="fe-step">6. Decode</text>
   <rect x="510" y="90" width="90" height="45" rx="3" fill="#2d8659"/>
   <text x="555" y="110" class="fe-step">7. Execute</text>
   <rect x="400" y="150" width="200" height="40" rx="3" fill="#e89822"/>
-  <text x="500" y="170" class="fe-step">Actualiza flags / regs</text>
+  <text x="500" y="170" class="fe-step">Actúaliza flags / regs</text>
 </svg>
 
-#### Fase 1: Busqueda (FETCH)
+#### Fase 1: Búsqueda (FETCH)
 
 La instrucción es localizada en memoria y transferida a la Unidad de Control. Pasos:
 
-1. La UC transfiere el contenido del **Contador de Programa (CP)** al **Registro de Dirección de Memoria (MAR)** a traves del bus interno.
-2. El MAR emite la dirección al sistema de memoria a traves del bus de direcciones.
-3. El sistema de memoria accede a la posición indicada y transfiere la instrucción al **Registro de Intercambio de Memoria (MBR)** a traves del bus de datos.
+1. La UC transfiere el contenido del **Contador de Programa (CP)** al **Registro de Dirección de Memoria (MAR)** a través del bus interno.
+2. El MAR emite la dirección al sistema de memoria a través del bus de direcciónes.
+3. El sistema de memoria accede a la posición indicada y transfiere la instrucción al **Registro de Intercambio de Memoria (MBR)** a través del bus de datos.
 4. La instrucción se transfiere del MBR al **Registro de Instrucción (RI)**.
-5. El **Contador de Programa se incrementa** para apuntar a la siguiente instrucción secuencial (normalmente CP = CP + tamano_instruccion).
+5. El **Contador de Programa se incrementa** para apuntar a la siguiente instrucción secuencial (normalmente CP = CP + tamaño_instrucción).
 
 #### Fase 2: Ejecución (EXECUTE)
 
@@ -1149,13 +1149,13 @@ La instrucción es localizada en memoria y transferida a la Unidad de Control. P
 | Tipo | Descripción | Ejemplo (castellano) |
 |---|---|---|
 | Sin operandos | Acciones de control sin datos explícitos | `FIN`, `NOP` |
-| Un operando | Actuan sobre un dato o dirección | `SALTA 12345`, `INC A` |
+| Un operando | Actúan sobre un dato o dirección | `SALTA 12345`, `INC A` |
 | Dos operandos | Dos elementos; uno suele ser destino | `SUMA A, B` (A = A + B) |
 | Tres operandos | Dos fuentes + un destino | `SUMA A, B, C` (C = A + B) |
 
-Las arquitecturas **CISC** suelen soportar 0-2 operandos. Las **RISC modernas** tipicamente usan **3 operandos** (dos fuentes y un destino explícito), lo que evita sobrescribir el contenido original.
+Las arquitecturas **CISC** suelen soportar 0-2 operandos. Las **RISC modernas** típicamente usan **3 operandos** (dos fuentes y un destino explícito), lo que evita sobrescribir el contenido original.
 
-> **[EJERCICIO RESUELTO]** **Problema**: una instrucción x86 `ADD EAX, EBX` (SUMA EAX, EBX en nuestra notación castellana) suma los valores de EAX y EBX y guarda el resultado en EAX. Si EAX=10 y EBX=5, ¿cual es el contenido de EAX tras la ejecución y que flags se actualizan?
+> **[EJERCICIO RESUELTO]** **Problema**: una instrucción x86 `ADD EAX, EBX` (SUMA EAX, EBX en nuestra notación castellana) suma los valores de EAX y EBX y guarda el resultado en EAX. Si EAX=10 y EBX=5, ¿cuál es el contenido de EAX tras la ejecución y que flags se actualizan?
 >
 > **Solución**: EAX pasa a valer 15 (10+5). Los flags afectados son: ZF=0 (resultado no es cero), SF=0 (resultado positivo), CF=0 (sin acarreo), OF=0 (sin desbordamiento con signo), PF=1 (15 = 00001111, número par de bits 1 en los 8 bits bajos).
 
@@ -1201,14 +1201,14 @@ Se clasifican en:
 
 | Modo | Descripción | Ejemplo |
 |---|---|---|
-| **Implícito** (inherente) | El operando esta implícito en la definición de la instrucción. Usado en acumuladores y pilas. | `INC` (incrementa acumulador), `PUSH A` (usa SP implicitamente) |
-| **Inmediato** (literal) | El operando esta incluido en la propia instrucción. Útil para inicializar registros con constantes. | `SUMA #42` (suma la constante 42) |
+| **Implícito** (inherente) | El operando está implícito en la definición de la instrucción. Usado en acumuladores y pilas. | `INC` (incrementa acumulador), `PUSH A` (usa SP implícitamente) |
+| **Inmediato** (literal) | El operando está incluido en la propia instrucción. Útil para inicializar registros con constantes. | `SUMA #42` (suma la constante 42) |
 
 **Modos propios** (operando en memoria):
 
 | Modo | Descripción | Fórmula |
 |---|---|---|
-| **Directo/Absoluto** | El campo de operando contiene la dirección donde esta el dato. | DE = campo_operando |
+| **Directo/Absoluto** | El campo de operando contiene la dirección donde está el dato. | DE = campo_operando |
 | **Indirecto** | El campo contiene una dirección donde se encuentra la dirección efectiva del operando. Necesita un acceso extra a memoria. | DE = M[campo_operando] |
 | **Relativo a registro base** | Dirección efectiva = contenido del registro base + desplazamiento. Permite códigos reentrantes y reubicables. | DE = BP + desplazamiento |
 | **Relativo a registro índice** (indexado) | Dirección efectiva = dirección de memoria (en instrucción) + contenido del registro índice. Útil para arrays y bucles. | DE = dirección + IX |
@@ -1222,7 +1222,7 @@ Arquitecturas modernas añaden modos compuestos:
 - **Base-desplazamiento-escala** (x86): `[BP + IX*4 + 16]` — acceso a elemento de array de enteros de 32 bits con offset.
 - **Relativo al PC**: offset desde el contador de programa (saltos relativos, típicos en ARM/RISC-V).
 
-> **[DATO CLAVE EXAMEN]** En ARM la mayoria de instrucciones aritmético-lógicas operan solo sobre registros; para acceder a memoria se usan exclusivamente `LDR` (load) y `STR` (store) con modos relativo-base y relativo-índice. Es la **arquitectura load-store**, característica fundamental RISC.
+> **[DATO CLAVE EXAMEN]** En ARM la mayoría de instrucciones aritmético-lógicas operan solo sobre registros; para acceder a memoria se usan exclusivamente `LDR` (load) y `STR` (store) con modos relativo-base y relativo-índice. Es la **arquitectura load-store**, característica fundamental RISC.
 
 ---
 
@@ -1234,23 +1234,23 @@ Arquitecturas modernas añaden modos compuestos:
 - **Memoria interna**: reside dentro o cerca de la CPU (registros, cache, RAM, ROM).
 - **Memoria externa**: dispositivos de almacenamiento secundario (SSD, HDD, cinta, nube).
 
-**Por volatilidad**:
-- **Volatil**: se borra al perder alimentación electrica (RAM, registros, cache).
-- **No volatil**: persiste tras apagar el equipo (ROM, Flash, SSD, HDD, cinta, optico).
+**Por volátilidad**:
+- **Volátil**: se borra al perder alimentación eléctrica (RAM, registros, cache).
+- **No volátil**: persiste tras apagar el equipo (ROM, Flash, SSD, HDD, cinta, optico).
 
 **Por tipo de acceso**:
 - **Acceso aleatorio (random)**: cualquier posición en el mismo tiempo (RAM, ROM, SSD).
-- **Acceso secuencial**: hay que recorrer posiciones intermedias (cinta).
-- **Acceso directo**: zonas accedidas directamente pero con posiciones internas secuenciales (HDD por cilindro/sector).
+- **Acceso secuencial**: hay que recorrer posiciónes intermedías (cinta).
+- **Acceso directo**: zonas accedidas directamente pero con posiciónes internas secuenciales (HDD por cilindro/sector).
 
 **Por jerarquía** (pirámide de memoria):
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 380" role="img" aria-label="Jerarquia de memoria">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 380" role="img" aria-label="Jerarquía de memoria">
   <style>
     .jm-label{font:600 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}
     .jm-speed{font:11px system-ui,sans-serif;fill:#555;text-anchor:start}
   </style>
-  <text x="320" y="28" text-anchor="middle" font="700 16px system-ui,sans-serif" fill="#0055a0">Jerarquia de memoria</text>
+  <text x="320" y="28" text-anchor="middle" font="700 16px system-ui,sans-serif" fill="#0055a0">Jerarquía de memoria</text>
   <polygon points="295,55 345,55 360,85 280,85" fill="#003d73"/>
   <text x="320" y="75" class="jm-label">Registros</text>
   <polygon points="280,85 360,85 375,120 265,120" fill="#0055a0"/>
@@ -1275,11 +1275,11 @@ Arquitecturas modernas añaden modos compuestos:
 
 ### 6.2. Memoria RAM
 
-La **memoria RAM** (*Random Access Memory*) es memoria principal de tipo **volatil**: su contenido se pierde al apagar el sistema. [JEDEC-DDR]
+La **memoria RAM** (*Random Access Memory*) es memoria principal de tipo **volátil**: su contenido se pierde al apagar el sistema. [JEDEC-DDR]
 
 **Función**: almacenar temporalmente los datos e instrucciones que utiliza el procesador durante la ejecución de programas. Actúa como espacio de trabajo intermedio entre la CPU (muy rápida, poca capacidad) y la memoria secundaria (lenta, mucha capacidad).
 
-**Característica principal**: **acceso aleatorio** — se puede leer/escribir en cualquier posición en el mismo tiempo, independientemente de su ubicación. Este es el **acceso aleatorio** que da nombre a la RAM.
+**Carácterística principal**: **acceso aleatorio** — se puede leer/escribir en cualquier posición en el mismo tiempo, independientemente de su ubicación. Este es el **acceso aleatorio** que da nombre a la RAM.
 
 #### 6.2.1. SRAM vs DRAM
 
@@ -1331,7 +1331,7 @@ Dos tecnologías fundamentales de RAM:
 
 | Tecnología | Años | Descripción |
 |---|---|---|
-| **Nucleos de Ferrita** | 1950-1970 | Malla con nucleos magneticos de ferrita en las intersecciones |
+| **Núcleos de Ferrita** | 1950-1970 | Malla con núcleos magnéticos de ferrita en las intersecciónes |
 | **DIP** (Dual In-line Package) | 1960-70 | Basadas en transistores, chips encapsulados |
 | **SIPP** (Single In-line Pin Package) | 1983 | Módulos de 30 pines. Uso en Intel 80286 |
 | **SIMM** (Single In-line Memory Module) | 1987 | Contactos planos en lugar de pines, muesca de orientación. Uso en 80486. 30 o 72 contactos. 32 bits |
@@ -1349,7 +1349,7 @@ Dos tecnologías fundamentales de RAM:
 | **Capacidad máxima por módulo** | 1 GB | 8 GB | 16 GB | 64 GB | **128 GB** |
 | **Pines (DIMM)** | 184 | 240 | 240 | 288 | 288 |
 
-> **[DATO CLAVE EXAMEN]** DDR2 y DDR3 tienen los **mismos 240 pines** pero son **física y electricamente incompatibles** (la muesca esta en distinta posición, y el voltaje es distinto: 1,8 V vs 1,5 V). Analogamente, DDR4 y DDR5 tienen **los mismos 288 pines** pero son incompatibles (voltajes 1,2 V vs 1,1 V, topología distinta: DDR5 integra el PMIC en el módulo).
+> **[DATO CLAVE EXAMEN]** DDR2 y DDR3 tienen los **mismos 240 pines** pero son **física y eléctricamente incompatibles** (la muesca está en distinta posición, y el voltaje es distinto: 1,8 V vs 1,5 V). Análogamente, DDR4 y DDR5 tienen **los mismos 288 pines** pero son incompatibles (voltajes 1,2 V vs 1,1 V, topología distinta: DDR5 integra el PMIC en el módulo).
 
 #### 6.2.4. Tipos especiales de RAM
 
@@ -1358,57 +1358,57 @@ Dos tecnologías fundamentales de RAM:
 | **RIMM** (Rambus In-line Memory Module) | Módulos Rambus con disipador integrado, 232 contactos | Memorias RDRAM (muerto comercialmente) |
 | **FB-DIMM** (Fully Buffered DIMM) | Datos en serie, menos líneas, mayor velocidad | Servidores (obsoleto) |
 | **GDDR** (Graphics DDR) | DDR optimizada para gráficas, integrada en la GPU | Tarjetas gráficas (GDDR6X actual) |
-| **SO-DIMM** (Small Outline DIMM) | Versión compacta de DIMM (~50% más pequeña) | Portatiles, NUCs |
+| **SO-DIMM** (Small Outline DIMM) | Versión compacta de DIMM (~50% más pequeña) | Portátiles, NUCs |
 | **Micro-DIMM** | Más pequeño que SO-DIMM | Dispositivos ultracompactos (obsoleto) |
-| **LPDDR** (Low-Power DDR) | DDR de bajo consumo, soldada a placa | Smartphones, tablets, ultraportatiles |
+| **LPDDR** (Low-Power DDR) | DDR de bajo consumo, soldada a placa | Smartphones, tablets, ultraportátiles |
 | **HBM** (High Bandwidth Memory) | DRAM apilada en 3D, buses muy anchos | GPUs HPC (NVIDIA H100: 3 TB/s) |
 
 #### 6.2.5. RAM ECC vs No-ECC
 
-- **No-ECC**: sin corrección de errores. Uso en PCs domesticos, tablets, portatiles.
+- **No-ECC**: sin corrección de errores. Uso en PCs domésticos, tablets, portátiles.
 - **ECC** (*Error Checking and Correction*): sistema de paridad para **detectar errores de 1 bit y corregirlos**. Detecta errores de 2 bits sin corregirlos. Uso en servidores, estaciones de trabajo profesionales. Requiere soporte de placa base y procesador. ~10% más caro, ~2-3% más lento.
 
-#### 6.2.6. Parametros de la memoria RAM
+#### 6.2.6. Parámetros de la memoria RAM
 
-| Parametro | Descripción |
+| Parámetro | Descripción |
 |---|---|
 | **Velocidad (MHz/MT/s)** | Millones de operaciones (transferencias) por segundo |
 | **Ancho de banda (MB/s o GB/s)** | Máxima cantidad de datos transferida por segundo = velocidad × anchura bus / 8 |
-| **Dual Channel / Quad Channel** | La CPU usa 2/4 canales simultaneos, doblando/cuadruplicando ancho de banda. Requiere módulos identicos en slots correctos |
+| **Dual Channel / Quad Channel** | La CPU usa 2/4 canales simultáneos, doblando/cuadruplicando ancho de banda. Requiere módulos idénticos en slots correctos |
 | **Tiempo de acceso (ns)** | Tiempo que tarda la CPU en acceder a la memoria desde la petición hasta recibir el dato |
 | **Latencia** | Retardo entre solicitud y respuesta |
-| **Latencia CAS (CL)** | Ciclos de reloj desde la petición de lectura hasta la entrega de datos. **Cuanto menor, más rápida** |
+| **Latencia CAS (CL)** | Ciclos de reloj desde la petición de lectura hasta la entrega de datos. **Cuánto menor, más rápida** |
 
 #### 6.2.7. RAM-CMOS (BIOS/UEFI)
 
 Memoria de entre **64 y 256 bytes** vinculada al reloj de tiempo real del sistema. Alimentada por la **pila de la placa base** (tecnología CMOS de bajo consumo).
 
-Almacena la **configuración del firmware**: velocidad de buses, discos instalados, secuencia de arranque, contrasena, overclock, activación de dispositivos. La información es usada por el BIOS/UEFI durante el arranque.
+Almacena la **configuración del firmware**: velocidad de buses, discos instalados, secuencia de arranque, contraseña, overclock, activación de dispositivos. La información es usada por el BIOS/UEFI durante el arranque.
 
-Si los datos son incorrectos, se genera un error. Para restaurar valores de fabrica: cortar la alimentación de la pila durante ~30 segundos (jumper CLRTC o retirar pila).
+Si los datos son incorrectos, se genera un error. Para restaurar valores de fábrica: cortar la alimentación de la pila durante ~30 segundos (jumper CLRTC o retirar pila).
 
 > **[DATO CLAVE EXAMEN]** No confundir **RAM-CMOS** (memoria de configuración) con **BIOS/UEFI** (firmware en ROM): son entidades distintas, aunque la RAM-CMOS se configura desde la utilidad del BIOS/UEFI.
 
-#### 6.2.8. Memoria virtual y paginación
+#### 6.2.8. Memoria virtual y páginación
 
-La **memoria virtual** es un mecanismo que permite a un proceso usar más memoria de la fisicamente disponible, combinando RAM con disco como "memoria secundaria virtual". [TANENBAUM-SO, Cap. 3]
+La **memoria virtual** es un mecanismo que permite a un proceso usar más memoria de la físicamente disponible, combinando RAM con disco como "memoria secundaria virtual". [TANENBAUM-SO, Cap. 3]
 
 Conceptos clave:
 
-- **Pagina**: bloque de tamaño fijo de memoria virtual (tipicamente 4 KB).
-- **Marco de pagina**: bloque de tamaño fijo de memoria física, mismo tamaño que pagina.
-- **Tabla de paginas**: estructura que asocia paginas virtuales a marcos físicos.
-- **TLB** (Translation Lookaside Buffer): cache de la tabla de paginas dentro de la MMU (Memory Management Unit). Critico para rendimiento.
-- **Fallo de pagina**: cuando se accede a una pagina no residente en RAM, se produce una interrupción y el SO la carga desde disco.
-- **Swap / fichero de paginación**: espacio en disco para paginas expulsadas de RAM.
+- **Página**: bloque de tamaño fijo de memoria virtual (típicamente 4 KB).
+- **Marco de página**: bloque de tamaño fijo de memoria física, mismo tamaño que página.
+- **Tabla de páginas**: estructura que asocia páginas virtuales a marcos físicos.
+- **TLB** (Translation Lookaside Buffer): cache de la tabla de páginas dentro de la MMU (Memory Management Unit). Crítico para rendimiento.
+- **Fallo de página**: cuando se accede a una página no residente en RAM, se produce una interrupción y el SO la carga desde disco.
+- **Swap / fichero de páginación**: espacio en disco para páginas expulsadas de RAM.
 
-La **MMU** (Memory Management Unit) es el hardware dentro de la CPU que traduce direcciones virtuales a físicas consultando la tabla de paginas (con cache en TLB).
+La **MMU** (Memory Management Unit) es el hardware dentro de la CPU que traduce direcciónes virtuales a físicas consultando la tabla de páginas (con cache en TLB).
 
 > **[REFERENCIA CRUZADA]** La memoria virtual se trata en profundidad en el **Tema 20** (Sistemas operativos).
 
 ### 6.3. Memoria ROM
 
-La **memoria ROM** (*Read Only Memory*) es memoria principal de tipo **no volatil**: conserva la información almacenada al apagar el sistema.
+La **memoria ROM** (*Read Only Memory*) es memoria principal de tipo **no volátil**: conserva la información almacenada al apagar el sistema.
 
 **Función**: almacenar de forma permanente programas e instrucciones esenciales, como el **firmware**. Destaca la **BIOS/UEFI**, ubicada en la placa base, con las rutinas básicas de arranque e inicialización.
 
@@ -1416,10 +1416,10 @@ La **memoria ROM** (*Read Only Memory*) es memoria principal de tipo **no volati
 
 | Tipo | Descripción | Reprogramable |
 |---|---|---|
-| **ROM** (mask ROM) | Programada en fabrica, contenido inalterable. Obsoleta | No |
+| **ROM** (mask ROM) | Programada en fábrica, contenido inalterable. Obsoleta | No |
 | **PROM** (Programmable ROM) | Programable una única vez por el usuario mediante un programador PROM. Depende de fusibles que se queman una sola vez | Una vez |
-| **EPROM** (Erasable PROM) | Borrable mediante **exposición a luz ultravioleta** (ventana de cuarzo). Reprogramable electricamente | Si (UV + electrica) |
-| **EEPROM** (Electrically EPROM) | Borrable y reprogramable **electricamente**, byte a byte. Permite sobreescritura sin extraer el chip | Si (electrica) |
+| **EPROM** (Erasable PROM) | Borrable mediante **exposición a luz ultravioleta** (ventana de cuarzo). Reprogramable eléctricamente | Si (UV + eléctrica) |
+| **EEPROM** (Electrically EPROM) | Borrable y reprogramable **eléctricamente**, byte a byte. Permite sobreescritura sin extraer el chip | Si (eléctrica) |
 | **Flash** | Variante de EEPROM. Borrado y escritura **en bloques** (no byte a byte). Ampliamente utilizada: pendrives, SSD, tarjetas SD, firmware actual | Si (por bloques) |
 
 #### 6.3.1. NAND Flash vs NOR Flash
@@ -1428,7 +1428,7 @@ Dentro de Flash, dos subtipos con casos de uso distintos:
 
 | Aspecto | NOR Flash | NAND Flash |
 |---|---|---|
-| Acceso | Aleatorio, byte a byte | Por bloques (paginas) |
+| Acceso | Aleatorio, byte a byte | Por bloques (páginas) |
 | Lectura | Rápida | Lenta |
 | Escritura | Lenta | Rápida |
 | Densidad | Baja | **Alta** (10× NOR) |
@@ -1445,7 +1445,7 @@ La **NAND Flash** domina el mercado de almacenamiento masivo por su densidad y c
 
 ### 6.4. BIOS y UEFI
 
-Ambos son **firmware**: código almacenado en memoria no volatil en la placa base que contiene las instrucciones de control de los circuitos del equipo. [UEFI-SPEC]
+Ambos son **firmware**: código almacenado en memoria no volátil en la placa base que contiene las instrucciones de control de los circuitos del equipo. [UEFI-SPEC]
 
 **BIOS** (*Basic Input Output System*) — Creado en 1975:
 
@@ -1457,7 +1457,7 @@ Ambos son **firmware**: código almacenado en memoria no volatil en la placa bas
 
 - Desarrollado inicialmente por Intel como **EFI** (2005), transferido a la UEFI Forum en 2007.
 - Realiza todo lo del BIOS + funciones adicionales (red, GUI, etc.).
-- Estándar obligatorio en Windows 8+ (arranque seguro), macOS, la mayoria de Linux.
+- Estándar obligatorio en Windows 8+ (arranque seguro), macOS, la mayoría de Linux.
 
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="Comparativa BIOS vs UEFI">
   <style>
@@ -1482,7 +1482,7 @@ Ambos son **firmware**: código almacenado en memoria no volatil en la placa bas
   <text x="130" y="115" class="bu-row" text-anchor="middle">16 bits</text>
   <text x="550" y="115" class="bu-row" text-anchor="middle" fill="#2d8659">32/64 bits</text>
   <text x="130" y="140" class="bu-row" text-anchor="middle">Texto</text>
-  <text x="550" y="140" class="bu-row" text-anchor="middle" fill="#2d8659">GUI · raton</text>
+  <text x="550" y="140" class="bu-row" text-anchor="middle" fill="#2d8659">GUI · ratón</text>
   <text x="130" y="165" class="bu-row" text-anchor="middle" fill="#d13c3c">Aislado</text>
   <text x="550" y="165" class="bu-row" text-anchor="middle" fill="#2d8659">Internet</text>
   <text x="130" y="190" class="bu-row" text-anchor="middle" fill="#d13c3c">4 MBR</text>
@@ -1490,7 +1490,7 @@ Ambos son **firmware**: código almacenado en memoria no volatil en la placa bas
   <text x="130" y="215" class="bu-row" text-anchor="middle" fill="#d13c3c">2,2 TB</text>
   <text x="550" y="215" class="bu-row" text-anchor="middle" fill="#2d8659">8 ZB</text>
   <text x="130" y="240" class="bu-row" text-anchor="middle">Lento ~30s</text>
-  <text x="550" y="240" class="bu-row" text-anchor="middle" fill="#2d8659">Rapido ~5s</text>
+  <text x="550" y="240" class="bu-row" text-anchor="middle" fill="#2d8659">Rápido ~5s</text>
   <text x="130" y="265" class="bu-row" text-anchor="middle" fill="#d13c3c">Sin verific.</text>
   <text x="550" y="265" class="bu-row" text-anchor="middle" fill="#2d8659">Secure Boot</text>
   <text x="130" y="290" class="bu-row" text-anchor="middle" fill="#d13c3c">Firme</text>
@@ -1501,13 +1501,13 @@ Ambos son **firmware**: código almacenado en memoria no volatil en la placa bas
 
 | Aspecto | BIOS | UEFI |
 |---|---|---|
-| Interfaz | Consola MS-DOS, solo teclado | GUI moderna, raton, animaciones |
+| Interfaz | Consola MS-DOS, solo teclado | GUI moderna, ratón, animaciones |
 | Conectividad | Sin internet | Puede conectarse a internet para actualizarse |
 | Código | 16 bits (modo real) | 32 o 64 bits (modo protegido) |
 | Arranque | Más lento (30 s) | Más rápido (5 s) |
 | Seguridad | Sin verificación | **Secure Boot** (válida firma digital del bootloader) |
 | TPM | Opcional | TPM 2.0 integrado (Windows 11 obligatorio) |
-| Almacenamiento | Solo recursos especificos | Cualquier memoria no volatil, extensible |
+| Almacenamiento | Solo recursos específicos | Cualquier memoria no volátil, extensible |
 | Particiones | **4 particiones MBR** (max 2,2 TB) | **128 particiones GPT** (max 8 ZB) |
 | CSM | Nativo | Compatibilidad con BIOS legacy |
 
@@ -1519,10 +1519,10 @@ Ambos son **firmware**: código almacenado en memoria no volatil en la placa bas
 
 | Unidad | Descripción | Equivalencia binaria | Equivalencia decimal (SI) |
 |---|---|---|---|
-| **Bit** | Digito binario (0 o 1). Unidad mínima | — | — |
+| **Bit** | Dígito binario (0 o 1). Unidad mínima | — | — |
 | **Nibble** | Grupo de 4 bits | 4 bits | 4 bits |
 | **Byte (B)** | Grupo de 8 bits. Unidad más pequeña que representa un carácter | 8 bits | 8 bits |
-| **Palabra (word)** | Grupo fijo de bits procesados como unidad (varia por arquitectura: 16, 32, 64 bits) | Variable | Variable |
+| **Palabra (word)** | Grupo fijo de bits procesados como unidad (varía por arquitectura: 16, 32, 64 bits) | Variable | Variable |
 | **Kilobyte (KB / KiB)** | | 1.024 B = 2^10 | 1.000 B = 10^3 |
 | **Megabyte (MB / MiB)** | | 1.048.576 B = 2^20 | 10^6 B |
 | **Gigabyte (GB / GiB)** | | 2^30 B | 10^9 B |
@@ -1534,11 +1534,11 @@ Ambos son **firmware**: código almacenado en memoria no volatil en la placa bas
 
 ### 7.1. IEC (binario) vs SI (decimal)
 
-Historicamente, la informática usa potencias de 2 (1024) para cuantificar memoria, pero el Sistema Internacional usa potencias de 10 (1000). Esto genera **ambiguedad** — ¿1 MB son 1.048.576 bytes o 1.000.000 bytes?
+Históricamente, la informática usa potencias de 2 (1024) para cuantificar memoria, pero el Sistema Internacional usa potencias de 10 (1000). Esto genera **ambigüedad** — ¿1 MB son 1.048.576 bytes o 1.000.000 bytes?
 
-La **norma IEC 60027-2** (2000) introdujo nuevos prefijos **binarios** para evitar ambiguedad:
+La **norma IEC 60027-2** (2000) introdujo nuevos prefijos **binarios** para evitar ambigüedad:
 
-| Prefijo IEC (binario) | Simbolo | Valor | Prefijo SI (decimal) | Simbolo | Valor |
+| Prefijo IEC (binario) | Símbolo | Valor | Prefijo SI (decimal) | Símbolo | Valor |
 |---|---|---|---|---|---|
 | Kibibyte | KiB | 2^10 (1.024) | Kilobyte | KB | 10^3 (1.000) |
 | Mebibyte | MiB | 2^20 | Megabyte | MB | 10^6 |
@@ -1547,13 +1547,13 @@ La **norma IEC 60027-2** (2000) introdujo nuevos prefijos **binarios** para evit
 
 **Convenciones actuales**:
 - **RAM**: siempre se mide en **potencias de 2** (16 GB RAM = 16 × 2^30 B = 17,18 GB decimales).
-- **Discos duros y SSD**: los fabricantes usan **potencias de 10** (1 TB SSD = 10^12 B = 931 GiB binarios — por eso "falta" espacio).
+- **Discos duros y SSD**: los fábricantes usan **potencias de 10** (1 TB SSD = 10^12 B = 931 GiB binarios — por eso "falta" espacio).
 - **Sistemas operativos**: Windows usa binario (muestra 931 GB en un disco de 1 TB), macOS y Linux usan decimal (muestran 1 TB correctamente).
 - **Redes**: siempre **decimal** (100 Mbps = 10^8 bits/s).
 
-> **[EJERCICIO RESUELTO]** **Problema**: Compras un SSD de **2 TB**. ¿Cuantos bytes tendras disponibles realmente en un sistema Windows?
+> **[EJERCICIO RESUELTO]** **Problema**: Compras un SSD de **2 TB**. ¿Cuántos bytes tendrás disponibles realmente en un sistema Windows?
 >
-> **Solución**: El fabricante anuncia 2 TB = 2 × 10^12 bytes = 2.000.000.000.000 B. Windows los interpreta en binario: 2.000.000.000.000 / 2^40 ≈ 1,819 TiB. Windows mostrara **aproximadamente 1,82 TB** (aunque internamente son TiB). Es decir, "faltan" unos 181 GB por la diferencia binario/decimal. No es un engaño, es la diferencia de convenciones.
+> **Solución**: El fábricante anuncia 2 TB = 2 × 10^12 bytes = 2.000.000.000.000 B. Windows los interpreta en binario: 2.000.000.000.000 / 2^40 ≈ 1,819 TiB. Windows mostrará **aproximadamente 1,82 TB** (aunque internamente son TiB). Es decir, "faltan" unos 181 GB por la diferencia binario/decimal. No es un engaño, es la diferencia de convenciones.
 
 ### 7.2. Volúmenes reales
 
@@ -1563,7 +1563,7 @@ Algunas magnitudes de referencia para contextualizar:
 - Foto de smartphone 2024 (48 MP): ~12 MB
 - Película 4K 2h: ~60 GB
 - Wikipedia en español (texto, 2024): ~80 GB
-- Todos los libros publicados en España (2024): ~5 TB
+- Todos los libros públicados en España (2024): ~5 TB
 - Datos generados diarios por usuario promedio: ~1,7 MB/s (todas las interacciones digitales)
 - Datos generados diariamente a nivel mundial (2025): ~400 EB
 - Estimación volumen total de datos en el mundo (2025): ~181 ZB (IDC)
@@ -1572,20 +1572,20 @@ Algunas magnitudes de referencia para contextualizar:
 
 ## 8. Sistemas de numeración
 
-Un sistema de numeración es un conjunto de simbolos y reglas que permiten construir números válidos. [STALLINGS-COA, Cap. 9]
+Un sistema de numeración es un conjunto de símbolos y reglas que permiten construir números válidos. [STALLINGS-COA, Cap. 9]
 
-| Sistema | Base | Simbolos | Uso principal |
+| Sistema | Base | Símbolos | Uso principal |
 |---|---|---|---|
 | **Decimal** | 10 | 0-9 | Uso humano cotidiano |
 | **Binario** | 2 | 0, 1 | Uso interno de ordenadores y sistemas digitales |
 | **Octal** | 8 | 0-7 | Representación compacta de binario (permisos Unix) |
-| **Hexadecimal** | 16 | 0-9, A-F | Direcciones de memoria, colores, MAC, código maquina |
+| **Hexadecimal** | 16 | 0-9, A-F | Direcciónes de memoria, colores, MAC, código máquina |
 
-> **[DATO CLAVE EXAMEN]** El sistema **binario** es el utilizado por los ordenadores de forma interna para todos los procesos. Hexadecimal se usa como notación corta para binario (cada digito hex = 4 bits).
+> **[DATO CLAVE EXAMEN]** El sistema **binario** es el utilizado por los ordenadores de forma interna para todos los procesos. Hexadecimal se usa como notación corta para binario (cada dígito hex = 4 bits).
 
 ### 8.1. Conversión entre bases
 
-**Decimal a binario** (divisiones sucesivas):
+**Decimal a binario** (divisiónes sucesivas):
 
 > **[EJERCICIO RESUELTO]** Convertir 25 decimal a binario:
 >
@@ -1612,12 +1612,12 @@ Un sistema de numeración es un conjunto de simbolos y reglas que permiten const
 >
 > 1101 0111 → D 7 → **D7₁₆**
 
-**Hexadecimal a binario**: cada digito hex se expande a 4 bits:
+**Hexadecimal a binario**: cada dígito hex se expande a 4 bits:
 - 0→0000, 1→0001, 2→0010, ..., 9→1001, A→1010, B→1011, C→1100, D→1101, E→1110, F→1111.
 
 ### 8.2. Representación de números negativos: complemento a 2
 
-El ordenador no tiene un "signo menos"; solo tiene bits. Para representar números negativos se usa **complemento a 2** (el estándar practicamente universal).
+El ordenador no tiene un "signo menos"; solo tiene bits. Para representar números negativos se usa **complemento a 2** (el estándar prácticamente universal).
 
 **Para obtener el complemento a 2 de un número binario**:
 1. Invertir todos los bits (complemento a 1).
@@ -1662,14 +1662,14 @@ valor = (-1)^signo × mantisa × 2^exponente
 
 ### 9.1. ASCII
 
-**ASCII** (*American Standard Code for Information Interchange*): código de caracteres basado en el alfabeto latino. Creado en **1963** por el Comite Estadounidense de Estandares (ASA, luego ANSI). [RFC-20]
+**ASCII** (*American Standard Code for Information Interchange*): código de caracteres basado en el alfabeto latino. Creado en **1963** por el Comité Estadounidense de Estándares (ASA, luego ANSI). [RFC-20]
 
-- Utiliza **7 bits** para representar caracteres.
+- Útiliza **7 bits** para representar caracteres.
 - Define **33 caracteres no imprimibles** (control: NUL, SOH, BEL, BS, TAB, LF, CR, ESC, DEL...) + **95 caracteres imprimibles** (desde el espacio).
 - En total: **128 caracteres** (2^7 = 128).
 - Inicialmente usaba un bit adicional de paridad para detección de errores en transmisión.
 
-**Caracteres ASCII notables**:
+**Carácteres ASCII notables**:
 
 | Código | Carácter | Nombre |
 |---|---|---|
@@ -1677,21 +1677,21 @@ valor = (-1)^signo × mantisa × 2^exponente
 | 10 | LF | Line Feed (salto de línea Unix) |
 | 13 | CR | Carriage Return (retorno carro) |
 | 32 | (espacio) | Space |
-| 48-57 | 0-9 | Digitos |
-| 65-90 | A-Z | Mayusculas |
-| 97-122 | a-z | Minusculas |
+| 48-57 | 0-9 | Dígitos |
+| 65-90 | A-Z | Mayúsculas |
+| 97-122 | a-z | Minúsculas |
 | 127 | DEL | Delete |
 
 ### 9.2. ASCII extendido
 
 Cualquier juego de caracteres de **8 bits** donde los códigos 32-126 coinciden con los caracteres imprimibles de ASCII. Los códigos 128-255 se usan para caracteres adicionales (acentos, caracteres especiales).
 
-Codificaciones más comunes:
+Codificaciónes más comúnes:
 
 - **Codepage 437**: IBM PC / MS-DOS en inglés.
 - **Codepage 850**: IBM PC / MS-DOS Europa occidental (incluye n, acentos).
 - **ISO 8859-1** (Latin-1): Unix, Europa occidental.
-- **Windows-1252**: variante Latin-1 de Microsoft, con algunas diferencias en caracteres 128-159.
+- **Windows-1252**: varíante Latin-1 de Microsoft, con algunas diferencias en caracteres 128-159.
 - **ISO 8859-15** (Latin-9): versión actualizada de Latin-1 con soporte para € y otros.
 
 Problema fundamental: no hay forma de combinar múltiples idiomas en un mismo documento.
@@ -1700,13 +1700,13 @@ Problema fundamental: no hay forma de combinar múltiples idiomas en un mismo do
 
 **Unicode**: estándar de codificación diseñado para representar texto de **todos los lenguajes del mundo** en un único sistema. Nombre proviene de tres objetivos: **universalidad, uniformidad, unicidad**. [UNICODE-STD]
 
-Especifica un nombre e identificador numérico único (**code point**) para cada carácter. Trata caracteres alfabéticos, ideograficos y simbolos de forma equivalente.
+Específica un nombre e identificador numérico único (**code point**) para cada carácter. Trata caracteres alfabéticos, ideográficos y símbolos de forma equivalente.
 
 - Versión actual: **Unicode 15.1** (2023).
 - Define **149.186 caracteres** (2024) repartidos en **17 planos** de 65.536 caracteres cada uno.
-- Cubre >160 scripts (alfabetos) y además simbolos matemáticos, musicales, emojis.
+- Cubre >160 scripts (alfabetos) y además símbolos matemáticos, musicales, emojis.
 
-**UTF-8** (*8-bit Unicode Transformation Format*): formato de codificación de longitud variable de **1 a 4 bytes por carácter**. Es la codificación **dominante en la web** (~98% de paginas en 2024).
+**UTF-8** (*8-bit Unicode Transformation Format*): formato de codificación de longitud variable de **1 a 4 bytes por carácter**. Es la codificación **dominante en la web** (~98% de páginas en 2024).
 
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 320" role="img" aria-label="Estructura de UTF-8">
   <style>
@@ -1746,23 +1746,23 @@ Especifica un nombre e identificador numérico único (**code point**) para cada
   <text x="435" y="235" class="u8-range">U+10000+  ·  emojis, suplement.</text>
 </svg>
 
-| Bytes | Caracteres cubiertos | Rango Unicode |
+| Bytes | Carácteres cubiertos | Rango Unicode |
 |---|---|---|
 | 1 byte | US-ASCII (128 caracteres) | U+0000 - U+007F |
-| 2 bytes | Latin extendido, griego, cirilico, hebreo, arabe (~1.920) | U+0080 - U+07FF |
-| 3 bytes | Plano básico multilingue (BMP), incluido CJK | U+0800 - U+FFFF |
+| 2 bytes | Latin extendido, griego, cirílico, hebreo, árabe (~1.920) | U+0080 - U+07FF |
+| 3 bytes | Plano básico multilingüe (BMP), incluido CJK | U+0800 - U+FFFF |
 | 4 bytes | Planos suplementarios (matemáticos, históricos, emojis) | U+10000 - U+10FFFF |
 
 **Ventajas de UTF-8**:
-- **Compatible 100% con US-ASCII** (los primeros 128 caracteres son identicos).
+- **Compatible 100% con US-ASCII** (los primeros 128 caracteres son idénticos).
 - **Eficiente en textos latinos** (1 byte por carácter ASCII, 2 para acentos).
 - **Autosincronización**: puede identificarse el inicio de cada carácter desde cualquier byte. Si se pierde un byte, el siguiente se puede reconocer.
 - **Sin solapamiento** entre bytes de diferentes caracteres.
 - **Independiente del endianness** (no requiere BOM).
 
 **Desventajas de UTF-8**:
-- Caracteres CJK ocupan 3 bytes (vs 2 en UTF-16).
-- Acceso directo a posiciones difícil (requiere recorrido secuencial por longitud variable).
+- Carácteres CJK ocupan 3 bytes (vs 2 en UTF-16).
+- Acceso directo a posiciónes difícil (requiere recorrido secuencial por longitud variable).
 - Mayor coste computacional en ordenación/indexación vs UTF-16/UTF-32.
 
 ### 9.4. UTF-16 y UTF-32
@@ -1773,16 +1773,16 @@ Especifica un nombre e identificador numérico único (**code point**) para cada
 ### 9.5. BOM (Byte Order Mark)
 
 Carácter especial `U+FEFF` (ZERO WIDTH NO-BREAK SPACE) colocado al inicio de un fichero para indicar:
-- **UTF-8**: `EF BB BF` — opcional, identifica codificación.
+- **UTF-8**: `EF BB BF` — opciónal, identifica codificación.
 - **UTF-16 BE** (big endian): `FE FF`.
 - **UTF-16 LE** (little endian): `FF FE`.
 - **UTF-32 BE**: `00 00 FE FF`.
 
 ### 9.6. Normalización Unicode
 
-Un mismo carácter puede representarse de varias formas: "n" puede ser U+00F1 (un solo code point) o U+006E U+0303 (n + tilde combinante). Para comparar cadenas de forma consistente se usan **formas de normalización**:
+Un mismo carácter puede representarse de varías formas: "n" puede ser U+00F1 (un solo code point) o U+006E U+0303 (n + tilde combinante). Para comparar cadenas de forma consistente se usan **formas de normalización**:
 
-| Forma | Nombre | Proposito |
+| Forma | Nombre | Propósito |
 |---|---|---|
 | **NFC** | Canonical Composition | Forma compuesta (preferida en web) |
 | **NFD** | Canonical Decomposition | Forma descompuesta |
@@ -1794,21 +1794,21 @@ Un mismo carácter puede representarse de varias formas: "n" puede ser U+00F1 (u
 **EBCDIC** (*Extended Binary Coded Decimal Interchange Code*): código de caracteres de **8 bits** desarrollado por **IBM** en 1963 para su System/360. Usado en sistemas **mainframe** IBM (z/OS).
 
 - 1 byte por carácter = 256 combinaciones posibles.
-- Existen **múltiples variantes** (code pages) según idioma/entorno (EBCDIC-37 inglés, EBCDIC-500 internacional, EBCDIC-284 español).
+- Existen **múltiples varíantes** (code pages) según idioma/entorno (EBCDIC-37 inglés, EBCDIC-500 internacional, EBCDIC-284 español).
 - **No es compatible con ASCII** — las letras A-Z no están en orden contiguo.
 
 > **[DATO CLAVE EXAMEN]** EBCDIC es **incompatible** con ASCII: las letras no están ordenadas de forma contigua (A=193, B=194... pero I=201 y J=209 — hay huecos). Esta particularidad causa problemas en migraciones mainframe-PC.
 
 ### 9.8. ISO/IEC 10646
 
-Norma internacional **equivalente a Unicode** en términos de repertorio de caracteres, mantenida por ISO/IEC. Originalmente eran proyectos separados (ISO empezo en 1984, Unicode Consortium en 1987), pero en 1991 se fusionaron en un estándar unificado.
+Norma internacional **equivalente a Unicode** en términos de repertorio de caracteres, mantenida por ISO/IEC. Originalmente eran proyectos separados (ISO empezó en 1984, Unicode Consortium en 1987), pero en 1991 se fusionaron en un estándar unificado.
 
 Formalmente, Unicode es una **implementación más rica** de ISO/IEC 10646 — incluye propiedades de caracteres, algoritmos de normalización, ordenación, etc.
 
-> **[REFERENCIA CRUZADA]** Las codificaciones de caracteres se amplian en el **Tema 16** (Comunicación de datos) y su aplicación web en el **Tema 34** (Internet y servicios web).
+> **[REFERENCIA CRUZADA]** Las codificaciones de caracteres se amplían en el **Tema 16** (Comunicación de datos) y su aplicación web en el **Tema 34** (Internet y servicios web).
 
 ---
 
 *Documento generado con asistencia de IA — Pendiente validación humana (María / Ana)*
 *Fuentes: ver tema-11-fuentes.md · Diagramas: ver tema-11-diagramas.md · Cambios: ver tema-11-changelog.md*
-*Versión 2.0 — Fecha: 2026-04-23*
+*Versión 3.0 — Fecha: 2026-04-28*

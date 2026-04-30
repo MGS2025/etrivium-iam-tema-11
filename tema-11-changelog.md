@@ -21,7 +21,7 @@
 
 **Sección 1.7 — Tipos y clasificación de datos**:
 - Renombrada de "Clasificación de datos" a "Tipos y clasificación de datos".
-- Anadida referencia a ISO/IEC 11404 (norma de tipos independientes de lenguaje).
+- Añadida referencia a ISO/IEC 11404 (norma de tipos independientes de lenguaje).
 - Nueva subsección **1.7.5 Tipos primitivos**: tabla con familias (enteros, reales, lógicos, carácter), tamaños en bytes, rangos completos, ejemplos en Java/C/Python.
 - Nueva subsección **1.7.6 Tipos compuestos**: array, struct, union, enum, string.
 - Nueva subsección **1.7.7 Tipos abstractos de datos (TAD)**: tabla con 8 TAD canónicos (pila, cola, lista, conjunto, mapa, árbol, grafo, cola de prioridad) con operaciones, política de acceso y casos de uso.
@@ -42,13 +42,13 @@
 - Nuevo callout DATO CLAVE: tres bloques TI/organización/personas (visión tripartita COBIT 2019, ITIL v4 cuatro dimensiones).
 
 **Sección 2.3 — Características del SI**:
-- Tabla resumen al inicio: característica, como se mide, norma de referencia.
+- Tabla resumen al inicio: característica, cómo se mide, norma de referencia.
 - Detalle individual de las 10 características, cada una con:
   - Definición ampliada.
-  - Como se mide (uptime, MTBF, MTTR, P50/P95/P99, RTO/RPO, etc.).
+  - Cómo se mide (uptime, MTBF, MTTR, P50/P95/P99, RTO/RPO, etc.).
   - Norma técnica de referencia (ISO/IEC 25010, ISO 8000, ISO 27001, ISO/IEC 27040, ENS, RD 1112/2018, UNE-EN 301 549, WCAG 2.1).
-  - Ejemplo aplicado al Ayto Madrid (Sede Electrónica, datos.madrid.es, Padron, IBI, cita previa, etc.).
-- Nuevo callout DATO CLAVE: triada CIA + trazabilidad + autenticidad (ENS).
+  - Ejemplo aplicado al Ayto Madrid (Sede Electrónica, datos.madrid.es, Padrón, IBI, cita previa, etc.).
+- Nuevo callout DATO CLAVE: tríada CIA + trazabilidad + autenticidad (ENS).
 - Nuevo callout DATO CLAVE: ISO/IEC 25010 SQuaRE — 8 características de calidad de software.
 
 ### Fuentes añadidas en v3.0
@@ -83,7 +83,7 @@
 | Secciones | 9 | 9 (misma estructura) | — |
 | Diagramas | 0 | 12 SVG inline | +12 |
 | Callouts | 0 | 4 tipos (DATO CLAVE, EJERCICIO, AYTO MADRID, REFERENCIA CRUZADA) | +4 |
-| Ejemplos Ayto Madrid | 0 explícitos | 7 (Padron, SIMA, Open Data, CMI alcalde, planificación urbana, etc.) | +7 |
+| Ejemplos Ayto Madrid | 0 explícitos | 7 (Padrón, SIMA, Open Data, CMI alcalde, planificación urbana, etc.) | +7 |
 | Fuentes Tier 1 | 9 | 18 | +9 |
 | Nuevas subsecciones | — | 12 | +12 |
 | Preguntas test | 15 | 25 (+10 nuevas) | +10 |
@@ -96,7 +96,7 @@
 ### Sección 1 — Dato e información
 
 **Añadido**:
-- Nueva subsección **1.3 Piramide DIKW** con ejemplo Ayto Madrid + **diagrama D1** (SVG)
+- Nueva subsección **1.3 Pirámide DIKW** con ejemplo Ayto Madrid + **diagrama D1** (SVG)
 - Nueva subsección **1.4 Ciclo de vida del dato** (6 fases, tabla con ejemplos Ayto Madrid)
 - Nueva subsección **1.5 Calidad del dato** (4 dimensiones canónicas + ISO 8000)
 - Nueva subsección **1.6 Metadatos** (3 tipos + ejemplo Open Data Madrid DCAT-AP-ES)
@@ -108,9 +108,9 @@
 
 **Añadido**:
 - **Diagrama D2** (Componentes SI, 7 bloques)
-- **Diagrama D3** (Piramide tipos SI con niveles organizacionales)
-- Ampliada 2.3: referencia explícita a **triada CIA** e **ISO 27001 / ENS Real Decreto 311/2022**
-- Ampliada 2.6: ejemplo Ayto Madrid con Padron como TPS, cuadro de mando del Alcalde como EIS
+- **Diagrama D3** (Pirámide tipos SI con niveles organizacionales)
+- Ampliada 2.3: referencia explícita a **tríada CIA** e **ISO 27001 / ENS Real Decreto 311/2022**
+- Ampliada 2.6: ejemplo Ayto Madrid con Padrón como TPS, cuadro de mando del alcalde como EIS
 - Nueva subsección **2.7 SI empresariales transversales** (ERP, CRM, SCM, BPM, BI, DWH)
 - Ampliada 2.8: Data Lake y Data Lakehouse añadidos
 - Nueva subsección **2.9 Metodologías de implantación** (Métrica v3, ITIL v4, COBIT, ágil)
@@ -134,7 +134,7 @@
 - **Diagrama D5** (Timeline horizontal con 5+1 generaciones)
 - Datos concretos (tamaño ENIAC, consumo, fechas invención transistor con nombres Bardeen/Brattain/Shockley)
 - Ejemplo Ayto Madrid: **IBM 650 RENFE 1959** como primer ordenador en España
-- Nueva subsección **4.6 Sexta generación** (1991→actual): multinucleo, cloud, móviles, IA, cuantica, neuromorfica
+- Nueva subsección **4.6 Sexta generación** (1991→actual): multinúcleo, cloud, móviles, IA, cuántica, neuromórfica
 
 **Palabras**: 700 → 1.300 (+86%)
 
@@ -151,7 +151,7 @@
 - Nueva subsección **5.2.7 Procesadores actuales** (Intel, AMD, Apple, Qualcomm, NVIDIA, AWS)
 - Nueva subsección **5.3.1.1 FLAGS, EFLAGS, RFLAGS** (x86) — detalle bits principales + ejemplo
 - Ampliada 5.5 Modos de direccionamiento: modos adicionales (pre/post-indexado, base-desplazamiento-escala x86, relativo a PC)
-- Mnemonicos de instrucciones en **castellano** (`SUMA A, B`, `COMPARA A, B`, `SALTA_SI_IGUAL`, `INC A`)
+- Mnemónicos de instrucciones en **castellano** (`SUMA A, B`, `COMPARA A, B`, `SALTA_SI_IGUAL`, `INC A`)
 - Ejemplo resuelto sobre flags con ADD/SUMA
 
 **Palabras**: 2.400 → 4.500 (+87%)
@@ -163,7 +163,7 @@
 - **Diagrama D10** (Evolución RAM con barras comparativas hasta DDR5)
 - **Diagrama D11** (BIOS vs UEFI comparativa)
 - Tabla DDR actualizada: **incluye DDR5** (año, voltaje, frecuencia, ancho banda, capacidad, pines)
-- Nueva subsección **6.2.8 Memoria virtual y paginación** (pagina, marco, TLB, fallo pagina, swap)
+- Nueva subsección **6.2.8 Memoria virtual y paginación** (página, marco, TLB, fallo página, swap)
 - Ampliada 6.2.4 Tipos especiales: LPDDR, HBM añadidos
 - Nueva subsección **6.3.1 NAND Flash vs NOR Flash** (SLC, MLC, TLC, QLC)
 - Ampliada 6.4: referencia TPM 2.0 y Windows 11, CSM
@@ -208,14 +208,14 @@
 
 Se introducen 4 tipos de callout reutilizables en todo el temario:
 
-1. **[DATO CLAVE EXAMEN]** — alta densidad memoristica (15 apariciones en el tema)
+1. **[DATO CLAVE EXAMEN]** — alta densidad memorística (15 apariciones en el tema)
 2. **[EJERCICIO RESUELTO]** — problema + solución paso a paso (7 apariciones)
 3. **[EJEMPLO AYTO MADRID]** — aplicación real municipal (7 apariciones)
 4. **[REFERENCIA CRUZADA]** — enlaces a otros temas (5 apariciones)
 
 ### Idioma del código
 
-Cambio de mnemonicos: en v1.0 se mezclaban formas. En v2.0 se uniforma a **castellano** (`SUMA A, B`, `SALTA_SI_IGUAL`, `INC A`) según decisión de María. La nomenclatura de registros y estándares se mantiene en original (`MAR`, `MBR`, `CP`, `RI`, `FLAGS`, `EFLAGS`, `RFLAGS`).
+Cambio de mnemónicos: en v1.0 se mezclaban formas. En v2.0 se uniforma a **castellano** (`SUMA A, B`, `SALTA_SI_IGUAL`, `INC A`) según decisión de María. La nomenclatura de registros y estándares se mantiene en original (`MAR`, `MBR`, `CP`, `RI`, `FLAGS`, `EFLAGS`, `RFLAGS`).
 
 ---
 
@@ -243,11 +243,11 @@ Cambio de mnemonicos: en v1.0 se mezclaban formas. En v2.0 se uniforma a **caste
 |---|---|
 | Añadir diagramas al tema | Cubierto: 12 SVG inline, uno por bloque temático |
 | Multiplicar por 2 el contenido | Cubierto parcialmente: 8K → 14.3K (+79%, focalizado en CPU y memoria según acuerdo) |
-| Añadir ejemplos Ayto Madrid | Cubierto: 7 ejemplos (Padron, SIMA, Open Data, CMI alcalde, etc.) |
+| Añadir ejemplos Ayto Madrid | Cubierto: 7 ejemplos (Padrón, SIMA, Open Data, CMI alcalde, etc.) |
 | Cajas callout "Dato clave" y "Ejercicio resuelto" | Cubierto: 4 tipos de callout transversales |
 | Ampliar profundidad técnica (FLAGS/EFLAGS/RFLAGS, modos direccionamiento, pipelining) | Cubierto: 5.2.4 Pipelining completo, 5.3.1.1 FLAGS completo, 5.5.1 modos adicionales |
 | Versión PDF imprimible A4 light | Cubierto: tema-11-piloto.pdf |
-| Mnemonicos en castellano | Cubierto: `SUMA A, B` en todo el documento |
+| Mnemónicos en castellano | Cubierto: `SUMA A, B` en todo el documento |
 
 ---
 

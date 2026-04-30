@@ -1,8 +1,8 @@
 # Tema 11 — Catálogo de Diagramas
 
-> **Titulo oficial**: Informatica basica. Representacion y comunicacion de la informacion: elementos constitutivos de un sistema de informacion. Caracteristicas y funciones. Arquitectura de ordenadores. Componentes internos de los equipos microinformaticos.
+> **Título oficial**: Informática básica. Representación y comunicación de la información: elementos constitutivos de un sistema de información. Características y funciones. Arquitectura de ordenadores. Componentes internos de los equipos microinformáticos.
 >
-> **Version**: 2.0
+> **Versión**: 2.0
 > **Fecha**: 2026-04-23
 > **Autor**: MGS
 > **Formato**: SVG inline (zero-dependencias, escalable, imprimible)
@@ -10,32 +10,32 @@
 
 ---
 
-## Indice de diagramas
+## Índice de diagramas
 
-| ID  | Titulo                         | Seccion | Tipo          | Formato |
+| ID  | Título                         | Sección | Tipo          | Formato |
 |---|---|---|---|---|
-| D1  | Piramide DIKW                  | § 1     | Piramide      | 600×340 |
+| D1  | Pirámide DIKW                  | § 1     | Pirámide      | 600×340 |
 | D2  | Componentes del SI             | § 2.2   | Bloques       | 640×360 |
-| D3  | Piramide tipos de SI           | § 2.6   | Piramide      | 600×340 |
+| D3  | Pirámide tipos de SI           | § 2.6   | Pirámide      | 600×340 |
 | D4  | Von Neumann vs Harvard         | § 3     | Comparativa   | 680×360 |
 | D5  | Timeline de generaciones       | § 4     | Timeline      | 720×320 |
 | D6  | Bloques internos de la CPU     | § 5.3   | Arquitectura  | 640×360 |
 | D7  | Ciclo Fetch-Execute            | § 5.4   | Flowchart     | 640×360 |
 | D8  | Modos de direccionamiento      | § 5.5   | Conceptual    | 680×360 |
-| D9  | Jerarquia de memoria           | § 6.1   | Piramide      | 640×380 |
+| D9  | Jerarquía de memoria           | § 6.1   | Pirámide      | 640×380 |
 | D10 | Evolucion de la memoria RAM    | § 6.2   | Timeline      | 720×340 |
 | D11 | BIOS vs UEFI                   | § 6.4   | Comparativa   | 680×360 |
 | D12 | Estructura de UTF-8            | § 9.3   | Estructura    | 680×320 |
 
 ---
 
-## D1 · Piramide DIKW
+## D1 · Pirámide DIKW
 
-**Seccion**: § 1 — Concepto de dato e informacion
-**Proposito**: Visualizar la jerarquia Dato → Informacion → Conocimiento → Sabiduria con ejemplo real del Ayto Madrid.
+**Sección**: § 1 — Concepto de dato e información
+**Propósito**: Visualizar la jerarquía Dato → Información → Conocimiento → Sabiduría con ejemplo real del Ayto Madrid.
 
 ```svg
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" role="img" aria-label="Piramide DIKW con ejemplo Ayto Madrid">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" role="img" aria-label="Pirámide DIKW con ejemplo Ayto Madrid">
   <style>
     .dikw-label{font:600 14px system-ui,sans-serif;fill:#fff}
     .dikw-example{font:12px system-ui,sans-serif;fill:#1a1a1a}
@@ -45,9 +45,9 @@
   <polygon points="265,70 345,70 365,120 245,120" fill="#0055a0"/>
   <polygon points="245,120 365,120 390,180 220,180" fill="#3378b9"/>
   <polygon points="220,180 390,180 420,250 190,250" fill="#6ea3d2"/>
-  <text x="305" y="56" text-anchor="middle" class="dikw-label">Sabiduria</text>
+  <text x="305" y="56" text-anchor="middle" class="dikw-label">Sabiduría</text>
   <text x="305" y="99" text-anchor="middle" class="dikw-label">Conocimiento</text>
-  <text x="305" y="155" text-anchor="middle" class="dikw-label">Informacion</text>
+  <text x="305" y="155" text-anchor="middle" class="dikw-label">Información</text>
   <text x="305" y="220" text-anchor="middle" class="dikw-label">Dato</text>
   <line x1="420" y1="50" x2="470" y2="50" stroke="#0055a0" stroke-width="1"/>
   <line x1="420" y1="99" x2="470" y2="99" stroke="#0055a0" stroke-width="1"/>
@@ -61,7 +61,7 @@
   <text x="480" y="165" class="dikw-example">"3,45 M habitantes"</text>
   <text x="480" y="215" class="dikw-title">Bruto</text>
   <text x="480" y="230" class="dikw-example">"3.450.000"</text>
-  <text x="305" y="285" text-anchor="middle" font="italic 11px system-ui,sans-serif" fill="#666">+ contexto, + analisis, + experiencia</text>
+  <text x="305" y="285" text-anchor="middle" font="italic 11px system-ui,sans-serif" fill="#666">+ contexto, + análisis, + experiencia</text>
   <path d="M 120 260 L 120 50" stroke="#0055a0" stroke-width="1" marker-end="url(#arrow1)" opacity="0.4"/>
   <defs><marker id="arrow1" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto"><polygon points="0,0 10,5 0,10" fill="#0055a0"/></marker></defs>
   <text x="115" y="155" text-anchor="end" font="11px system-ui,sans-serif" fill="#0055a0" transform="rotate(-90 115 155)">mayor valor</text>
@@ -71,13 +71,13 @@
 
 ---
 
-## D2 · Componentes del sistema de informacion
+## D2 · Componentes del sistema de información
 
-**Seccion**: § 2.2 — Componentes basicos de un SI
-**Proposito**: Mostrar los 7 componentes estructurales de un SI (Hardware, Software, Datos, Procedimientos, Usuarios, Red, Retroalimentacion) conectados en un modelo de bloques.
+**Sección**: § 2.2 — Componentes básicos de un SI
+**Propósito**: Mostrar los 7 componentes estructurales de un SI (Hardware, Software, Datos, Procedimientos, Usuarios, Red, Retroalimentación) conectados en un modelo de bloques.
 
 ```svg
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Componentes del sistema de informacion">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Componentes del sistema de información">
   <style>
     .si-tech{fill:#d6e4f0;stroke:#0055a0;stroke-width:1.5}
     .si-human{fill:#f0e4d6;stroke:#e89822;stroke-width:1.5}
@@ -85,7 +85,7 @@
     .si-label{font:600 13px system-ui,sans-serif;fill:#1a1a1a;text-anchor:middle}
     .si-sub{font:11px system-ui,sans-serif;fill:#555;text-anchor:middle}
   </style>
-  <text x="320" y="28" class="si-label" font-size="16" fill="#0055a0">Sistema de Informacion</text>
+  <text x="320" y="28" class="si-label" font-size="16" fill="#0055a0">Sistema de Información</text>
   <text x="320" y="45" class="si-sub">7 componentes estructurales [ISO-2382]</text>
   <rect x="40" y="70" width="150" height="60" rx="6" class="si-tech"/>
   <text x="115" y="94" class="si-label">Hardware</text>
@@ -100,7 +100,7 @@
   <text x="190" y="184" class="si-label">Red</text>
   <text x="190" y="202" class="si-sub">LAN, WAN, Internet</text>
   <rect x="350" y="160" width="200" height="60" rx="6" class="si-flow"/>
-  <text x="450" y="184" class="si-label">Retroalimentacion</text>
+  <text x="450" y="184" class="si-label">Retroalimentación</text>
   <text x="450" y="202" class="si-sub">mejora continua</text>
   <rect x="140" y="250" width="160" height="60" rx="6" class="si-human"/>
   <text x="220" y="274" class="si-label">Procedimientos</text>
@@ -115,22 +115,22 @@
   <line x1="450" y1="220" x2="420" y2="250" stroke="#2d8659" stroke-width="1" opacity="0.5"/>
   <line x1="300" y1="280" x2="340" y2="280" stroke="#e89822" stroke-width="1.5" stroke-dasharray="4 4"/>
   <g transform="translate(30 335)">
-    <rect width="12" height="12" class="si-tech"/><text x="18" y="10" font="11px system-ui,sans-serif" fill="#555">Tecnologia</text>
+    <rect width="12" height="12" class="si-tech"/><text x="18" y="10" font="11px system-ui,sans-serif" fill="#555">Tecnología</text>
     <rect x="120" width="12" height="12" class="si-human"/><text x="138" y="10" font="11px system-ui,sans-serif" fill="#555">Humano</text>
-    <rect x="220" width="12" height="12" class="si-flow"/><text x="238" y="10" font="11px system-ui,sans-serif" fill="#555">Flujo / comunicacion</text>
+    <rect x="220" width="12" height="12" class="si-flow"/><text x="238" y="10" font="11px system-ui,sans-serif" fill="#555">Flujo / comunicación</text>
   </g>
 </svg>
 ```
 
 ---
 
-## D3 · Piramide de tipos de SI
+## D3 · Pirámide de tipos de SI
 
-**Seccion**: § 2.6 — Tipos de sistemas de informacion
-**Proposito**: Mostrar la clasificacion jerarquica de sistemas de informacion (TPS, MIS, DSS, EIS) asociada a los niveles organizacionales.
+**Sección**: § 2.6 — Tipos de sistemas de información
+**Propósito**: Mostrar la clasificación jerarquica de sistemas de información (TPS, MIS, DSS, EIS) asociada a los niveles organizacionales.
 
 ```svg
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" role="img" aria-label="Piramide de tipos de sistemas de informacion">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" role="img" aria-label="Pirámide de tipos de sistemas de información">
   <style>
     .tps-eis{font:700 14px system-ui,sans-serif;fill:#fff;text-anchor:middle}
     .tps-nivel{font:600 12px system-ui,sans-serif;fill:#1a1a1a}
@@ -147,8 +147,8 @@
   <text x="300" y="237" class="tps-eis">TPS</text>
   <line x1="415" y1="50" x2="455" y2="50" stroke="#0055a0" stroke-width="1"/>
   <text x="460" y="40" class="tps-title">Estrategico</text>
-  <text x="460" y="55" class="tps-user">Alta direccion</text>
-  <text x="460" y="68" class="tps-user">vision global</text>
+  <text x="460" y="55" class="tps-user">Alta dirección</text>
+  <text x="460" y="68" class="tps-user">visión global</text>
   <line x1="415" y1="102" x2="455" y2="102" stroke="#0055a0" stroke-width="1"/>
   <text x="460" y="92" class="tps-title">Analitico</text>
   <text x="460" y="107" class="tps-user">Analistas</text>
@@ -164,13 +164,13 @@
   <line x1="145" y1="50" x2="185" y2="50" stroke="#0055a0" stroke-width="1"/>
   <text x="140" y="55" class="tps-user" text-anchor="end">Executive Info</text>
   <line x1="145" y1="107" x2="180" y2="107" stroke="#0055a0" stroke-width="1"/>
-  <text x="140" y="112" class="tps-user" text-anchor="end">Decision Support</text>
+  <text x="140" y="112" class="tps-user" text-anchor="end">Decisión Support</text>
   <line x1="145" y1="162" x2="175" y2="162" stroke="#0055a0" stroke-width="1"/>
   <text x="140" y="167" class="tps-user" text-anchor="end">Management Info</text>
   <line x1="145" y1="232" x2="170" y2="232" stroke="#0055a0" stroke-width="1"/>
   <text x="140" y="237" class="tps-user" text-anchor="end">Transaction Processing</text>
-  <text x="300" y="300" text-anchor="middle" font="italic 11px system-ui,sans-serif" fill="#666">+ agregacion, - volumen / + volumen, - agregacion</text>
-  <text x="300" y="320" text-anchor="middle" font="11px system-ui,sans-serif" fill="#666">Ej. Ayto Madrid: TPS=Padron · MIS=informes censales · DSS=planificacion urbana · EIS=cuadro mando alcalde</text>
+  <text x="300" y="300" text-anchor="middle" font="italic 11px system-ui,sans-serif" fill="#666">+ agregación, - volumen / + volumen, - agregación</text>
+  <text x="300" y="320" text-anchor="middle" font="11px system-ui,sans-serif" fill="#666">Ej. Ayto Madrid: TPS=Padrón · MIS=informes censales · DSS=planificación urbana · EIS=cuadro mando alcalde</text>
 </svg>
 ```
 
@@ -178,8 +178,8 @@
 
 ## D4 · Von Neumann vs Harvard
 
-**Seccion**: § 3.1 · 3.2 — Arquitecturas de ordenadores
-**Proposito**: Comparar visualmente ambas arquitecturas side-by-side evidenciando el cuello de botella de Von Neumann.
+**Sección**: § 3.1 · 3.2 — Arquitecturas de ordenadores
+**Propósito**: Comparar visualmente ambas arquitecturas side-by-side evidenciando el cuello de botella de Von Neumann.
 
 ```svg
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="Comparativa Von Neumann vs Harvard">
@@ -202,7 +202,7 @@
   <text x="190" y="97" class="arch-sub">bus compartido</text>
   <rect x="60" y="160" width="290" height="60" rx="4" fill="#fce4e4" stroke="#d13c3c" stroke-width="1.5" stroke-dasharray="5 3"/>
   <text x="205" y="185" class="arch-label" fill="#d13c3c">Cuello de botella Von Neumann</text>
-  <text x="205" y="205" class="arch-sub">no se puede leer dato e instruccion a la vez</text>
+  <text x="205" y="205" class="arch-sub">no se puede leer dato e instrucción a la vez</text>
   <text x="205" y="250" text-anchor="middle" font="11px system-ui,sans-serif" fill="#555">Implementaciones:</text>
   <text x="205" y="268" text-anchor="middle" font="11px system-ui,sans-serif" fill="#555">EDVAC (1949) · ENIAC (1945) · IBM 701</text>
   <line x1="360" y1="40" x2="360" y2="320" stroke="#c0c7cf" stroke-width="1" stroke-dasharray="3 3"/>
@@ -225,7 +225,7 @@
   <text x="540" y="134" class="arch-sub">bus D</text>
   <rect x="400" y="180" width="270" height="60" rx="4" fill="#d8f0dc" stroke="#2d8659" stroke-width="1.5" stroke-dasharray="5 3"/>
   <text x="535" y="205" class="arch-label" fill="#2d8659">Acceso paralelo</text>
-  <text x="535" y="225" class="arch-sub">instruccion y dato simultaneos</text>
+  <text x="535" y="225" class="arch-sub">instrucción y dato simultáneos</text>
   <text x="535" y="258" text-anchor="middle" font="11px system-ui,sans-serif" fill="#555">Implementaciones:</text>
   <text x="535" y="276" text-anchor="middle" font="11px system-ui,sans-serif" fill="#555">microcontroladores AVR, PIC · DSP · ARM L1</text>
   <rect x="60" y="295" width="610" height="50" rx="4" fill="#f5f5f5" stroke="#c0c7cf"/>
@@ -238,8 +238,8 @@
 
 ## D5 · Timeline de generaciones de ordenadores
 
-**Seccion**: § 4 — Generaciones de ordenadores
-**Proposito**: Linea temporal horizontal con las 5 generaciones clasicas (1940-1991) + extension a 6ª generacion (actualidad).
+**Sección**: § 4 — Generaciones de ordenadores
+**Propósito**: Linea temporal horizontal con las 5 generaciones clásicas (1940-1991) + extensión a 6ª generación (actualidad).
 
 ```svg
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 320" role="img" aria-label="Timeline generaciones de ordenadores">
@@ -254,8 +254,8 @@
   <circle cx="110" cy="170" r="18" fill="#0055a0"/>
   <text x="110" y="175" class="gen-num">1ª</text>
   <text x="110" y="130" class="gen-year">1940-1952</text>
-  <text x="110" y="200" class="gen-tech">Valvulas</text>
-  <text x="110" y="215" class="gen-tech">de vacio</text>
+  <text x="110" y="200" class="gen-tech">Válvulas</text>
+  <text x="110" y="215" class="gen-tech">de vacío</text>
   <text x="110" y="240" class="gen-ex">ENIAC</text>
   <text x="110" y="255" class="gen-ex">Mark I</text>
   <circle cx="220" cy="170" r="18" fill="#0055a0"/>
@@ -294,7 +294,7 @@
   <text x="640" y="240" class="gen-ex">IBM Q</text>
   <text x="640" y="255" class="gen-ex">Intel Loihi</text>
   <rect x="60" y="280" width="600" height="28" rx="3" fill="#f5f5f5" stroke="#c0c7cf"/>
-  <text x="360" y="298" text-anchor="middle" font="11px system-ui,sans-serif" fill="#555">ms → ns → ps → fs   ·   Ley de Moore: transistores x2 cada ~24 meses   ·   Ayto Madrid: IBM 650 RENFE 1959 = primer ordenador en Espana</text>
+  <text x="360" y="298" text-anchor="middle" font="11px system-ui,sans-serif" fill="#555">ms → ns → ps → fs   ·   Ley de Moore: transistores x2 cada ~24 meses   ·   Ayto Madrid: IBM 650 RENFE 1959 = primer ordenador en España</text>
 </svg>
 ```
 
@@ -302,8 +302,8 @@
 
 ## D6 · Bloques internos de la CPU
 
-**Seccion**: § 5.3 — Unidad Central de Proceso
-**Proposito**: Mostrar la estructura interna de la CPU: ALU, UC, Registros y los 3 buses que la conectan al exterior.
+**Sección**: § 5.3 — Unidad Central de Proceso
+**Propósito**: Mostrar la estructura interna de la CPU: ALU, UC, Registros y los 3 buses que la conectan al exterior.
 
 ```svg
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Bloques internos de la CPU">
@@ -317,7 +317,7 @@
   <text x="70" y="82" class="cpu-chip">CPU / MICROPROCESADOR</text>
   <rect x="80" y="100" width="150" height="65" rx="4" fill="#0055a0"/>
   <text x="155" y="125" class="cpu-heading">ALU</text>
-  <text x="155" y="145" class="cpu-sub" fill="#cde4f0">aritmetico-logica</text>
+  <text x="155" y="145" class="cpu-sub" fill="#cde4f0">aritmético-lógica</text>
   <text x="155" y="158" class="cpu-sub" fill="#cde4f0">+ − × ÷ AND OR XOR</text>
   <rect x="250" y="100" width="160" height="65" rx="4" fill="#0055a0"/>
   <text x="330" y="125" class="cpu-heading">Unidad de Control</text>
@@ -333,7 +333,7 @@
   <text x="540" y="118" class="cpu-sub">principal</text>
   <rect x="470" y="150" width="140" height="50" rx="4" fill="#d6e4f0" stroke="#0055a0" stroke-width="1.5"/>
   <text x="540" y="172" class="cpu-heading" fill="#1a1a1a">E/S</text>
-  <text x="540" y="188" class="cpu-sub">perifericos</text>
+  <text x="540" y="188" class="cpu-sub">periféricos</text>
   <rect x="470" y="220" width="140" height="50" rx="4" fill="#d6e4f0" stroke="#0055a0" stroke-width="1.5"/>
   <text x="540" y="242" class="cpu-heading" fill="#1a1a1a">ROM / BIOS</text>
   <text x="540" y="258" class="cpu-sub">firmware</text>
@@ -349,7 +349,7 @@
   <polygon points="466,241 474,245 466,249" fill="#0055a0"/>
   <polygon points="434,241 426,245 434,249" fill="#0055a0"/>
   <text x="450" y="236" class="cpu-bus" fill="#0055a0">datos</text>
-  <text x="320" y="325" text-anchor="middle" font="12px system-ui,sans-serif" fill="#0055a0" font-weight="600">3 buses · separacion fisica y logica</text>
+  <text x="320" y="325" text-anchor="middle" font="12px system-ui,sans-serif" fill="#0055a0" font-weight="600">3 buses · separacion física y lógica</text>
   <text x="320" y="345" text-anchor="middle" font="11px system-ui,sans-serif" fill="#666">control (unidireccional UC→dispositivos) · direcciones (unidireccional) · datos (bidireccional)</text>
 </svg>
 ```
@@ -358,8 +358,8 @@
 
 ## D7 · Ciclo Fetch-Execute
 
-**Seccion**: § 5.4 — Ciclo de ejecucion de instrucciones
-**Proposito**: Flowchart de los 7 pasos del ciclo de instruccion, divididos en las 2 fases canonicas (busqueda y ejecucion).
+**Sección**: § 5.4 — Ciclo de ejecución de instrucciones
+**Propósito**: Flowchart de los 7 pasos del ciclo de instrucción, divididos en las 2 fases canónicas (búsqueda y ejecución).
 
 ```svg
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Ciclo Fetch-Execute de instrucciones">
@@ -370,10 +370,10 @@
   </style>
   <text x="320" y="28" text-anchor="middle" font="700 16px system-ui,sans-serif" fill="#0055a0">Ciclo Fetch-Execute</text>
   <rect x="30" y="50" width="330" height="150" rx="6" fill="#eef4fa" stroke="#0055a0" stroke-width="1.5" stroke-dasharray="4 3"/>
-  <text x="45" y="68" class="fe-phase" fill="#0055a0">FASE 1 · FETCH (busqueda)</text>
+  <text x="45" y="68" class="fe-phase" fill="#0055a0">FASE 1 · FETCH (búsqueda)</text>
   <rect x="50" y="90" width="90" height="45" rx="3" fill="#0055a0"/>
   <text x="95" y="110" class="fe-step">1. CP → MAR</text>
-  <text x="95" y="125" class="fe-desc">direccion instr.</text>
+  <text x="95" y="125" class="fe-desc">dirección instr.</text>
   <rect x="160" y="90" width="90" height="45" rx="3" fill="#0055a0"/>
   <text x="205" y="110" class="fe-step">2. MAR → Mem</text>
   <text x="205" y="125" class="fe-desc">bus direcciones</text>
@@ -395,7 +395,7 @@
   <line x1="200" y1="170" x2="220" y2="170" stroke="#0055a0" stroke-width="2"/>
   <polygon points="216,166 224,170 216,174" fill="#0055a0"/>
   <rect x="380" y="50" width="230" height="150" rx="6" fill="#d8f0dc" stroke="#2d8659" stroke-width="1.5" stroke-dasharray="4 3"/>
-  <text x="395" y="68" class="fe-phase" fill="#2d8659">FASE 2 · EXECUTE (ejecucion)</text>
+  <text x="395" y="68" class="fe-phase" fill="#2d8659">FASE 2 · EXECUTE (ejecución)</text>
   <rect x="400" y="90" width="90" height="45" rx="3" fill="#2d8659"/>
   <text x="445" y="110" class="fe-step">6. Decode</text>
   <text x="445" y="125" class="fe-desc">interpreta RI</text>
@@ -406,13 +406,13 @@
   <polygon points="506,108 514,112 506,116" fill="#2d8659"/>
   <rect x="400" y="150" width="200" height="40" rx="3" fill="#e89822"/>
   <text x="500" y="170" class="fe-step">Actualiza PC / flags / registros</text>
-  <text x="500" y="183" class="fe-desc">resultados de la operacion</text>
+  <text x="500" y="183" class="fe-desc">resultados de la operación</text>
   <line x1="360" y1="112" x2="400" y2="112" stroke="#1a1a1a" stroke-width="2.5"/>
   <polygon points="396,108 404,112 396,116" fill="#1a1a1a"/>
   <path d="M 600 170 Q 620 170 620 230 Q 620 260 95 260 Q 60 260 60 210" stroke="#d13c3c" stroke-width="1.5" fill="none" stroke-dasharray="4 3"/>
   <polygon points="64,214 60,206 56,214" fill="#d13c3c"/>
-  <text x="340" y="275" text-anchor="middle" font="italic 12px system-ui,sans-serif" fill="#d13c3c">bucle: siguiente instruccion</text>
-  <text x="320" y="310" text-anchor="middle" font="11px system-ui,sans-serif" fill="#555">CP = Contador de Programa · MAR = Memory Address Register · MBR = Memory Buffer Register · RI = Registro de Instruccion</text>
+  <text x="340" y="275" text-anchor="middle" font="italic 12px system-ui,sans-serif" fill="#d13c3c">bucle: siguiente instrucción</text>
+  <text x="320" y="310" text-anchor="middle" font="11px system-ui,sans-serif" fill="#555">CP = Contador de Programa · MAR = Memory Address Register · MBR = Memory Buffer Register · RI = Registro de Instrucción</text>
   <text x="320" y="328" text-anchor="middle" font="11px system-ui,sans-serif" fill="#555">Un Pentium IV a 2 GHz ejecuta ~2.000 millones de estos ciclos por segundo (pero 1 instr. ≠ 1 ciclo)</text>
 </svg>
 ```
@@ -421,8 +421,8 @@
 
 ## D8 · Modos de direccionamiento
 
-**Seccion**: § 5.5 — Modos de direccionamiento
-**Proposito**: Visualizar los 5 modos fundamentales usando el mismo operando (42) para evidenciar como cambia la direccion efectiva.
+**Sección**: § 5.5 — Modos de direccionamiento
+**Propósito**: Visualizar los 5 modos fundamentales usando el mismo operando (42) para evidenciar como cambia la dirección efectiva.
 
 ```svg
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="Modos de direccionamiento">
@@ -439,7 +439,7 @@
   <text x="40" y="110" font="600 11px system-ui,sans-serif" fill="#555">SUMA #42</text>
   <text x="115" y="110" class="md-op">← 42</text>
   <text x="80" y="145" class="md-note">operando en</text>
-  <text x="80" y="158" class="md-note">la instruccion</text>
+  <text x="80" y="158" class="md-note">la instrucción</text>
   <text x="80" y="176" class="md-note" fill="#2d8659" font-weight="600">1 acceso</text>
   <text x="210" y="75" class="md-title">2. Directo</text>
   <rect x="155" y="90" width="110" height="30" fill="#eef4fa" stroke="#0055a0" stroke-width="1.5"/>
@@ -449,7 +449,7 @@
   <text x="230" y="155" class="md-op">42</text>
   <line x1="210" y1="120" x2="210" y2="135" stroke="#0055a0" stroke-width="1.5"/>
   <polygon points="206,131 214,131 210,137" fill="#0055a0"/>
-  <text x="210" y="185" class="md-note">direccion en instr.</text>
+  <text x="210" y="185" class="md-note">dirección en instr.</text>
   <text x="210" y="200" class="md-note" fill="#0055a0" font-weight="600">2 accesos</text>
   <text x="340" y="75" class="md-title">3. Indirecto</text>
   <rect x="285" y="90" width="110" height="30" fill="#eef4fa" stroke="#0055a0" stroke-width="1.5"/>
@@ -494,27 +494,27 @@
   <text x="600" y="234" class="md-note" fill="#e89822" font-weight="600">arrays, bucles</text>
   <rect x="25" y="275" width="630" height="65" rx="4" fill="#f5f5f5" stroke="#c0c7cf"/>
   <text x="35" y="295" font="600 12px system-ui,sans-serif" fill="#0055a0">Impropios (operando fuera de memoria):</text>
-  <text x="35" y="312" font="11px system-ui,sans-serif" fill="#555">implicito (en la instruccion, p.ej. PUSH usa SP) · inmediato (en la propia instruccion)</text>
+  <text x="35" y="312" font="11px system-ui,sans-serif" fill="#555">implicito (en la instrucción, p.ej. PUSH usa SP) · inmediato (en la propia instrucción)</text>
   <text x="35" y="328" font="600 12px system-ui,sans-serif" fill="#0055a0">Propios (operando en memoria): directo · indirecto · relativo · indexado</text>
 </svg>
 ```
 
 ---
 
-## D9 · Jerarquia de memoria
+## D9 · Jerarquía de memoria
 
-**Seccion**: § 6.1 — Clasificaciones de memoria
-**Proposito**: Piramide de 7 niveles mostrando el trade-off velocidad ↔ capacidad ↔ coste.
+**Sección**: § 6.1 — Clasificaciones de memoria
+**Propósito**: Pirámide de 7 niveles mostrando el trade-off velocidad ↔ capacidad ↔ coste.
 
 ```svg
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 380" role="img" aria-label="Jerarquia de memoria">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 380" role="img" aria-label="Jerarquía de memoria">
   <style>
     .jm-label{font:600 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}
     .jm-speed{font:11px system-ui,sans-serif;fill:#555;text-anchor:start}
     .jm-cap{font:11px system-ui,sans-serif;fill:#555;text-anchor:end}
     .jm-axis{font:600 11px system-ui,sans-serif;fill:#0055a0;letter-spacing:1px}
   </style>
-  <text x="320" y="28" text-anchor="middle" font="700 16px system-ui,sans-serif" fill="#0055a0">Jerarquia de memoria</text>
+  <text x="320" y="28" text-anchor="middle" font="700 16px system-ui,sans-serif" fill="#0055a0">Jerarquía de memoria</text>
   <polygon points="295,55 345,55 360,85 280,85" fill="#003d73"/>
   <text x="320" y="75" class="jm-label">Registros</text>
   <polygon points="280,85 360,85 375,120 265,120" fill="#0055a0"/>
@@ -526,7 +526,7 @@
   <polygon points="220,210 420,210 450,265 190,265" fill="#6ea3d2"/>
   <text x="320" y="242" class="jm-label" fill="#1a1a1a">SSD (NAND Flash)</text>
   <polygon points="190,265 450,265 485,320 155,320" fill="#d6e4f0"/>
-  <text x="320" y="295" class="jm-label" fill="#1a1a1a">HDD (magnetico)</text>
+  <text x="320" y="295" class="jm-label" fill="#1a1a1a">HDD (magnético)</text>
   <text x="320" y="310" font="11px system-ui,sans-serif" fill="#555" text-anchor="middle">/ cinta / nube / archivo</text>
   <text x="500" y="75" class="jm-speed">~0,3 ns · KB</text>
   <text x="500" y="107" class="jm-speed">~1 ns · 32-64 KB</text>
@@ -534,7 +534,7 @@
   <text x="500" y="188" class="jm-speed">~100 ns · 8-128 GB</text>
   <text x="500" y="240" class="jm-speed">~20-100 µs · 1-4 TB</text>
   <text x="500" y="292" class="jm-speed">~10 ms · 1-20 TB</text>
-  <text x="140" y="75" class="jm-cap">+ rapida</text>
+  <text x="140" y="75" class="jm-cap">+ rápida</text>
   <text x="140" y="292" class="jm-cap">+ lenta</text>
   <line x1="115" y1="60" x2="115" y2="315" stroke="#0055a0" stroke-width="1"/>
   <polygon points="112,65 118,65 115,57" fill="#0055a0"/>
@@ -545,7 +545,7 @@
   <polygon points="552,310 558,310 555,318" fill="#0055a0"/>
   <text x="580" y="150" class="jm-axis" text-anchor="middle" transform="rotate(90 580 150)">CAPACIDAD</text>
   <rect x="60" y="340" width="520" height="30" rx="3" fill="#f5f5f5" stroke="#c0c7cf"/>
-  <text x="320" y="359" text-anchor="middle" font="11px system-ui,sans-serif" fill="#555">Regla: cada nivel es ~10-100× mas lento y ~10-100× mas grande que el anterior · CPU Apple M3: L1=192KB, L2=16MB, RAM=24GB</text>
+  <text x="320" y="359" text-anchor="middle" font="11px system-ui,sans-serif" fill="#555">Regla: cada nivel es ~10-100× más lento y ~10-100× más grande que el anterior · CPU Apple M3: L1=192KB, L2=16MB, RAM=24GB</text>
 </svg>
 ```
 
@@ -553,8 +553,8 @@
 
 ## D10 · Evolucion de la memoria RAM
 
-**Seccion**: § 6.2 — Memoria RAM
-**Proposito**: Timeline + comparativa visual de modulos RAM desde los años 60 hasta DDR5 actual.
+**Sección**: § 6.2 — Memoria RAM
+**Propósito**: Timeline + comparativa visual de módulos RAM desde los años 60 hasta DDR5 actual.
 
 ```svg
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 340" role="img" aria-label="Evolucion de la memoria RAM">
@@ -620,8 +620,8 @@
 
 ## D11 · BIOS vs UEFI
 
-**Seccion**: § 6.4 — BIOS y UEFI
-**Proposito**: Comparativa de 8 aspectos clave entre el firmware clasico y su sucesor moderno.
+**Sección**: § 6.4 — BIOS y UEFI
+**Propósito**: Comparativa de 8 aspectos clave entre el firmware clásico y su sucesor moderno.
 
 ```svg
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="Comparativa BIOS vs UEFI">
@@ -650,7 +650,7 @@
   <text x="130" y="115" class="bu-row" text-anchor="middle">16 bits · modo real</text>
   <text x="550" y="115" class="bu-row" text-anchor="middle" fill="#2d8659">32 o 64 bits · modo protegido</text>
   <text x="130" y="140" class="bu-row" text-anchor="middle">Texto · solo teclado</text>
-  <text x="550" y="140" class="bu-row" text-anchor="middle" fill="#2d8659">GUI · raton · animaciones</text>
+  <text x="550" y="140" class="bu-row" text-anchor="middle" fill="#2d8659">GUI · ratón · animaciones</text>
   <text x="130" y="165" class="bu-row" text-anchor="middle" fill="#d13c3c">Aislado</text>
   <text x="550" y="165" class="bu-row" text-anchor="middle" fill="#2d8659">Internet · red</text>
   <text x="130" y="190" class="bu-row" text-anchor="middle" fill="#d13c3c">4 particiones MBR</text>
@@ -658,12 +658,12 @@
   <text x="130" y="215" class="bu-row" text-anchor="middle" fill="#d13c3c">2,2 TB por disco</text>
   <text x="550" y="215" class="bu-row" text-anchor="middle" fill="#2d8659">8 ZB por disco</text>
   <text x="130" y="240" class="bu-row" text-anchor="middle">POST lento · ~30s</text>
-  <text x="550" y="240" class="bu-row" text-anchor="middle" fill="#2d8659">Rapido · ~5s</text>
-  <text x="130" y="265" class="bu-row" text-anchor="middle" fill="#d13c3c">Sin verificacion</text>
+  <text x="550" y="240" class="bu-row" text-anchor="middle" fill="#2d8659">Rápido · ~5s</text>
+  <text x="130" y="265" class="bu-row" text-anchor="middle" fill="#d13c3c">Sin verificación</text>
   <text x="550" y="265" class="bu-row" text-anchor="middle" fill="#2d8659">Secure Boot · TPM 2.0</text>
   <text x="130" y="290" class="bu-row" text-anchor="middle" fill="#d13c3c">Firme · no modular</text>
   <text x="550" y="290" class="bu-row" text-anchor="middle" fill="#2d8659">Modular · drivers propios</text>
-  <text x="340" y="326" text-anchor="middle" font="600 12px system-ui,sans-serif" fill="#0055a0">UEFI es el estandar en PCs desde ~2012 (Windows 8) [UEFI Forum spec 2.10]</text>
+  <text x="340" y="326" text-anchor="middle" font="600 12px system-ui,sans-serif" fill="#0055a0">UEFI es el estándar en PCs desde ~2012 (Windows 8) [UEFI Forum spec 2.10]</text>
 </svg>
 ```
 
@@ -671,8 +671,8 @@
 
 ## D12 · Estructura de UTF-8
 
-**Seccion**: § 9.3 — Unicode y UTF-8
-**Proposito**: Mostrar la estructura binaria de UTF-8 por longitud, evidenciando la autosincronizacion y la compatibilidad ASCII.
+**Sección**: § 9.3 — Unicode y UTF-8
+**Propósito**: Mostrar la estructura binaria de UTF-8 por longitud, evidenciando la autosincronización y la compatibilidad ASCII.
 
 ```svg
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 320" role="img" aria-label="Estructura de UTF-8">
@@ -695,7 +695,7 @@
   <text x="140" y="136" class="u8-bits">110xxxxx</text>
   <rect x="182" y="118" width="80" height="28" fill="#3378b9"/>
   <text x="222" y="136" class="u8-bits">10xxxxxx</text>
-  <text x="275" y="135" class="u8-range">U+0080 - U+07FF  ·  Latin extendido, griego, cirilico, hebreo</text>
+  <text x="275" y="135" class="u8-range">U+0080 - U+07FF  ·  Latin extendido, griego, cirílico, hebreo</text>
   <text x="275" y="150" class="u8-example" fill="#2d8659">"n" = 1100 0011  1011 0001</text>
   <text x="35" y="185" class="u8-len">3 bytes</text>
   <rect x="100" y="168" width="80" height="28" fill="#0055a0"/>
@@ -719,9 +719,9 @@
   <text x="435" y="250" class="u8-example" fill="#2d8659">"🎉" = 1111 0000  1001 1111  1001 0000  1000 1001</text>
   <rect x="30" y="275" width="620" height="40" rx="3" fill="#f5f5f5" stroke="#c0c7cf"/>
   <text x="40" y="293" font="600 11px system-ui,sans-serif" fill="#0055a0">Ventaja clave:</text>
-  <text x="135" y="293" font="11px system-ui,sans-serif" fill="#555">primer byte indica cuantos siguen (0xxx=1, 110xx=2, 1110xx=3, 11110xx=4)</text>
+  <text x="135" y="293" font="11px system-ui,sans-serif" fill="#555">primer byte indica cuántos siguen (0xxx=1, 110xx=2, 1110xx=3, 11110xx=4)</text>
   <text x="40" y="310" font="600 11px system-ui,sans-serif" fill="#0055a0">Resultado:</text>
-  <text x="120" y="310" font="11px system-ui,sans-serif" fill="#555">texto puede leerse desde cualquier posicion · compatibilidad 100% con ASCII</text>
+  <text x="120" y="310" font="11px system-ui,sans-serif" fill="#555">texto puede leerse desde cualquier posición · compatibilidad 100% con ASCII</text>
 </svg>
 ```
 
@@ -731,12 +731,12 @@
 
 - Los SVG son **inline** y **autosuficientes** — no requieren CDN ni fuentes externas.
 - Usan `system-ui,sans-serif` para heredar la tipografia del documento contenedor.
-- Las dimensiones son **escalables** via `viewBox` — se adaptan al ancho del contenedor.
+- Las dimensiones son **escalables** vía `viewBox` — se adaptan al ancho del contenedor.
 - Para impresion en PDF A4 light theme funcionan tal cual (fondo blanco, colores legibles).
-- Para embeber en `.docx`: copiar el codigo SVG → renderizar con herramienta online → insertar PNG resultante.
+- Para embeber en `.docx`: copiar el código SVG → renderizar con herramienta online → insertar PNG resultante.
 - Colores mantenidos dentro de la gama accesible WCAG AA (contraste > 4.5:1 entre texto y fondo).
 
 ---
 
 *Cataloge generado como parte del pipeline v2.0 · MGS · 2026-04-23*
-*Pendiente validacion humana: Maria / Ana*
+*Pendiente validación humana: María / Ana*
