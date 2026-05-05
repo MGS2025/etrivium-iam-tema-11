@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tema 11 v3.1 — Informe de correcciones | ETRIVIUM IAM</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --azul: #0055a0;
+  --azul-dark: #003d75;
+  --azul-deeper: #002a52;
+  --azul-light: #e8f0f8;
+  --azul-05: rgba(0,85,160,0.05);
+  --azul-10: rgba(0,85,160,0.10);
+  --verde: #1f6644;
+  --verde-bg: #e8f5ee;
+  --rojo: #a82828;
+  --rojo-bg: #fbeeed;
+  --amber: #c77a1b;
+  --amber-bg: #fdf4e4;
+  --gris-100: #f5f7fa;
+  --gris-200: #e8ecf0;
+  --gris-300: #d1d7df;
+  --gris-600: #4a5568;
+  --gris-800: #2d3748;
+  --font: 'DM Sans', -apple-system, sans-serif;
+  --radius: 8px;
+  --shadow: 0 1px 3px rgba(0,0,0,0.08);
+  --shadow-lg: 0 4px 16px rgba(0,0,0,0.08);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: var(--font);
+  color: var(--gris-800);
+  background: var(--gris-100);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 920px; margin: 0 auto; padding: 32px 24px 80px; }
+
+/* HEADER */
+.hero {
+  background: linear-gradient(135deg, var(--azul-deeper) 0%, var(--azul) 100%);
+  color: #fff;
+  padding: 36px 32px;
+  border-radius: var(--radius);
+  margin-bottom: 28px;
+  box-shadow: var(--shadow-lg);
+}
+.hero .meta {
+  display: flex; align-items: center; gap: 12px; margin-bottom: 14px;
+  font-size: 12px; letter-spacing: 0.5px; opacity: 0.85;
+}
+.hero .badge {
+  background: rgba(255,255,255,0.18);
+  padding: 4px 10px; border-radius: 4px;
+  font-weight: 700; letter-spacing: 1px;
+}
+.hero h1 { font-size: 30px; font-weight: 700; margin-bottom: 8px; line-height: 1.25; }
+.hero p.subtitle { font-size: 15px; opacity: 0.92; max-width: 720px; }
+.hero .footer-line {
+  margin-top: 20px; padding-top: 16px;
+  border-top: 1px solid rgba(255,255,255,0.18);
+  font-size: 13px; opacity: 0.85;
+  display: flex; flex-wrap: wrap; gap: 18px;
+}
+
+/* SECTIONS */
+section { margin-bottom: 32px; }
+section h2 {
+  font-size: 20px; color: var(--azul-dark); font-weight: 700;
+  margin-bottom: 14px;
+  padding-bottom: 8px; border-bottom: 2px solid var(--azul-10);
+}
+section h3 { font-size: 16px; color: var(--azul); font-weight: 600; margin: 18px 0 8px; }
+section p { margin-bottom: 10px; }
+section ul, section ol { margin: 8px 0 12px 22px; }
+section li { margin-bottom: 6px; }
+strong { color: var(--gris-800); }
+
+/* CARD */
+.card {
+  background: #fff;
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--gris-200);
+}
+
+/* RESUMEN */
+.resumen {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 24px;
+}
+.kpi {
+  background: #fff; border-radius: var(--radius); padding: 16px 18px;
+  border-left: 4px solid var(--azul); box-shadow: var(--shadow);
+}
+.kpi .num { font-size: 26px; font-weight: 700; color: var(--azul-dark); line-height: 1; }
+.kpi .label { font-size: 12px; color: var(--gris-600); margin-top: 6px; }
+.kpi.ok { border-left-color: var(--verde); }
+.kpi.ok .num { color: var(--verde); }
+.kpi.warn { border-left-color: var(--amber); }
+.kpi.warn .num { color: var(--amber); }
+
+/* TABLA PUNTOS */
+table.feedback {
+  width: 100%; border-collapse: collapse; margin: 12px 0 20px;
+  background: #fff; border-radius: var(--radius); overflow: hidden;
+  box-shadow: var(--shadow); border: 1px solid var(--gris-200);
+}
+table.feedback th {
+  background: var(--azul);
+  color: #fff;
+  padding: 12px 14px; text-align: left;
+  font-weight: 600; font-size: 13px; letter-spacing: 0.3px;
+}
+table.feedback td {
+  padding: 12px 14px; border-top: 1px solid var(--gris-200);
+  font-size: 14px; vertical-align: top;
+}
+table.feedback tr:nth-child(even) td { background: var(--azul-05); }
+table.feedback td.num { font-weight: 700; color: var(--azul-dark); width: 40px; }
+table.feedback td.estado { width: 90px; text-align: center; }
+.tag { display: inline-block; padding: 3px 10px; border-radius: 12px; font-size: 11px; font-weight: 600; letter-spacing: 0.3px; }
+.tag-ok { background: var(--verde-bg); color: var(--verde); }
+.tag-pendiente { background: var(--amber-bg); color: var(--amber); }
+.tag-critico { background: var(--rojo-bg); color: var(--rojo); }
+
+/* TABLA REFS */
+table.refs {
+  width: 100%; border-collapse: collapse; margin: 12px 0; background: #fff;
+  font-size: 13px; box-shadow: var(--shadow); border-radius: var(--radius); overflow: hidden;
+}
+table.refs th { background: var(--azul-deeper); color: #fff; padding: 10px 12px; text-align: left; font-weight: 600; }
+table.refs td { padding: 10px 12px; border-top: 1px solid var(--gris-200); }
+table.refs td.before { color: var(--rojo); }
+table.refs td.after { color: var(--verde); font-weight: 600; }
+table.refs tr:nth-child(even) td { background: var(--gris-100); }
+
+/* CALLOUT */
+.callout {
+  border-left: 4px solid var(--azul); padding: 14px 18px;
+  background: var(--azul-light); border-radius: 4px; margin: 14px 0;
+}
+.callout.warn { border-left-color: var(--amber); background: var(--amber-bg); }
+.callout.ok { border-left-color: var(--verde); background: var(--verde-bg); }
+.callout .kicker {
+  display: inline-block; font-size: 11px; font-weight: 700;
+  letter-spacing: 1px; text-transform: uppercase;
+  color: var(--azul-dark); margin-right: 8px;
+}
+.callout.warn .kicker { color: var(--amber); }
+.callout.ok .kicker { color: var(--verde); }
+
+/* DIFF */
+.diff {
+  background: #fff; border-radius: var(--radius); border: 1px solid var(--gris-200);
+  margin: 12px 0; overflow: hidden;
+}
+.diff .row { padding: 12px 16px; font-size: 13px; line-height: 1.6; }
+.diff .row.before { background: var(--rojo-bg); border-left: 4px solid var(--rojo); }
+.diff .row.before .label { color: var(--rojo); font-weight: 700; font-size: 11px; letter-spacing: 0.5px; margin-bottom: 6px; }
+.diff .row.after { background: var(--verde-bg); border-left: 4px solid var(--verde); border-top: 1px solid #fff; }
+.diff .row.after .label { color: var(--verde); font-weight: 700; font-size: 11px; letter-spacing: 0.5px; margin-bottom: 6px; }
+
+/* CODE / KEYS */
+code {
+  background: var(--gris-200); padding: 1px 6px;
+  border-radius: 3px; font-family: 'SF Mono', Menlo, monospace;
+  font-size: 0.9em; color: var(--azul-dark);
+}
+
+/* FOOTER */
+.footer {
+  margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--gris-300);
+  font-size: 12px; color: var(--gris-600); text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+  .resumen { grid-template-columns: repeat(2, 1fr); }
+  .hero h1 { font-size: 22px; }
+  table.feedback th:nth-child(3), table.feedback td:nth-child(3) { display: none; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<!-- HERO -->
+<header class="hero">
+  <div class="meta">
+    <span class="badge">VERSIÓN 3.1</span>
+    <span>Iteración correctiva</span>
+    <span>·</span>
+    <span>5 mayo 2026</span>
+  </div>
+  <h1>Tema 11 — Informática básica</h1>
+  <p class="subtitle">Informe de correcciones aplicadas tras el feedback de Jesús Cuadrado García de la Calera (IAM) recibido el 4 de mayo de 2026 sobre la versión piloto v3.0.</p>
+  <div class="footer-line">
+    <span><strong>Proyecto:</strong> Material formativo oposiciones TIC C1</span>
+    <span><strong>Expediente:</strong> 300/2026/00147</span>
+    <span><strong>Repositorio:</strong> <code>MGS2025/etrivium-iam-tema-11</code></span>
+  </div>
+</header>
+
+<!-- KPIs -->
+<div class="resumen">
+  <div class="kpi ok">
+    <div class="num">6 / 7</div>
+    <div class="label">Puntos del feedback resueltos en v3.1</div>
+  </div>
+  <div class="kpi warn">
+    <div class="num">1</div>
+    <div class="label">Punto pendiente (a la espera de input)</div>
+  </div>
+  <div class="kpi">
+    <div class="num">11</div>
+    <div class="label">Referencias cruzadas erróneas corregidas</div>
+  </div>
+  <div class="kpi">
+    <div class="num">10</div>
+    <div class="label">Enlaces a normas externas añadidos</div>
+  </div>
+</div>
+
+<!-- INTRO -->
+<section>
+  <h2>Resumen ejecutivo</h2>
+  <div class="card">
+    <p>Tras la revisión de la versión 3.0 del piloto del Tema 11 por parte de Jesús Cuadrado, hemos publicado la versión <strong>3.1</strong> en GitHub con todas las correcciones puntuales que se solicitaron. La iteración ha sido <strong>exclusivamente correctiva</strong>: no se ha añadido contenido nuevo, sino que se han arreglado los problemas concretos detectados en la revisión.</p>
+    <p>Adicionalmente, durante la auditoría sistemática que hicimos al revisar el Punto 5 del feedback, detectamos <strong>8 errores adicionales del mismo tipo</strong> (referencias cruzadas con otros temas que no se correspondían con el listado oficial del programa). Todos ellos también se han corregido cotejando una a una contra el Anexo del Programa publicado en el <strong>BOAM 10.032 / 23 de diciembre de 2025</strong>.</p>
+    <div class="callout">
+      <span class="kicker">Estado actual</span>El piloto v3.1 está publicado en el repositorio del IAM. Queda a disposición del equipo del Ayuntamiento para una segunda revisión, con objeto de confirmar que los puntos planteados se han resuelto satisfactoriamente.
+    </div>
+  </div>
+</section>
+
+<!-- TABLA PUNTOS -->
+<section>
+  <h2>Estado de los siete puntos del feedback</h2>
+  <table class="feedback">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Punto del feedback</th>
+        <th>Acción aplicada en v3.1</th>
+        <th class="estado">Estado</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="num">1</td>
+        <td>Tiempo de lectura aproximado de 1 h 15 min, posible falta de contenido. Petición de comparar con índices de academias de oposiciones.</td>
+        <td>Pendiente de los índices que está consiguiendo Jesús. Si tras compararlos detectamos huecos temáticos, se planificará una iteración v3.2 de ampliación.</td>
+        <td class="estado"><span class="tag tag-pendiente">Pendiente input</span></td>
+      </tr>
+      <tr>
+        <td class="num">2</td>
+        <td>El documento no incluía enlaces a las referencias externas mencionadas (normas ISO, etc.).</td>
+        <td>Se han añadido 10 enlaces inline a normas en sus primeras menciones (ISO/IEC 11404, 9075, 25010, 8000, 27001, 27040; UNE-EN 301 549; WCAG 2.1; RD 1112/2018; RD 311/2022).</td>
+        <td class="estado"><span class="tag tag-ok">Resuelto</span></td>
+      </tr>
+      <tr>
+        <td class="num">3</td>
+        <td>Mención a DCAT-AP-ES sin definir el término.</td>
+        <td>Definición inline en su primera aparición (§1.6 Metadatos), explicando que es la adaptación española del <em>Data Catalog Vocabulary - Application Profile</em> exigido por la UE para datos abiertos del sector público.</td>
+        <td class="estado"><span class="tag tag-ok">Resuelto</span></td>
+      </tr>
+      <tr>
+        <td class="num">4</td>
+        <td>Frases con apariencia de salida automática sin revisar (ej. <em>"Array (vector): colección ordenada de elementos del mismo tipo, indexada por posición. Acceso O(1) por índice"</em>).</td>
+        <td>El bloque §1.7.6 (Tipos compuestos) se ha reescrito por completo en prosa pedagógica natural. Cada tipo (array, struct, union, enum, string) pasa de definición telegráfica a párrafo con verbo, ejemplo concreto y matiz cuando aplica. Eliminada la jerga técnica fuera de nivel C1.</td>
+        <td class="estado"><span class="tag tag-ok">Resuelto</span></td>
+      </tr>
+      <tr>
+        <td class="num">5</td>
+        <td>Referencias cruzadas con otros temas del programa que no eran correctas (ej. "TAD se desarrollan en el Tema 27", cuando el Tema 27 es Administración del SO).</td>
+        <td>Auditoría sistemática contra el listado oficial del BOAM 10.032. Se detectaron 11 errores en 8 ubicaciones (3 los señaló Jesús, 8 adicionales del mismo patrón). Todos corregidos. Detalle en la tabla siguiente.</td>
+        <td class="estado"><span class="tag tag-critico">Corregido</span></td>
+      </tr>
+      <tr>
+        <td class="num">6</td>
+        <td>El gráfico TPS/MIS/DSS/EIS empleaba criterios de clasificación (táctico, analítico, estratégico) que no se introducían previamente en el texto. Daba la impresión de información generada sin contexto.</td>
+        <td>Añadido párrafo narrativo introductorio en §2.6 que presenta los <strong>cuatro niveles de decisión</strong> (operativo, gestión/táctico, analítico, estratégico) ANTES del diagrama, con la cita académica correspondiente (Anthony 1965; Laudon &amp; Laudon 2017). Pie del diagrama reescrito en dos líneas legibles. Tildes corregidas en el SVG y en la tabla.</td>
+        <td class="estado"><span class="tag tag-ok">Resuelto</span></td>
+      </tr>
+      <tr>
+        <td class="num">7</td>
+        <td>Algunos diagramas tenían problemas de accesibilidad: letra clara sobre fondo claro, especialmente en el diagrama de bloques de la CPU (etiquetas Memoria RAM, E/S, ROM/BIOS).</td>
+        <td>Detectada la causa raíz (un bug de prioridad CSS en los SVG). Solucionado añadiendo clases dedicadas con texto oscuro y aplicándolas a los textos sobre fondo claro. Cuatro diagramas afectados y arreglados (DIKW base, TPS base, CPU/RAM, jerarquía de memoria).</td>
+        <td class="estado"><span class="tag tag-ok">Resuelto</span></td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- PUNTO 5 EN DETALLE -->
+<section>
+  <h2>Punto 5 en detalle — Referencias cruzadas auditadas</h2>
+  <p>Auditoría sistemática contra el Anexo del Programa publicado en el BOAM 10.032, de 23 de diciembre de 2025. Se han revisado todas las menciones a "Tema NN" del documento y se han cotejado contra los enunciados oficiales de los 40 temas del programa.</p>
+  <table class="refs">
+    <thead>
+      <tr>
+        <th>Sección del Tema 11</th>
+        <th>v3.0 decía (incorrecto)</th>
+        <th>v3.1 dice (correcto BOAM)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>§1.7.7 — TAD</td>
+        <td class="before">Tema 27 (Estructuras de datos y algoritmos)</td>
+        <td class="after">Tema 13 (Tipos abstractos y Estructuras de datos)</td>
+      </tr>
+      <tr>
+        <td>§1.7.7 — Sistemas operativos</td>
+        <td class="before">Tema 20 (planificación de procesos)</td>
+        <td class="after">Tema 14 (Sistemas operativos)</td>
+      </tr>
+      <tr>
+        <td>§1.7.9 — cierre Sección 1</td>
+        <td class="before">Tema 20 (SO) y Tema 27 (Estr. datos)</td>
+        <td class="after">Tema 14 (SO) y Tema 13 (TAD/Estr. datos)</td>
+      </tr>
+      <tr>
+        <td>§2.9 — metodologías</td>
+        <td class="before">Tema 30 (Ingeniería del SW) y Tema 25 (Gestión de servicios TI)</td>
+        <td class="after">Reformulado: ninguno de los dos existe como tema independiente del programa</td>
+      </tr>
+      <tr>
+        <td>§4.6 — Cloud / IA</td>
+        <td class="before">Tema 28 (Cloud computing) y Tema 36 (IA y Big Data)</td>
+        <td class="after">Tema 31 (Computación distribuida y Cloud); IA/Big Data no figura como tema</td>
+      </tr>
+      <tr>
+        <td>§5.2.5 — paralelismo</td>
+        <td class="before">Tema 19 (Arquitecturas paralelas)</td>
+        <td class="after">Reformulado: no existe tal tema en el programa</td>
+      </tr>
+      <tr>
+        <td>§6.2.8 — memoria virtual</td>
+        <td class="before">Tema 20 (Sistemas operativos)</td>
+        <td class="after">Tema 14 (Sistemas operativos)</td>
+      </tr>
+      <tr>
+        <td>§9.8 — codificaciones</td>
+        <td class="before">Tema 16 (Comunicación de datos) y Tema 34 (Internet y servicios web)</td>
+        <td class="after">Tema 33 (Comunicaciones) y Tema 35 (Internet, HTTP/HTTPS/SSL/TLS)</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="callout warn">
+    <span class="kicker">Hallazgo</span>El feedback inicial de Jesús señalaba 3 referencias cruzadas erróneas. La auditoría sistemática ha encontrado <strong>8 más</strong> con el mismo patrón en otras secciones del documento. Todas ellas se han corregido en v3.1. Para futuros temas, el procedimiento de generación incluirá una validación obligatoria de toda referencia cruzada contra el listado del BOAM antes de la primera entrega.
+  </div>
+</section>
+
+<!-- EJEMPLOS ANTES/DESPUÉS -->
+<section>
+  <h2>Ejemplos de cambios significativos</h2>
+
+  <h3>Punto 4 — Reescritura del bloque sobre tipos compuestos</h3>
+  <p>El siguiente fragmento ilustra el cambio de tono en la sección §1.7.6 (Tipos compuestos):</p>
+  <div class="diff">
+    <div class="row before">
+      <div class="label">v3.0 — antes</div>
+      <em>"Array (vector): colección ordenada de elementos del mismo tipo, indexada por posición. Acceso O(1) por índice. Tamaño fijo en compilación (C, Java) o dinámico (Python list, ArrayList)."</em>
+    </div>
+    <div class="row after">
+      <div class="label">v3.1 — ahora</div>
+      Un <strong>array</strong> (también llamado vector o tabla) almacena una secuencia de elementos del mismo tipo, accesibles por su posición en la secuencia. Su tamaño puede ser fijo, definido en el momento de compilar el programa (como en C o Java), o variable, ajustándose dinámicamente durante la ejecución (como ocurre con <code>list</code> en Python o <code>ArrayList</code> en Java).
+    </div>
+  </div>
+
+  <h3>Punto 6 — Introducción narrativa antes del diagrama TPS/MIS</h3>
+  <p>Antes del diagrama de la pirámide de sistemas de información, ahora aparece:</p>
+  <div class="diff">
+    <div class="row after">
+      <div class="label">v3.1 — añadido</div>
+      <p>Esta clasificación, originada en la literatura clásica de gestión empresarial (Anthony, 1965; Laudon &amp; Laudon, 2017), parte de una idea sencilla: dentro de cualquier organización conviven <strong>cuatro niveles de decisión</strong> que necesitan información de naturaleza distinta.</p>
+      <ul style="margin-top:8px">
+        <li><strong>Nivel operativo</strong> — el día a día. Operarios y personal de ventanilla ejecutan transacciones individuales (alta de un empadronamiento, cobro de un tributo). Necesitan datos en bruto, en tiempo real y en alto volumen.</li>
+        <li><strong>Nivel de gestión</strong> (también llamado <strong>táctico</strong>) — mandos medios que coordinan equipos. Necesitan informes periódicos consolidados.</li>
+        <li><strong>Nivel analítico</strong> — analistas y técnicos que estudian escenarios y simulan alternativas para decisiones no rutinarias.</li>
+        <li><strong>Nivel estratégico</strong> — alta dirección que define objetivos y planifica a medio y largo plazo.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>Punto 7 — Causa raíz del problema de contraste en los diagramas</h3>
+  <p>El comportamiento observado por Jesús ("letra clara sobre fondo claro") tenía una causa técnica concreta. Los SVG declaraban su clase de texto con color blanco (<code>fill:#fff</code>) y luego intentaban sobrescribir ese color con un atributo inline (<code>fill="#1a1a1a"</code>). En SVG, sin embargo, las reglas declaradas dentro de <code>&lt;style&gt;</code> tienen mayor especificidad CSS que los atributos inline, por lo que el override no tenía efecto y el texto se renderizaba en blanco sobre fondos claros.</p>
+  <p>La solución aplicada en v3.1 ha sido añadir clases CSS dedicadas (<code>.cpu-heading-dark</code>, <code>.jm-label-dark</code>, <code>.dikw-label-dark</code>, <code>.tps-eis-dark</code>) con color oscuro (<code>fill:#0a2540</code>) y aplicarlas explícitamente a los textos sobre fondo claro. Los diagramas afectados eran cuatro: la pirámide DIKW (nivel base "Dato"), la pirámide TPS/MIS (nivel base "TPS"), el diagrama de bloques de la CPU (etiquetas RAM, E/S y ROM/BIOS) y el diagrama de jerarquía de memoria (etiquetas SSD y HDD/cinta/nube). Todos pasan ahora el criterio de contraste WCAG 2.1 AA.</p>
+</section>
+
+<!-- ARCHIVOS -->
+<section>
+  <h2>Ficheros afectados</h2>
+  <div class="card">
+    <ul>
+      <li><code>tema-11-contenido.md</code> — Markdown fuente del documento. 142 líneas modificadas.</li>
+      <li><code>index.html</code> — vista HTML que se publica en el repositorio del IAM. 139 líneas modificadas (mismas correcciones replicadas).</li>
+      <li><code>tema-11-changelog.md</code> — registro de cambios. Sección v3.1 añadida con detalle por punto.</li>
+      <li><code>informe-correcciones-v3.1.html</code> — el presente informe (nuevo).</li>
+    </ul>
+    <p style="margin-top:12px"><strong>Commit en GitHub:</strong> <code>c15fef1</code> · <strong>Rama:</strong> <code>main</code> · <strong>Push:</strong> 2026-05-05</p>
+  </div>
+</section>
+
+<!-- PRÓXIMOS PASOS -->
+<section>
+  <h2>Próximos pasos</h2>
+  <div class="card">
+    <ol>
+      <li><strong>Validación de v3.1 por el IAM.</strong> Confirmar que las correcciones aplicadas resuelven los siete puntos del feedback inicial.</li>
+      <li><strong>Recibir los índices de academias.</strong> Cuando los obtengamos, se evaluará el Punto 1 (densidad/extensión) y, si procede, se planificará una iteración v3.2 de ampliación de las secciones que queden cortas frente a esos índices.</li>
+      <li><strong>Replicar el procedimiento de auditoría en los temas siguientes.</strong> La validación sistemática de referencias cruzadas contra el BOAM 10.032 se incorpora como paso obligatorio antes de la primera entrega de cada nuevo tema, evitando así la repetición del problema detectado en el Punto 5.</li>
+    </ol>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<div class="footer">
+  Tema 11 · Versión 3.1 · 5 mayo 2026<br>
+  ETRIVIUM LEARN SL · Expediente 300/2026/00147 · Ayuntamiento de Madrid (IAM)
+</div>
+
+</div>
+</body>
+</html>
