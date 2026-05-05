@@ -62,11 +62,12 @@ Información = Datos + Contexto (añadir valor) + Utilidad (disminuir la incerti
 
 La clasificación tradicional en informática opera sobre dato e información, pero la literatura sobre gestión del conocimiento añade dos niveles superiores: **conocimiento** y **sabiduría**. El modelo resultante se conoce como **pirámide DIKW** (Data-Information-Knowledge-Wisdom), atribuida a Russell Ackoff (1989) y ampliamente adoptada por organismos como la ONU y la OCDE para documentar sus sistemas de gestión del conocimiento.
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" role="img" aria-label="Pirámide DIKW con ejemplo Ayto Madrid">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" role="img" aria-label="Pirámide DIKW con ejemplo Ayto Madrid: Dato, Información, Conocimiento, Sabiduría">
   <style>
     .dikw-label{font:600 14px system-ui,sans-serif;fill:#fff}
+    .dikw-label-dark{font:600 14px system-ui,sans-serif;fill:#0a2540}
     .dikw-example{font:12px system-ui,sans-serif;fill:#1a1a1a}
-    .dikw-title{font:700 13px system-ui,sans-serif;fill:#0055a0;text-transform:uppercase;letter-spacing:1px}
+    .dikw-title{font:700 13px system-ui,sans-serif;fill:#003d73;text-transform:uppercase;letter-spacing:1px}
   </style>
   <polygon points="280,30 330,30 345,70 265,70" fill="#003d73"/>
   <polygon points="265,70 345,70 365,120 245,120" fill="#0055a0"/>
@@ -75,7 +76,7 @@ La clasificación tradicional en informática opera sobre dato e información, p
   <text x="305" y="56" text-anchor="middle" class="dikw-label">Sabiduría</text>
   <text x="305" y="99" text-anchor="middle" class="dikw-label">Conocimiento</text>
   <text x="305" y="155" text-anchor="middle" class="dikw-label">Información</text>
-  <text x="305" y="220" text-anchor="middle" class="dikw-label">Dato</text>
+  <text x="305" y="220" text-anchor="middle" class="dikw-label-dark">Dato</text>
   <line x1="420" y1="50" x2="470" y2="50" stroke="#0055a0" stroke-width="1"/>
   <line x1="420" y1="99" x2="470" y2="99" stroke="#0055a0" stroke-width="1"/>
   <line x1="420" y1="155" x2="470" y2="155" stroke="#0055a0" stroke-width="1"/>
@@ -128,7 +129,7 @@ Un dato técnicamente correcto pero de baja calidad puede generar información e
 
 Normas adicionales como **ISO 8000** (Data Quality) amplían estas a 10-14 dimensiones (unicidad, validez, precisión, plausibilidad, etc.), usadas en auditorías de calidad masivas.
 
-> **[DATO CLAVE EXAMEN]** Las 4 dimensiones mínimas de calidad del dato son: **exactitud, completitud, consistencia y oportunidad**. ISO 8000 amplía a 10+ dimensiones.
+> **[DATO CLAVE EXAMEN]** Las 4 dimensiones mínimas de calidad del dato son: **exactitud, completitud, consistencia y oportunidad**. La familia [ISO 8000](https://www.iso.org/standard/50798.html) (Data quality) amplía a 10+ dimensiones.
 
 ### 1.6. Metadatos
 
@@ -140,11 +141,11 @@ Tres tipos principales:
 - **Metadatos estructurales**: describen como se organiza el dato (relaciones, campos, tipos). Ej: esquema de tabla SQL, definición XML/JSON Schema.
 - **Metadatos administrativos**: gobiernan el uso, retención y acceso (permisos, copyright, fechas). Ej: nivel ENS, clasificación RGPD, retención legal.
 
-> **[EJEMPLO AYTO MADRID]** En el portal **Open Data Madrid** (datos.madrid.es) cada dataset incluye metadatos estandarizados según **DCAT-AP-ES**: título, descripción, fecha publicación, frecuencia actualización, licencia (CC-BY 4.0), responsable del dato, formato (CSV, JSON, XML).
+> **[EJEMPLO AYTO MADRID]** En el portal **Open Data Madrid** (datos.madrid.es) cada dataset incluye metadatos estandarizados según **DCAT-AP-ES** — la adaptación española del *Data Catalog Vocabulary - Application Profile* europeo, vocabulario común que la Unión Europea exige para describir conjuntos de datos abiertos del sector público y permitir que sean catalogables e interoperables entre administraciones. Los metadatos cubren título, descripción, fecha de publicación, frecuencia de actualización, licencia (CC-BY 4.0), responsable del dato y formato (CSV, JSON, XML).
 
 ### 1.7. Tipos y clasificación de datos
 
-La clasificación de los datos en informática no responde a un único criterio. Las clasificaciónes son complementarias, no excluyentes. La norma de referencia para tipos de datos independientes del lenguaje es **ISO/IEC 11404** (Language-independent datatypes).
+La clasificación de los datos en informática no responde a un único criterio. Las clasificaciónes son complementarias, no excluyentes. La norma de referencia para tipos de datos independientes del lenguaje es [**ISO/IEC 11404**](https://www.iso.org/standard/39479.html) (*Language-independent datatypes*).
 
 #### 1.7.1. Según su función en el sistema de información (la más relevante para examen)
 
@@ -192,13 +193,13 @@ Los **tipos primitivos** son los tipos de datos elementales soportados nativamen
 
 #### 1.7.6. Tipos de datos compuestos
 
-Los **tipos compuestos** agregan múltiples valores en una única entidad lógica.
+Los **tipos compuestos** son construcciones del lenguaje que agrupan múltiples valores bajo una única entidad lógica. Permiten al programador trabajar con conjuntos de datos relacionados como si fueran un solo elemento, simplificando el diseño y el mantenimiento del software.
 
-- **Array** (vector): colección ordenada de elementos del mismo tipo, indexada por posición. Acceso O(1) por índice. Tamaño fijo en compilación (C, Java) o dinámico (Python list, ArrayList).
-- **Struct / Registro**: agrupa campos heterogéneos (de tipos distintos) bajo un nombre común. Equivalente al tipo `record` en lenguajes funcionales y a la fila de una tabla relacional.
-- **Union**: comparte el mismo espacio de memoria entre varios campos. Útil para representaciones alternativas. Solo uno válido a la vez.
-- **Enumeración (enum)**: conjunto cerrado de valores nombrados (DIA = LUNES | MARTES | ...). Internamente se almacena como entero.
-- **String (cadena)**: secuencia de caracteres. Inmutable en Java/Python, mutable en C (array de char terminado en `\0`).
+- Un **array** (también llamado *vector* o tabla) almacena una secuencia de elementos del mismo tipo, accesibles por su posición en la secuencia. Su tamaño puede ser fijo, definido en el momento de compilar el programa (como en C o Java), o variable, ajustándose dinámicamente durante la ejecución (como ocurre con `list` en Python o `ArrayList` en Java).
+- Un **struct** o **registro** agrupa campos de tipos distintos bajo un nombre común — equivale a una fila de una tabla relacional o al tipo `record` de los lenguajes funcionales. Por ejemplo, un registro *Empleado* podría combinar un identificador numérico, un nombre alfanumérico y una fecha de alta.
+- Un **union** comparte un mismo espacio de memoria entre varios campos posibles, de los cuales solo uno guarda un valor válido en cada momento. Es útil cuando se necesitan representaciones alternativas del mismo dato sin duplicar memoria.
+- Una **enumeración** (`enum`) define un conjunto cerrado y finito de valores con nombre, como los días de la semana o los estados de un trámite. Internamente cada valor se almacena como un entero, pero el código gana legibilidad al usar el nombre simbólico.
+- Una **cadena de caracteres** (`string`) es una secuencia de caracteres tratada como una unidad. En Java o Python las cadenas son inmutables: una vez creadas no pueden modificarse, y cada operación devuelve una cadena nueva. En C, en cambio, una cadena es un array de caracteres terminado en el carácter nulo `\0`, que sí admite modificación in situ.
 
 #### 1.7.7. Tipos abstractos de datos (TAD)
 
@@ -215,11 +216,11 @@ Un **Tipo Abstracto de Datos** define un conjunto de valores y las operaciones q
 | **Grafo** | Nodos + aristas | addNode, addEdge, BFS, DFS, dijkstra | Recorridos por anchura/profundidad | Redes, mapas, dependencias |
 | **Cola de prioridad** | Cola con orden por prioridad | insert, extractMax/Min | Extrae siempre el de mayor/menor prioridad | Planificación de procesos, A*, Dijkstra |
 
-> **[REFERENCIA CRUZADA]** Los TAD se desarrollan en profundidad en el **Tema 27** (Estructuras de datos y algoritmos) y son la base teórica de las **bases de datos** (Tema 15) y los **sistemas operativos** (planificación de procesos, Tema 20).
+> **[REFERENCIA CRUZADA]** Los TAD se desarrollan en profundidad en el **Tema 13** (Tipos abstractos y Estructuras de datos) y son la base teórica de las **bases de datos** (Tema 15) y de la planificación de procesos en los **sistemas operativos** (Tema 14).
 
 #### 1.7.8. Tipos de datos en SQL
 
-El estándar **SQL:2016 (ISO/IEC 9075)** define el catálogo de tipos para bases de datos relacionales. Los principales:
+El estándar **SQL:2016** ([ISO/IEC 9075](https://www.iso.org/standard/63555.html)) define el catálogo de tipos para bases de datos relacionales. Los principales:
 
 | Categoría | Tipo SQL | Descripción |
 |---|---|---|
@@ -258,7 +259,7 @@ La forma en que un lenguaje gestiona los tipos define dos ejes de clasificación
 
 > **[DATO CLAVE EXAMEN]** Los ejes "estático/dinámico" y "fuerte/débil" son **independientes**: Python es dinámico+fuerte, JavaScript es dinámico+débil, C es estático+débil, Java es estático+fuerte.
 
-> **[REFERENCIA CRUZADA]** La clasificación de datos conecta con el Tema 15 (Bases de datos) — modelo relacional frente a NoSQL — y con el Tema 20 (Sistemas operativos) — gestión de ficheros y dispositivos de E/S. Los tipos abstractos se desarrollan en el Tema 27 (Estructuras de datos y algoritmos).
+> **[REFERENCIA CRUZADA]** La clasificación de datos conecta con el Tema 15 (Sistemas de gestión de bases de datos) — modelo relacional frente a NoSQL — y con el Tema 14 (Sistemas operativos) — gestión de ficheros y dispositivos de E/S. Los tipos abstractos se desarrollan en el Tema 13 (Tipos abstractos y Estructuras de datos).
 
 ---
 
@@ -330,7 +331,7 @@ Los sistemas de información se componen de tres partes principales: **personas,
 - *Dispositivos de salida*: monitores, impresoras, plotters, altavoces.
 - *Equipos de red*: routers, switches, firewalls, puntos de acceso WiFi, balanceadores de carga.
 
-**2. Software** — programas que operan sobre el hardware. Se clasifica en cuatro capas (modelo de capas software, ISO/IEC 25010):
+**2. Software** — programas que operan sobre el hardware. Se clasifica en cuatro capas (modelo de capas software, [ISO/IEC 25010](https://www.iso.org/standard/35733.html)):
 
 - *Software de sistema*: sistema operativo (Windows Server, Linux, AIX), drivers, firmware.
 - *Software de utilidad*: antivirus, herramientas de backup, monitorización, sistemas de gestión de configuración.
@@ -348,7 +349,7 @@ Los sistemas de información se componen de tres partes principales: **personas,
 **4. Procedimientos** — reglas que rigen el uso del SI. Tipologia:
 
 - *Manuales operativos*: paso a paso para operadores del SI.
-- *Políticas de seguridad*: control de accesos, gestión de identidades, clasificación de la información (alineadas con ENS y ISO 27001).
+- *Políticas de seguridad*: control de accesos, gestión de identidades, clasificación de la información (alineadas con el [Esquema Nacional de Seguridad — RD 311/2022](https://www.boe.es/eli/es/rd/2022/05/03/311) e [ISO/IEC 27001](https://www.iso.org/standard/27001)).
 - *Procesos de negocio*: flujos modelados en BPMN (alta de empadronamiento, expedición de licencia).
 - *Acuerdos de nivel de servicio (SLA)*: tiempos de respuesta, disponibilidad comprometida con el ciudadano.
 - *Planes de continuidad y recuperación ante desastres (BCP/DRP)*: RPO y RTO acordados.
@@ -380,7 +381,7 @@ Los sistemas de información se componen de tres partes principales: **personas,
 
 ### 2.3. Características de un sistema de información
 
-Para que un sistema de información sea considerado como tal, debe cumplir las siguientes **diez características**. La norma de referencia para la calidad de los productos software (y por extensión de los SI) es la **ISO/IEC 25010** (modelo de calidad SQuaRE).
+Para que un sistema de información sea considerado como tal, debe cumplir las siguientes **diez características**. La norma de referencia para la calidad de los productos software (y por extensión de los SI) es la [**ISO/IEC 25010**](https://www.iso.org/standard/35733.html) (modelo de calidad SQuaRE — *Systems and software Quality Requirements and Evaluation*).
 
 | # | Carácterística | Cómo se mide | Norma de referencia |
 |---|---|---|---|
@@ -401,23 +402,23 @@ Para que un sistema de información sea considerado como tal, debe cumplir las s
 
 **2. Selección adecuada** — el SI entrega solo información relevante, evitando sobrecarga (*information overload*). Las herramientas de búsqueda y filtrado, los gestores documentales con etiquetado y los buscadores con relevancia (TF-IDF, BM25) materializan esta característica. **Ejemplo Ayto Madrid**: el portal **datos.madrid.es** filtra los 600+ datasets por categoría, organismo, formato y licencia para que el ciudadano encuentre lo que busca sin recorrer todo el catálogo.
 
-**3. Adaptación y personalización** — el SI se ajusta al perfil del usuario (idioma, rol, dispositivo, accesibilidad). La norma **UNE-EN 301 549** y las **WCAG 2.1** (Web Content Accessibility Guidelines) son obligatorias en webs de organismos públicos españoles según el **Real Decreto 1112/2018**. **Ejemplo Ayto Madrid**: la web municipal soporta múltiples idiomas y modo alto contraste, navegación por teclado y compatibilidad con lectores de pantalla (NVDA, JAWS, VoiceOver).
+**3. Adaptación y personalización** — el SI se ajusta al perfil del usuario (idioma, rol, dispositivo, accesibilidad). La norma [**UNE-EN 301 549**](https://www.une.org/encuentra-tu-norma/busca-tu-norma/norma/?c=N0067945) y las [**WCAG 2.1**](https://www.w3.org/TR/WCAG21/) (*Web Content Accessibility Guidelines*) son obligatorias en webs de organismos públicos españoles según el [**Real Decreto 1112/2018**](https://www.boe.es/eli/es/rd/2018/09/07/1112). **Ejemplo Ayto Madrid**: la web municipal soporta múltiples idiomas y modo alto contraste, navegación por teclado y compatibilidad con lectores de pantalla (NVDA, JAWS, VoiceOver).
 
 **4. Capacidad de relación** — el SI permite enlazar datos de fuentes distintas (*linked data*). El estándar **DCAT-AP** (Data Catalog Application Profile) define como describir datasets con relaciones explícitas. **Ejemplo Ayto Madrid**: el dataset de "tributos por distrito" puede cruzarse con el de "población empadronada por distrito" para obtener "tributo medio por habitante" — la relación es posible porque ambos comparten una clave común (código de distrito).
 
 **5. Tiempos de respuesta adecuados** — el SI responde en plazos compatibles con el caso de uso. Los percentiles **P50/P95/P99** son la métrica estándar (P95 = 95% de las peticiones se sirven por debajo de ese tiempo). El **throughput** mide peticiones por segundo. **Ejemplo Ayto Madrid**: una consulta del Padrón debe responder en menos de 2 segundos (P95) para no degradar la experiencia del operador en ventanilla.
 
-**6. Exactitud y calidad** — los datos del SI son veraces y actualizados. Se evalúa por las **cuatro dimensiones canónicas** (ver §1.5): exactitud, completitud, consistencia, oportunidad. La norma **ISO 8000** (Data Quality) y el cuerpo de conocimiento **DAMA-DMBOK** son los marcos de referencia. **Ejemplo Ayto Madrid**: la dirección postal en el Padrón debe coincidir exactamente con el callejero oficial; un error de calle invalida la notificación fehaciente.
+**6. Exactitud y calidad** — los datos del SI son veraces y actualizados. Se evalúa por las **cuatro dimensiones canónicas** (ver §1.5): exactitud, completitud, consistencia, oportunidad. La norma [**ISO 8000**](https://www.iso.org/standard/50798.html) (*Data quality*) y el cuerpo de conocimiento **DAMA-DMBOK** son los marcos de referencia. **Ejemplo Ayto Madrid**: la dirección postal en el Padrón debe coincidir exactamente con el callejero oficial; un error de calle invalida la notificación fehaciente.
 
 **7. Flexibilidad** — el SI se adapta a nuevas necesidades sin reconstruirse. Se mide por el **time-to-market** de los cambios (cuánto tarda implementar una nueva normativa) y por la **complejidad ciclomática** del código. Arquitecturas modulares (microservicios, API-first) y desacoplamiento (event-driven, cola de mensajes) materializan la flexibilidad. **Ejemplo Ayto Madrid**: un cambio en la normativa de IBI debe poder reflejarse en el sistema en días, no en meses.
 
 **8. Fiabilidad** — el SI funciona de forma correcta y continua. Se mide por el **MTTR** (tiempo medio de reparación), la tasa de fallos y los defectos por mil líneas de código. La fiabilidad incluye la **tolerancia a fallos**: redundancia de hardware, replicación de datos, balanceadores activo-activo. **Ejemplo Ayto Madrid**: el sistema de cita previa debe poder seguir operando aunque uno de los servidores caiga — la replicación en tiempo real de la base de datos es el mecanismo habitual.
 
-**9. Seguridad** — la información está protegida frente a accesos no autorizados, modificaciones indebidas y pérdida. La **tríada CIA** (Confidencialidad, Integridad, Disponibilidad) se complementa con dos atributos adicionales en el modelo **AAA** (Authentication, Authorization, Accounting) y con la **trazabilidad** y la **autenticidad** del **Esquema Nacional de Seguridad** (Real Decreto 311/2022). **Ejemplo Ayto Madrid**: el acceso al Padrón requiere autenticación fuerte (certificado digital o cl@ve), autorización según rol y registro de toda acción en logs auditables (trazabilidad).
+**9. Seguridad** — la información está protegida frente a accesos no autorizados, modificaciones indebidas y pérdida. La **tríada CIA** (Confidencialidad, Integridad, Disponibilidad) se complementa con dos atributos adicionales en el modelo **AAA** (*Authentication, Authorization, Accounting*) y con la **trazabilidad** y la **autenticidad** del [**Esquema Nacional de Seguridad — RD 311/2022**](https://www.boe.es/eli/es/rd/2022/05/03/311). **Ejemplo Ayto Madrid**: el acceso al Padrón requiere autenticación fuerte (certificado digital o cl@ve), autorización según rol y registro de toda acción en logs auditables (trazabilidad).
 
-**10. Copias de seguridad** — el SI dispone de copias periódicas que permiten recuperar la operación ante fallos, errores humanos o ciberataques. Las métricas son el **RPO** (Recovery Point Objective: cuántos datos se pueden perder) y el **RTO** (Recovery Time Objective: cuánto se puede tardar en restaurar). La norma **ISO/IEC 27040** rige la seguridad del almacenamiento. **Ejemplo Ayto Madrid**: política de backups 3-2-1 — tres copias, en dos medios distintos, una de ellas externa (off-site) — con prueba mensual de restauración.
+**10. Copias de seguridad** — el SI dispone de copias periódicas que permiten recuperar la operación ante fallos, errores humanos o ciberataques. Las métricas son el **RPO** (*Recovery Point Objective*: cuántos datos se pueden perder) y el **RTO** (*Recovery Time Objective*: cuánto se puede tardar en restaurar). La norma [**ISO/IEC 27040**](https://www.iso.org/standard/80194.html) rige la seguridad del almacenamiento. **Ejemplo Ayto Madrid**: política de backups 3-2-1 — tres copias, en dos medios distintos, una de ellas externa (*off-site*) — con prueba mensual de restauración.
 
-> **[DATO CLAVE EXAMEN]** La **tríada CIA** (Confidencialidad, Integridad, Disponibilidad) es el principio fundamental de seguridad de la información, recogido en **ISO 27001** y en el **Esquema Nacional de Seguridad** (Real Decreto 311/2022, ENS). El ENS extiende la tríada con dos dimensiones adicionales: **Trazabilidad** y **Autenticidad**.
+> **[DATO CLAVE EXAMEN]** La **tríada CIA** (Confidencialidad, Integridad, Disponibilidad) es el principio fundamental de seguridad de la información, recogido en [**ISO/IEC 27001**](https://www.iso.org/standard/27001) y en el [**Esquema Nacional de Seguridad — RD 311/2022**](https://www.boe.es/eli/es/rd/2022/05/03/311). El ENS extiende la tríada con dos dimensiones adicionales: **Trazabilidad** y **Autenticidad**.
 
 > **[DATO CLAVE EXAMEN]** El modelo **ISO/IEC 25010 (SQuaRE)** distingue ocho características de calidad de software: adecuación funcional, eficiencia de desempeño, compatibilidad, **usabilidad**, **fiabilidad**, **seguridad**, mantenibilidad y portabilidad. Las negritas son las que coinciden con la lista de características del SI.
 
@@ -467,11 +468,22 @@ Se distinguen **cuatro funciones básicas** (regla nemotécnica: **EAPS** — En
 
 **Clasificación por nivel organizacional** (la **más relevante** para examen):
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" role="img" aria-label="Pirámide de tipos de sistemas de información">
+Esta clasificación, originada en la literatura clásica de gestión empresarial (Anthony, 1965; Laudon & Laudon, 2017), parte de una idea sencilla: dentro de cualquier organización conviven **cuatro niveles de decisión** que necesitan información de naturaleza distinta.
+
+- **Nivel operativo** — el día a día. Operarios y personal de ventanilla ejecutan transacciones individuales (alta de un empadronamiento, cobro de un tributo, registro de una incidencia). Necesitan datos en bruto, en tiempo real y en alto volumen.
+- **Nivel de gestión** (también llamado **táctico**) — mandos medios que coordinan equipos y supervisan el funcionamiento de un servicio. Necesitan informes periódicos consolidados (semanales, mensuales) para detectar desviaciones y tomar decisiones rutinarias.
+- **Nivel analítico** — analistas y técnicos que estudian escenarios y simulan alternativas para decisiones no rutinarias. Necesitan herramientas de exploración y modelado sobre datos históricos.
+- **Nivel estratégico** — alta dirección que define objetivos y planifica a medio y largo plazo. Necesita información muy agregada, indicadores clave y cuadros de mando.
+
+A cada nivel le corresponde un tipo de sistema de información, formando una pirámide: **a más altura, mayor agregación de los datos y menor volumen** (un alcalde no consulta cada transacción individual, sino indicadores resumen); **a menor altura, mayor volumen y menor agregación** (un funcionario de ventanilla maneja registros individuales en bruto).
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" role="img" aria-label="Pirámide de tipos de sistemas de información por nivel organizacional: TPS-Operativo, MIS-Gestión, DSS-Analítico, EIS-Estratégico">
   <style>
     .tps-eis{font:700 14px system-ui,sans-serif;fill:#fff;text-anchor:middle}
-    .tps-user{font:11px system-ui,sans-serif;fill:#555}
-    .tps-title{font:700 13px system-ui,sans-serif;fill:#0055a0}
+    .tps-eis-dark{font:700 14px system-ui,sans-serif;fill:#0a2540;text-anchor:middle}
+    .tps-user{font:11px system-ui,sans-serif;fill:#1a1a1a}
+    .tps-title{font:700 13px system-ui,sans-serif;fill:#003d73}
+    .tps-axis{font:italic 11px system-ui,sans-serif;fill:#1a1a1a;text-anchor:middle}
   </style>
   <polygon points="275,30 325,30 340,75 260,75" fill="#003d73"/>
   <polygon points="260,75 340,75 360,130 240,130" fill="#0055a0"/>
@@ -480,28 +492,29 @@ Se distinguen **cuatro funciones básicas** (regla nemotécnica: **EAPS** — En
   <text x="300" y="56" class="tps-eis">EIS</text>
   <text x="300" y="107" class="tps-eis">DSS</text>
   <text x="300" y="167" class="tps-eis">MIS</text>
-  <text x="300" y="237" class="tps-eis">TPS</text>
+  <text x="300" y="237" class="tps-eis-dark">TPS</text>
   <line x1="415" y1="50" x2="455" y2="50" stroke="#0055a0" stroke-width="1"/>
-  <text x="460" y="40" class="tps-title">Estrategico</text>
+  <text x="460" y="40" class="tps-title">Estratégico</text>
   <text x="460" y="55" class="tps-user">Alta dirección</text>
   <line x1="415" y1="102" x2="455" y2="102" stroke="#0055a0" stroke-width="1"/>
-  <text x="460" y="92" class="tps-title">Analitico</text>
+  <text x="460" y="92" class="tps-title">Analítico</text>
   <text x="460" y="107" class="tps-user">Analistas</text>
   <line x1="415" y1="162" x2="455" y2="162" stroke="#0055a0" stroke-width="1"/>
-  <text x="460" y="152" class="tps-title">Gestion</text>
+  <text x="460" y="152" class="tps-title">Gestión / Táctico</text>
   <text x="460" y="167" class="tps-user">Mandos medios</text>
   <line x1="415" y1="230" x2="455" y2="230" stroke="#0055a0" stroke-width="1"/>
   <text x="460" y="220" class="tps-title">Operativo</text>
   <text x="460" y="235" class="tps-user">Operarios</text>
-  <text x="300" y="300" text-anchor="middle" font="italic 11px system-ui,sans-serif" fill="#666">+ agregación / - volumen  ·  - agregación / + volumen</text>
+  <text x="300" y="305" class="tps-axis">Cima: más agregación, menos volumen de datos</text>
+  <text x="300" y="325" class="tps-axis">Base: menos agregación, más volumen de datos</text>
 </svg>
 
-| Tipo | Sigla | Nivel | Función | Ejemplo |
+| Tipo | Sigla | Nivel | Función | Ejemplo Ayto Madrid |
 |---|---|---|---|---|
-| Sistema de Procesamiento de Transacciones | **TPS** | Operativo | Gestiona transacciones diarias | Alta en Padrón, cobro de tributo |
-| Sistema de Información Gerencial | **MIS** | Tactico | Informes regulares para mandos medios | Informe mensual de ingresos por distrito |
-| Sistema de Soporte a la Decisión | **DSS** | Analítico | Análisis y simulaciones para decisiones no rutinarias | Simulación de impacto de subida de IBI |
-| Sistema de Información Ejecutiva | **EIS** | Estratégico | Cuadro de mando para dirección | Cuadro de mando del Alcalde |
+| Sistema de Procesamiento de Transacciones | **TPS** | Operativo | Gestiona transacciones individuales en tiempo real | Alta en Padrón, cobro de tributo |
+| Sistema de Información Gerencial | **MIS** | Gestión / Táctico | Informes periódicos consolidados para mandos medios | Informe mensual de ingresos por distrito |
+| Sistema de Soporte a la Decisión | **DSS** | Analítico | Análisis exploratorio y simulación para decisiones no rutinarias | Simulación de impacto de subida de IBI |
+| Sistema de Información Ejecutiva | **EIS** | Estratégico | Cuadro de mando para alta dirección | Cuadro de mando integral del Alcalde |
 
 > **[EJEMPLO AYTO MADRID]** La arquitectura de sistemas del Ayuntamiento de Madrid combina los cuatro niveles: el **Padrón Municipal** funciona como TPS (procesa altas/bajas en tiempo real), alimenta un MIS estadístico (informes demográficos mensuales), que a su vez nutre un DSS de **planificación urbana** (¿donde construir un nuevo colegio?), cuyos resultados llegan al EIS del **Cuadro de Mando Integral municipal** que consulta el equipo de gobierno.
 
@@ -535,7 +548,7 @@ Implantar un SI en una organización no es solo comprar software: requiere metod
 - **COBIT 2019** (ISACA): gobernanza de TI y cumplimiento regulatorio.
 - **Metodologías ágiles** (Scrum, Kanban, SAFe): iteraciones cortas, entregas incrementales. Adoptadas progresivamente por el sector público.
 
-> **[REFERENCIA CRUZADA]** La metodología de desarrollo se trata en profundidad en el **Tema 30** (Ingeniería del software) y la gestión de servicios en el **Tema 25** (Gestión de servicios TI).
+> **[NOTA]** Las metodologías de desarrollo y gestión de servicios TI (Métrica v3, ITIL, COBIT, ágiles) son marcos transversales: no se desarrollan como tema independiente del programa, pero su terminología aparece en múltiples temas técnicos del bloque (administración del sistema operativo, seguridad, redes).
 
 ---
 
@@ -756,7 +769,7 @@ Aunque la literatura clásica cierra las generaciones con la 5ª, la mayoría de
 - **Computación cuántica**: primeros ordenadores cuánticos comerciales (IBM Q 2016, Google Sycamore 2019). Potencial disruptivo.
 - **Computación neuromórfica**: chips inspirados en el cerebro (Intel Loihi 2017, IBM TrueNorth 2014). Muy eficientes energéticamente.
 
-> **[REFERENCIA CRUZADA]** La computación en la nube se amplía en el **Tema 28** (Cloud computing) y la IA en el **Tema 36** (Inteligencia artificial y Big Data).
+> **[REFERENCIA CRUZADA]** La computación en la nube y los modelos IaaS / PaaS / SaaS se amplían en el **Tema 31** (Paradigmas de computación distribuida y servicios en Cloud). La virtualización se aborda en el **Tema 28**.
 
 ---
 
@@ -914,7 +927,7 @@ Una CPU **escalar** ejecuta una instrucción por ciclo en el mejor caso. Una CPU
 
 El procesador despacha instrucciones a las unidades disponibles en paralelo, respetando las dependencias de datos. Intel Golden Cove despacha hasta **6 instrucciones por ciclo**; Apple M3 hasta **8**.
 
-> **[REFERENCIA CRUZADA]** El paralelismo a nivel de hilo (multi-core) y a nivel de instrucción (pipeline, superescalar) se tratan juntos en el **Tema 19** (Arquitecturas paralelas).
+> **[NOTA]** El paralelismo se manifiesta en dos niveles: a nivel de instrucción (ILP — pipeline, superescalar, ejecución fuera de orden, dentro de un mismo núcleo) y a nivel de hilo (TLP — multi-core, SMT/Hyper-Threading). Ambos coexisten en los procesadores modernos.
 
 #### 5.2.6. Ley de Moore y su crisis
 
@@ -950,39 +963,41 @@ La CPU está formada por tres subsistemas principales: [STALLINGS-COA, Cap. 12]
 2. **Unidad de Control (UC)**
 3. **Unidad Aritmético-Lógica (ALU/UAL)**
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Bloques internos de la CPU">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Bloques internos de la CPU: ALU, Unidad de Control y Banco de Registros, conectados con Memoria RAM, E/S y ROM/BIOS mediante buses de control, direcciones y datos">
   <style>
     .cpu-heading{font:700 14px system-ui,sans-serif;fill:#fff;text-anchor:middle}
+    .cpu-heading-dark{font:700 14px system-ui,sans-serif;fill:#0a2540;text-anchor:middle}
     .cpu-sub{font:11px system-ui,sans-serif;fill:#555;text-anchor:middle}
+    .cpu-sub-light{font:11px system-ui,sans-serif;fill:#cde4f0;text-anchor:middle}
     .cpu-chip{font:700 12px system-ui,sans-serif;fill:#0055a0;letter-spacing:2px}
-    .cpu-bus{font:600 12px system-ui,sans-serif;fill:#1a1a1a;text-anchor:middle}
+    .cpu-bus{font:600 12px system-ui,sans-serif;text-anchor:middle}
   </style>
   <rect x="50" y="60" width="380" height="240" rx="8" fill="#eef4fa" stroke="#0055a0" stroke-width="2" stroke-dasharray="6 4"/>
   <text x="70" y="82" class="cpu-chip">CPU / MICROPROCESADOR</text>
   <rect x="80" y="100" width="150" height="65" rx="4" fill="#0055a0"/>
   <text x="155" y="125" class="cpu-heading">ALU</text>
-  <text x="155" y="145" class="cpu-sub" fill="#cde4f0">aritmético-lógica</text>
-  <text x="155" y="158" class="cpu-sub" fill="#cde4f0">+ − × ÷ AND OR XOR</text>
+  <text x="155" y="145" class="cpu-sub-light">aritmético-lógica</text>
+  <text x="155" y="158" class="cpu-sub-light">+ − × ÷ AND OR XOR</text>
   <rect x="250" y="100" width="160" height="65" rx="4" fill="#0055a0"/>
   <text x="330" y="125" class="cpu-heading">Unidad de Control</text>
-  <text x="330" y="145" class="cpu-sub" fill="#cde4f0">reloj + CP + decoder</text>
-  <text x="330" y="158" class="cpu-sub" fill="#cde4f0">+ secuenciador</text>
+  <text x="330" y="145" class="cpu-sub-light">reloj + CP + decoder</text>
+  <text x="330" y="158" class="cpu-sub-light">+ secuenciador</text>
   <rect x="80" y="190" width="330" height="90" rx="4" fill="#3378b9"/>
   <text x="245" y="215" class="cpu-heading">Banco de Registros</text>
-  <text x="245" y="237" class="cpu-sub" fill="#cde4f0">MAR · MBR · CP · RI · ACC</text>
-  <text x="245" y="253" class="cpu-sub" fill="#cde4f0">FLAGS · SP · GPRs · SPRs</text>
+  <text x="245" y="237" class="cpu-sub-light">MAR · MBR · CP · RI · ACC</text>
+  <text x="245" y="253" class="cpu-sub-light">FLAGS · SP · GPRs · SPRs</text>
   <rect x="470" y="80" width="140" height="50" rx="4" fill="#d6e4f0" stroke="#0055a0" stroke-width="1.5"/>
-  <text x="540" y="102" class="cpu-heading" fill="#1a1a1a">Memoria RAM</text>
+  <text x="540" y="110" class="cpu-heading-dark">Memoria RAM</text>
   <rect x="470" y="150" width="140" height="50" rx="4" fill="#d6e4f0" stroke="#0055a0" stroke-width="1.5"/>
-  <text x="540" y="172" class="cpu-heading" fill="#1a1a1a">E/S</text>
+  <text x="540" y="180" class="cpu-heading-dark">E/S</text>
   <rect x="470" y="220" width="140" height="50" rx="4" fill="#d6e4f0" stroke="#0055a0" stroke-width="1.5"/>
-  <text x="540" y="242" class="cpu-heading" fill="#1a1a1a">ROM / BIOS</text>
-  <line x1="430" y1="120" x2="470" y2="105" stroke="#d13c3c" stroke-width="2.5"/>
-  <text x="450" y="100" class="cpu-bus" fill="#d13c3c">control</text>
-  <line x1="430" y1="170" x2="470" y2="175" stroke="#2d8659" stroke-width="2.5"/>
-  <text x="450" y="166" class="cpu-bus" fill="#2d8659">direcciónes</text>
-  <line x1="430" y1="240" x2="470" y2="245" stroke="#0055a0" stroke-width="2.5"/>
-  <text x="450" y="236" class="cpu-bus" fill="#0055a0">datos</text>
+  <text x="540" y="250" class="cpu-heading-dark">ROM / BIOS</text>
+  <line x1="430" y1="120" x2="470" y2="105" stroke="#a82828" stroke-width="2.5"/>
+  <text x="450" y="100" class="cpu-bus" fill="#a82828">control</text>
+  <line x1="430" y1="170" x2="470" y2="175" stroke="#1f6644" stroke-width="2.5"/>
+  <text x="450" y="166" class="cpu-bus" fill="#1f6644">direcciones</text>
+  <line x1="430" y1="240" x2="470" y2="245" stroke="#003d73" stroke-width="2.5"/>
+  <text x="450" y="236" class="cpu-bus" fill="#003d73">datos</text>
 </svg>
 
 #### 5.3.1. Registros
@@ -1248,7 +1263,8 @@ Arquitecturas modernas añaden modos compuestos:
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 380" role="img" aria-label="Jerarquía de memoria">
   <style>
     .jm-label{font:600 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}
-    .jm-speed{font:11px system-ui,sans-serif;fill:#555;text-anchor:start}
+    .jm-label-dark{font:600 13px system-ui,sans-serif;fill:#0a2540;text-anchor:middle}
+    .jm-speed{font:11px system-ui,sans-serif;fill:#1a1a1a;text-anchor:start}
   </style>
   <text x="320" y="28" text-anchor="middle" font="700 16px system-ui,sans-serif" fill="#0055a0">Jerarquía de memoria</text>
   <polygon points="295,55 345,55 360,85 280,85" fill="#003d73"/>
@@ -1260,9 +1276,9 @@ Arquitecturas modernas añaden modos compuestos:
   <polygon points="245,160 395,160 420,210 220,210" fill="#3378b9"/>
   <text x="320" y="189" class="jm-label">RAM</text>
   <polygon points="220,210 420,210 450,265 190,265" fill="#6ea3d2"/>
-  <text x="320" y="242" class="jm-label" fill="#1a1a1a">SSD</text>
+  <text x="320" y="242" class="jm-label-dark">SSD</text>
   <polygon points="190,265 450,265 485,320 155,320" fill="#d6e4f0"/>
-  <text x="320" y="295" class="jm-label" fill="#1a1a1a">HDD / cinta / nube</text>
+  <text x="320" y="295" class="jm-label-dark">HDD / cinta / nube</text>
   <text x="500" y="75" class="jm-speed">~0,3 ns · KB</text>
   <text x="500" y="107" class="jm-speed">~1 ns · 32-64 KB</text>
   <text x="500" y="142" class="jm-speed">~3-20 ns · 1-32 MB</text>
@@ -1404,7 +1420,7 @@ Conceptos clave:
 
 La **MMU** (Memory Management Unit) es el hardware dentro de la CPU que traduce direcciónes virtuales a físicas consultando la tabla de páginas (con cache en TLB).
 
-> **[REFERENCIA CRUZADA]** La memoria virtual se trata en profundidad en el **Tema 20** (Sistemas operativos).
+> **[REFERENCIA CRUZADA]** La memoria virtual se trata en profundidad en el **Tema 14** (Sistemas operativos).
 
 ### 6.3. Memoria ROM
 
@@ -1805,10 +1821,10 @@ Norma internacional **equivalente a Unicode** en términos de repertorio de cara
 
 Formalmente, Unicode es una **implementación más rica** de ISO/IEC 10646 — incluye propiedades de caracteres, algoritmos de normalización, ordenación, etc.
 
-> **[REFERENCIA CRUZADA]** Las codificaciones de caracteres se amplían en el **Tema 16** (Comunicación de datos) y su aplicación web en el **Tema 34** (Internet y servicios web).
+> **[REFERENCIA CRUZADA]** La transmisión de información codificada sobre redes se trata en el **Tema 33** (Comunicaciones: medios y modos de transmisión) y la arquitectura de Internet, donde Unicode y UTF-8 son el estándar de facto, en el **Tema 35** (Internet: arquitectura, HTTP, HTTPS, SSL/TLS).
 
 ---
 
-*Documento generado con asistencia de IA — Pendiente validación humana (María / Ana)*
+*Documento generado con asistencia de IA — Validación humana en curso (María / Ana / Jesús Cuadrado IAM)*
 *Fuentes: ver tema-11-fuentes.md · Diagramas: ver tema-11-diagramas.md · Cambios: ver tema-11-changelog.md*
-*Versión 3.0 — Fecha: 2026-04-28*
+*Versión 3.1 — Fecha: 2026-05-05*

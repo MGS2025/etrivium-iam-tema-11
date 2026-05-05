@@ -1,9 +1,108 @@
-# Tema 11 — Changelog (v1.0 → v2.0 → v3.0)
+# Tema 11 — Changelog (v1.0 → v2.0 → v3.0 → v3.1)
 
 > **Versiones**:
 > - v1.0 (2026-04-16) — primera versión del piloto.
 > - v2.0 (2026-04-23) — iteración tras feedback de María (21 abr 2026).
-> - **v3.0 (2026-04-28) — iteración tras revisión de María/Ana: ampliación de tipos de datos, elementos de SI y características de SI.**
+> - v3.0 (2026-04-28) — iteración tras revisión de María/Ana: ampliación de tipos de datos, elementos de SI y características de SI.
+> - **v3.1 (2026-05-05) — iteración tras feedback de Jesús Cuadrado (IAM): correcciones puntuales sin reescritura. Sin ampliación de contenido nuevo.**
+
+---
+
+## Cambios v3.1 — Resumen
+
+> **Fecha**: 2026-05-05
+> **Autor**: ETRIVIUM LEARN SL (JMS)
+> **Motivo**: feedback de Jesús Cuadrado del IAM tras revisión de v3.0 (4 may 2026). Iteración correctiva, no de ampliación.
+
+### Cambios v3.1 por punto del feedback
+
+**Punto 1 — Densidad / extensión del tema** (queda abierto)
+
+- No se aplica en v3.1. A la espera de los índices de academias que Jesús está consiguiendo. Se valorará en una eventual v3.2 si se detectan gaps temáticos respecto a esos índices.
+
+**Punto 2 — Falta de enlaces a referencias externas (ISO, etc.)**
+
+- Añadidos enlaces inline (`<a href>`) a las normas y disposiciones legales en sus primeras menciones del documento:
+  - [ISO/IEC 11404](https://www.iso.org/standard/39479.html) (Tipos de datos independientes de lenguaje)
+  - [ISO/IEC 9075](https://www.iso.org/standard/63555.html) (SQL:2016)
+  - [ISO/IEC 25010](https://www.iso.org/standard/35733.html) (SQuaRE — calidad de software)
+  - [ISO 8000](https://www.iso.org/standard/50798.html) (Calidad de datos)
+  - [ISO/IEC 27001](https://www.iso.org/standard/27001) (Seguridad de la información)
+  - [ISO/IEC 27040](https://www.iso.org/standard/80194.html) (Seguridad del almacenamiento)
+  - [UNE-EN 301 549](https://www.une.org/encuentra-tu-norma/busca-tu-norma/norma/?c=N0067945) (Accesibilidad TIC)
+  - [WCAG 2.1](https://www.w3.org/TR/WCAG21/) (W3C)
+  - [Real Decreto 1112/2018](https://www.boe.es/eli/es/rd/2018/09/07/1112) (Accesibilidad sector público)
+  - [Real Decreto 311/2022](https://www.boe.es/eli/es/rd/2022/05/03/311) (Esquema Nacional de Seguridad)
+
+**Punto 3 — DCAT-AP-ES sin definir**
+
+- §1.6 Metadatos · callout *Ejemplo Ayto Madrid*: añadida definición inline ("la adaptación española del *Data Catalog Vocabulary - Application Profile* europeo, vocabulario común que la Unión Europea exige para describir conjuntos de datos abiertos del sector público y permitir que sean catalogables e interoperables entre administraciones").
+
+**Punto 4 — Erratas estilo IA ("Array (vector): colección ordenada…")**
+
+- §1.7.6 Tipos compuestos: reescrito completamente el bloque eliminando el patrón "Término: cláusula técnica seca". Cada tipo compuesto (array, struct, union, enum, string) pasa de definición telegráfica a párrafo pedagógico con verbo, ejemplo concreto y matiz cuando aplica. Eliminada la mención a "Acceso O(1) por índice" (jerga de doc técnica fuera de nivel C1).
+
+**Punto 5 — Referencias cruzadas erróneas con otros temas** (CRÍTICO)
+
+Auditadas TODAS las referencias cruzadas del tema contra el listado oficial del programa publicado en el BOAM 10.032 / 23-dic-2025. Se detectaron 11 errores en 8 ubicaciones. Resumen:
+
+| Ubicación | v3.0 decía | v3.1 dice (correcto BOAM) |
+|---|---|---|
+| §1.7.7 *Referencia cruzada* TAD | "Tema 27 (Estructuras de datos y algoritmos)" | **Tema 13** (Tipos abstractos y Estructuras de datos) |
+| §1.7.7 *Referencia cruzada* SO | "Tema 20 (Sistemas operativos)" | **Tema 14** (Sistemas operativos) |
+| §1.7.9 *Referencia cruzada* (cierre §1) | "Tema 20 (SO) … Tema 27 (Estr. datos)" | **Tema 14** (SO) … **Tema 13** (TAD/Estr. datos) |
+| §2.9 *Referencia cruzada* metodologías | "Tema 30 (Ingeniería del SW) y Tema 25 (Gestión de servicios TI)" | Reformulado como nota: ambos no existen como temas independientes en el BOAM |
+| §4.6 *Referencia cruzada* Cloud/IA | "Tema 28 (Cloud) y Tema 36 (IA y Big Data)" | **Tema 31** (Computación distribuida y Cloud); IA/Big Data no es tema independiente del BOAM, eliminada esa parte |
+| §5.2.5 *Referencia cruzada* paralelismo | "Tema 19 (Arquitecturas paralelas)" | Reformulado como nota: no existe tal tema en el BOAM |
+| §6.2.8 *Referencia cruzada* memoria virtual | "Tema 20 (Sistemas operativos)" | **Tema 14** (Sistemas operativos) |
+| §9.8 *Referencia cruzada* codificaciones | "Tema 16 (Comunicación de datos) y Tema 34 (Internet y servicios web)" | **Tema 33** (Comunicaciones) y **Tema 35** (Internet, HTTP/HTTPS/SSL/TLS) |
+
+**Punto 6 — Pirámide TPS / MIS / DSS / EIS con criterios no introducidos**
+
+- §2.6 Tipos de SI (clasificación por nivel organizacional):
+  - Añadido párrafo narrativo introductorio que presenta los **cuatro niveles de decisión** (operativo, gestión/táctico, analítico, estratégico) ANTES del diagrama, citando a Anthony (1965) y Laudon &amp; Laudon (2017).
+  - Añadido segundo párrafo explicando explícitamente la regla "+ altura → + agregación / – volumen" que antes solo aparecía como pie de diagrama abreviado.
+  - Pie del diagrama reescrito en dos líneas legibles ("Cima: más agregación, menos volumen" / "Base: menos agregación, más volumen").
+  - Diagrama SVG: corregidas tildes en los rótulos de nivel (`Estrategico` → `Estratégico`, `Analitico` → `Analítico`, `Gestion` → `Gestión / Táctico`).
+  - Tabla de tipos de SI: corregido `Tactico` → `Gestión / Táctico` en la fila MIS.
+  - `aria-label` del SVG ampliado para describir los 4 niveles de la pirámide.
+
+**Punto 7 — Gráficos con problemas de accesibilidad (letra clara sobre fondo claro)**
+
+Detectado un bug sistémico: las clases CSS de los SVG declaraban `fill:#fff` (texto blanco) y los overrides inline `fill="#1a1a1a"` no se aplicaban por mayor especificidad de la clase CSS. Por eso textos como "Memoria RAM", "E/S", "ROM/BIOS" del diagrama de bloques de la CPU se renderizaban en blanco sobre fondo azul muy claro `#d6e4f0` — ilegibles.
+
+Solución: añadidas clases dedicadas `.cpu-heading-dark`, `.jm-label-dark`, `.dikw-label-dark`, `.tps-eis-dark` con `fill:#0a2540` (azul muy oscuro) y aplicadas a los textos sobre fondo claro.
+
+Diagramas afectados y arreglados:
+
+- **D6** Bloques internos de la CPU — Memoria RAM, E/S, ROM/BIOS pasan a texto oscuro legible. Buses (control rojo, direcciones verde, datos azul) reforzados a tonos más oscuros para AA.
+- **D9** Jerarquía de memoria — SSD y "HDD/cinta/nube" pasan a texto oscuro legible.
+- **D1** Pirámide DIKW — el nivel base "Dato" (sobre fondo `#6ea3d2`) pasa a texto oscuro.
+- **D3** Pirámide TPS/MIS/DSS/EIS — el nivel base "TPS" (sobre fondo `#6ea3d2`) pasa a texto oscuro.
+
+Adicionalmente: `aria-label` de SVGs enriquecidos con descripción explícita del contenido (mejora SR/lectores de pantalla, alineado con WCAG 2.1).
+
+### Ficheros afectados v3.1
+
+| Fichero | Cambio |
+|---|---|
+| `tema-11-contenido.md` | 9 ediciones puntuales (refs cruzadas + erratas IA + pirámide TPS narrativa + DCAT-AP-ES + enlaces ISO/BOE/W3C + 4 SVG con clases dark) |
+| `index.html` | Mismas ediciones replicadas + actualización de versión `v3.0` → `v3.1` y banner |
+| `tema-11-changelog.md` | Este fichero — añadida sección v3.1 |
+
+### Cifras de impacto v3.1
+
+- 11 referencias cruzadas erróneas corregidas/reformuladas (Punto 5)
+- 4 diagramas SVG con accesibilidad mejorada (Puntos 6 y 7)
+- 10 enlaces a normas externas añadidos (Punto 2)
+- 1 bloque de contenido reescrito sin ampliación: §1.7.6 Tipos compuestos (Punto 4)
+- 0 palabras añadidas netas — iteración correctiva, no de ampliación
+
+### Pendientes post-v3.1
+
+- Validación final del feedback aplicado por parte de Jesús Cuadrado (IAM).
+- Recibir índices de academias para evaluar Punto 1 (densidad).
+- Si se valida v3.1, replicar la auditoría sistemática de referencias cruzadas (vs BOAM 10.032) en el resto de temas técnicos cuando se generen.
 
 ---
 
