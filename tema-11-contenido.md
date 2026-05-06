@@ -460,7 +460,7 @@ Se distinguen **cuatro funciones básicas** (regla nemotécnica: **EAPS** — En
 
 ### 2.6. Tipos de sistemas de información
 
-**Clasificación generica** (Laudon, 2017):
+**Clasificación genérica** (Laudon, 2017):
 
 - **Sistemas competitivos**: orientados a ventaja competitiva (ej. sistemas de precios dinámicos).
 - **Sistemas cooperativos**: soportan trabajo colaborativo (ej. Microsoft Teams, Google Workspace).
@@ -516,11 +516,11 @@ A cada nivel le corresponde un tipo de sistema de información, formando una pir
 | Sistema de Soporte a la Decisión | **DSS** | Analítico | Análisis exploratorio y simulación para decisiones no rutinarias | Simulación de impacto de subida de IBI |
 | Sistema de Información Ejecutiva | **EIS** | Estratégico | Cuadro de mando para alta dirección | Cuadro de mando integral del Alcalde |
 
-> **[EJEMPLO AYTO MADRID]** La arquitectura de sistemas del Ayuntamiento de Madrid combina los cuatro niveles: el **Padrón Municipal** funciona como TPS (procesa altas/bajas en tiempo real), alimenta un MIS estadístico (informes demográficos mensuales), que a su vez nutre un DSS de **planificación urbana** (¿donde construir un nuevo colegio?), cuyos resultados llegan al EIS del **Cuadro de Mando Integral municipal** que consulta el equipo de gobierno.
+> **[EJEMPLO AYTO MADRID]** La arquitectura de sistemas del Ayuntamiento de Madrid combina los cuatro niveles: el **Padrón Municipal** funciona como TPS (procesa altas/bajas en tiempo real), alimenta un MIS estadístico (informes demográficos mensuales), que a su vez nutre un DSS de **planificación urbana** (¿dónde construir un nuevo colegio?), cuyos resultados llegan al EIS del **Cuadro de Mando Integral municipal** que consulta el equipo de gobierno.
 
 ### 2.7. SI empresariales transversales
 
-Más alla de la clasificación por nivel, existen sistemas que atraviesan todos los niveles organizacionales:
+Más allá de la clasificación por nivel, existen sistemas que atraviesan todos los niveles organizacionales:
 
 - **ERP** (Enterprise Resource Planning): integra procesos de negocio (finanzas, RRHH, compras, producción, ventas) en un único sistema. Ejemplos: SAP S/4HANA, Oracle Fusión, Microsoft Dynamics 365. En el sector público: **Sorolla2** (SEC) o **GEISER**.
 - **CRM** (Customer Relationship Management): gestiona la relación con clientes/ciudadanos. Ejemplos: Salesforce, HubSpot, Zoho. En el sector público: **CAU** (Centro de Atención al Usuario).
