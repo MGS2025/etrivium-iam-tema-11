@@ -1,10 +1,25 @@
-# Tema 11 — Changelog (v1.0 → v2.0 → v3.0 → v3.1)
+# Tema 11 — Changelog (v1.0 → v2.0 → v3.0 → v3.1 → v3.2)
 
 > **Versiones**:
 > - v1.0 (2026-04-16) — primera versión del piloto.
 > - v2.0 (2026-04-23) — iteración tras feedback de María (21 abr 2026).
 > - v3.0 (2026-04-28) — iteración tras revisión de María/Ana: ampliación de tipos de datos, elementos de SI y características de SI.
 > - **v3.1 (2026-05-05) — iteración tras feedback de Jesús Cuadrado (IAM): correcciones puntuales sin reescritura. Sin ampliación de contenido nuevo.**
+> - **v3.2 (2026-06-11) — corrección ortográfica tras validación del cliente: 1 ñ (`tamaño`). Sin cambios de contenido.**
+
+---
+
+## Cambios v3.2 — 2026-06-11 — Corrección ortográfica
+
+**Estado**: validado por María, Ana y Jesús Cuadrado (IAM).
+
+**Motivo**: tras la validación del cliente ("únicamente corregir las ñ"), una auditoría ortográfica con corrector es_ES confirmó que el Tema 11 estaba limpio salvo **una sola ñ**: `tamano_instruccion` → `tamaño_instrucción` (expresión de pseudo-código en la sección de arquitectura: contador de programa + tamaño de instrucción). El resto de avisos del corrector (~70) eran falsos positivos por vocabulario técnico inglés (`extranet`, `name`, `console`, `record`, `union`…), que NO se modifica para no romper el contenido.
+
+| Métrica | Valor |
+|---|---|
+| Correcciones aplicadas | 1 (ñ) |
+| Cambios de contenido sustantivo | 0 |
+| Falsos positivos descartados (términos técnicos EN) | ~70 |
 
 ---
 
