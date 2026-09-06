@@ -179,6 +179,16 @@ tr:hover td { background: var(--azul-05); }
   table { font-size: 12px; }
   th, td { padding: 6px 8px; }
 }
+
+/* ficha-estudio */
+.ficha-estudio{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0}
+.ficha-estudio .fe-item{flex:1 1 260px;border:1px solid rgba(127,127,127,.28);
+  border-left:3px solid #c77a1b;border-radius:6px;padding:10px 14px}
+.ficha-estudio .fe-k{display:block;font-size:11px;letter-spacing:.09em;
+  text-transform:uppercase;opacity:.72;margin-bottom:3px}
+.ficha-estudio .fe-v{display:block;font-size:15px;font-weight:600;line-height:1.4}
+.ficha-estudio .fe-n{font-weight:400;font-size:13px;opacity:.75}
+@media print{.ficha-estudio .fe-item{break-inside:avoid}}
 </style>
 </head>
 <body>
@@ -207,7 +217,7 @@ tr:hover td { background: var(--azul-05); }
   </div>
   <h1>Tema 11 — Informática básica</h1>
   <p class="subtitle">Representación y comunicación de la información: elementos constitutivos de un sistema de información. Características y funciones. Arquitectura de ordenadores. Componentes internos de los equipos microinformáticos.</p>
-</div>
+</div><!-- ficha-estudio:ini --><div class="ficha-estudio"><div class="fe-item"><span class="fe-k">Extensi&oacute;n</span><span class="fe-v">~14.000 palabras &middot; 12 diagramas &middot; 25 preguntas de test</span></div><div class="fe-item"><span class="fe-k">Tiempo estimado de estudio</span><span class="fe-v">12-14 horas <span class="fe-n">(primera vuelta completa, sin contar repasos)</span></span></div></div><!-- ficha-estudio:fin -->
 
 <div class="versión-banner">
   <strong>Versión 3.2 · 11 junio 2026</strong>
@@ -3284,7 +3294,7 @@ SALTA_SI_IGUAL FIN ; salta a FIN si ZF=1 (eran iguales)
 
 <!-- TAB 2: INDICE -->
 <div class="tab-content" id="tab-índice">
-<div class="card-header"><h1>Índice del Tema</h1><p class="subtitle">9 secciones · ~19.500 palabras · 12 diagramas SVG · 25 preguntas test</p></div>
+<div class="card-header"><h1>Índice del Tema</h1><p class="subtitle">9 secciones · ~14.000 palabras · 12 diagramas SVG · 25 preguntas test</p></div>
 <div class="card">
 <ol>
 <li><strong>Concepto de dato e información</strong> (1.2K pal · D1)
