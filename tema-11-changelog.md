@@ -9,6 +9,22 @@
 
 ---
 
+## v3.4 — 2026-10-01 — Normas vigentes y correcciones comunes de la revisión
+
+**Motivo**: revisión de la serie del 01-10-2026 (decisiones de Joan y María): normas caducadas con el patrón de dos filas en Fuentes y correcciones comunes (referencias al cliente y al origen del material, promesas sobre el examen, AP → AAPP).
+
+### Cambios
+
+- **ISO/IEC 25010:2023** (modelo de 2023, nueve características): el «Dato clave» de §2.3 pasa de las ocho características de 2011 a las nueve de 2023 (capacidad de interacción, flexibilidad y protección), manteniendo la idea de qué características coinciden con las del SI (ahora fiabilidad, seguridad y flexibilidad). Las dos citas en línea de §2.2 y §2.3 apuntan a la edición 2023 (enlace iso.org/standard/78176).
+- Fuentes: la fila `ISO-25010` («2011, rev. 2023») se desdobla en dos: la 2023 como vigente y la 2011 como histórica.
+- Fuentes: fuera la fila `FORO-OPOS-T11` (material previo con ruta interna `Test_Prompting/…docx`). «Ministerio AP» → «Ministerio de AAPP».
+- Fuera las referencias a cómo se hizo el tema: notas «generado con asistencia de IA — validación humana (María / Ana…)» del contenido, del test y del caso práctico, y «tras feedback de Jesús Cuadrado (IAM)» en el banner de versión.
+- Leyenda de las cajas: se quita «con alta probabilidad de aparecer en el test oficial».
+- Fuera las promesas sobre el examen: «(la más relevante para examen)» (§1.7.1 y clasificación por nivel organizacional), «En un examen C1, recordar…», «(los que aparecen en exámenes C1)», «(la tabla que SIEMPRE aparece en exámenes)».
+- Títulos de las cajas homogeneizados con los temas 1-10 (revisión jurídica): «Dato clave», «Ejemplo de aplicación en el Ayto» y «Relación con otros temas»; las cajas «Ejercicio resuelto» no cambian.
+
+---
+
 ## v3.3 — 2026-09-06 — Ficha de extensión y tiempo de estudio
 
 **Estado**: sin cambios de contenido. Solo se añade información sobre el propio tema.

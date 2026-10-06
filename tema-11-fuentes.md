@@ -29,8 +29,9 @@
 | UEFI-SPEC | UEFI Specification 2.10 | UEFI Forum | 2022 | Sec. 1-2: Diferencias BIOS/UEFI, Secure Boot, GPT, TPM 2.0 | uefi.org/specifications |
 | ENS-RD311 | Esquema Nacional de Seguridad (Real Decreto 311/2022) | BOE | 2022 | Tríada CIA, categorías de sistemas | boe.es/buscar/doc.php?id=BOE-A-2022-7191 |
 | RGPD | Reglamento (UE) 2016/679 — Protección de datos | DOUE | 2016 (aplicación 2018) | Protección de datos personales, ciclo de vida | eur-lex.europa.eu/eli/reg/2016/679 |
-| METRICA-V3 | Metodología MAP Métrica Versión 3 | Ministerio AP | 2001 (vigente en pliegos) | Metodología oficial desarrollo SI administración pública | administracionelectronica.gob.es |
-| ISO-25010 | ISO/IEC 25010 — Systems and software Quality Requirements and Evaluation (SQuaRE) | ISO/IEC | 2011, rev. 2023 | Modelo de calidad de software: 8 características (adecuación funcional, eficiencia, compatibilidad, usabilidad, fiabilidad, seguridad, mantenibilidad, portabilidad). Base de la sección 2.3 (características SI) | iso.org/standard/78176.html |
+| METRICA-V3 | Metodología MAP Métrica Versión 3 | Ministerio de AAPP | 2001 (vigente en pliegos) | Metodología oficial desarrollo SI administración pública | administracionelectronica.gob.es |
+| ISO-25010 | ISO/IEC 25010:2023 — Systems and software Quality Requirements and Evaluation (SQuaRE) — Product quality model | ISO/IEC | 2023 (vigente; anula y sustituye a la edición de 2011) | Modelo de calidad del producto software: 9 características (adecuación funcional, eficiencia de desempeño, compatibilidad, capacidad de interacción, fiabilidad, seguridad, mantenibilidad, flexibilidad, protección). Base de la sección 2.3 (características SI) | iso.org/standard/78176.html |
+| ISO-25010-2011 | ISO/IEC 25010:2011 — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models | ISO/IEC | 2011 (anulada y sustituida por la ISO/IEC 25010:2023) | Edición histórica: 8 características (adecuación funcional, eficiencia, compatibilidad, usabilidad, fiabilidad, seguridad, mantenibilidad, portabilidad). Se conserva la referencia porque es la que recogen los temarios al uso | iso.org/standard/35733.html |
 | ISO-11404 | ISO/IEC 11404 — Information technology — General-Purpose Datatypes (GPD) | ISO/IEC | 2007 (vigente) | Tipos de datos independientes de lenguaje: primitivos, agregados, generados. Base de la sección 1.7.5 (tipos primitivos) | iso.org/standard/39479.html |
 | ISO-9075 | ISO/IEC 9075 — SQL:2016 | ISO/IEC | 2016 (vigente, rev. 2023) | Catálogo de tipos SQL (sección 1.7.8) | iso.org/standard/63555.html |
 | KNUTH-TAOCP | The Art of Computer Programming, Vol. 1 (3rd ed.) — Donald Knuth | Addison-Wesley | 1997 | Tipos abstractos de datos (TAD): pila, cola, lista, árbol (sección 1.7.7) | ISBN 978-0201896831 |
@@ -44,7 +45,6 @@
 
 | ID | Título | Origen | Uso |
 |---|---|---|---|
-| FORO-OPOS-T11 | Tema 11 existente (Test_Prompting/Tema 11.docx) | Foro Opositores / Material previo | Patrón de profundidad y enfoque C1. Base de contenido a reestructurar y verificar |
 | MDN-CHARSET | MDN Web Docs — Character encodings | Mozilla | Referencia rápida UTF-8 vs ASCII extendido |
 | KINGSTON-RAM | Kingston Technology — Understanding RAM | Kingston | Tablas DDR comparativas, formato divulgativo verificable |
 | LAUDON-MIS | Management Information Systems (17th ed.) — Kenneth Laudon | Pearson | 2021 | Clasificación TPS/MIS/DSS/EIS, ERP, CRM |

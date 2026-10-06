@@ -17,13 +17,13 @@
 
 Este tema incluye cuatro tipos de **cajas callout** para facilitar el estudio:
 
-> **[DATO CLAVE EXAMEN]** Información de alta densidad memorística, con alta probabilidad de aparecer en el test oficial.
+> **[DATO CLAVE]** Información de alta densidad memorística.
 
 > **[EJERCICIO RESUELTO]** Problema + solución paso a paso. Útil para secciónes con cálculos.
 
-> **[EJEMPLO AYTO MADRID]** Aplicación real de la teoría al entorno municipal (SIMA, Padrón, sede electrónica, Portal del ciudadano).
+> **[EJEMPLO DE APLICACIÓN EN EL AYTO]** Aplicación real de la teoría al entorno municipal (SIMA, Padrón, sede electrónica, Portal del ciudadano).
 
-> **[REFERENCIA CRUZADA]** Enlace conceptual a otros temas del temario oficial.
+> **[RELACIÓN CON OTROS TEMAS]** Enlace conceptual a otros temas del temario oficial.
 
 Los mnemónicos de instrucciones máquina se muestran en **castellano** (`SUMA A, B`). Los registros, estándares y productos se mantienen en su nomenclatura original (CP, MAR, FLAGS, DDR5...). Las fuentes se referencian con etiquetas breves tipo `[STALLINGS-COA, Cap. 2]` — el registro completo está en `tema-11-fuentes.md`.
 
@@ -99,7 +99,7 @@ Los cuatro niveles responden a preguntas distintas:
 3. **Conocimiento** — responde a *¿como funciona?*: patrones, relaciones, correlaciones.
 4. **Sabiduría** — responde a *¿que hacemos?*: decisiones fundamentadas, principios de acción.
 
-> **[EJEMPLO AYTO MADRID]** Aplicado al **Padrón Municipal**: el valor "3.450.000" es dato; "3.450.000 habitantes empadronados a 31-12-2025" es información; "la población crece al 0,8% anual y envejece" es conocimiento; "hay que reforzar los servicios sociales en distritos envejecidos" es sabiduría (decisión).
+> **[EJEMPLO DE APLICACIÓN EN EL AYTO]** Aplicado al **Padrón Municipal**: el valor "3.450.000" es dato; "3.450.000 habitantes empadronados a 31-12-2025" es información; "la población crece al 0,8% anual y envejece" es conocimiento; "hay que reforzar los servicios sociales en distritos envejecidos" es sabiduría (decisión).
 
 ### 1.4. Ciclo de vida del dato
 
@@ -129,7 +129,7 @@ Un dato técnicamente correcto pero de baja calidad puede generar información e
 
 Normas adicionales como **ISO 8000** (Data Quality) amplían estas a 10-14 dimensiones (unicidad, validez, precisión, plausibilidad, etc.), usadas en auditorías de calidad masivas.
 
-> **[DATO CLAVE EXAMEN]** Las 4 dimensiones mínimas de calidad del dato son: **exactitud, completitud, consistencia y oportunidad**. La familia [ISO 8000](https://www.iso.org/standard/50798.html) (Data quality) amplía a 10+ dimensiones.
+> **[DATO CLAVE]** Las 4 dimensiones mínimas de calidad del dato son: **exactitud, completitud, consistencia y oportunidad**. La familia [ISO 8000](https://www.iso.org/standard/50798.html) (Data quality) amplía a 10+ dimensiones.
 
 ### 1.6. Metadatos
 
@@ -141,13 +141,13 @@ Tres tipos principales:
 - **Metadatos estructurales**: describen como se organiza el dato (relaciones, campos, tipos). Ej: esquema de tabla SQL, definición XML/JSON Schema.
 - **Metadatos administrativos**: gobiernan el uso, retención y acceso (permisos, copyright, fechas). Ej: nivel ENS, clasificación RGPD, retención legal.
 
-> **[EJEMPLO AYTO MADRID]** En el portal **Open Data Madrid** (datos.madrid.es) cada dataset incluye metadatos estandarizados según **DCAT-AP-ES** — la adaptación española del *Data Catalog Vocabulary - Application Profile* europeo, vocabulario común que la Unión Europea exige para describir conjuntos de datos abiertos del sector público y permitir que sean catalogables e interoperables entre administraciones. Los metadatos cubren título, descripción, fecha de publicación, frecuencia de actualización, licencia (CC-BY 4.0), responsable del dato y formato (CSV, JSON, XML).
+> **[EJEMPLO DE APLICACIÓN EN EL AYTO]** En el portal **Open Data Madrid** (datos.madrid.es) cada dataset incluye metadatos estandarizados según **DCAT-AP-ES** — la adaptación española del *Data Catalog Vocabulary - Application Profile* europeo, vocabulario común que la Unión Europea exige para describir conjuntos de datos abiertos del sector público y permitir que sean catalogables e interoperables entre administraciones. Los metadatos cubren título, descripción, fecha de publicación, frecuencia de actualización, licencia (CC-BY 4.0), responsable del dato y formato (CSV, JSON, XML).
 
 ### 1.7. Tipos y clasificación de datos
 
 La clasificación de los datos en informática no responde a un único criterio. Las clasificaciónes son complementarias, no excluyentes. La norma de referencia para tipos de datos independientes del lenguaje es [**ISO/IEC 11404**](https://www.iso.org/standard/39479.html) (*Language-independent datatypes*).
 
-#### 1.7.1. Según su función en el sistema de información (la más relevante para examen)
+#### 1.7.1. Según su función en el sistema de información
 
 | Tipo | Descripción | Origen/Destino |
 |---|---|---|
@@ -189,7 +189,7 @@ Los **tipos primitivos** son los tipos de datos elementales soportados nativamen
 | Lógicos | boolean / bool | 1 bit lógico (1 byte físico) | true / false | Java boolean, Python bool |
 | Carácter | char | 1-4 bytes (según codificación) | ASCII (1 byte), UTF-16 (2 bytes), UTF-8 (1-4 bytes) | C char, Java char (UTF-16) |
 
-> **[DATO CLAVE EXAMEN]** Los reales se almacenan en formato **IEEE-754** (estándar internacional de coma flotante): 1 bit de signo + exponente sesgado + mantisa normalizada. **Float**: 1+8+23 bits = 32 bits. **Double**: 1+11+52 bits = 64 bits. Ver §8 (Sistemas de numeración) para el detalle del formato.
+> **[DATO CLAVE]** Los reales se almacenan en formato **IEEE-754** (estándar internacional de coma flotante): 1 bit de signo + exponente sesgado + mantisa normalizada. **Float**: 1+8+23 bits = 32 bits. **Double**: 1+11+52 bits = 64 bits. Ver §8 (Sistemas de numeración) para el detalle del formato.
 
 #### 1.7.6. Tipos de datos compuestos
 
@@ -216,7 +216,7 @@ Un **Tipo Abstracto de Datos** define un conjunto de valores y las operaciones q
 | **Grafo** | Nodos + aristas | addNode, addEdge, BFS, DFS, dijkstra | Recorridos por anchura/profundidad | Redes, mapas, dependencias |
 | **Cola de prioridad** | Cola con orden por prioridad | insert, extractMax/Min | Extrae siempre el de mayor/menor prioridad | Planificación de procesos, A*, Dijkstra |
 
-> **[REFERENCIA CRUZADA]** Los TAD se desarrollan en profundidad en el **Tema 13** (Tipos abstractos y Estructuras de datos) y son la base teórica de las **bases de datos** (Tema 15) y de la planificación de procesos en los **sistemas operativos** (Tema 14).
+> **[RELACIÓN CON OTROS TEMAS]** Los TAD se desarrollan en profundidad en el **Tema 13** (Tipos abstractos y Estructuras de datos) y son la base teórica de las **bases de datos** (Tema 15) y de la planificación de procesos en los **sistemas operativos** (Tema 14).
 
 #### 1.7.8. Tipos de datos en SQL
 
@@ -257,9 +257,9 @@ La forma en que un lenguaje gestiona los tipos define dos ejes de clasificación
 | C | Estático | Débil |
 | TypeScript | Estático | Fuerte |
 
-> **[DATO CLAVE EXAMEN]** Los ejes "estático/dinámico" y "fuerte/débil" son **independientes**: Python es dinámico+fuerte, JavaScript es dinámico+débil, C es estático+débil, Java es estático+fuerte.
+> **[DATO CLAVE]** Los ejes "estático/dinámico" y "fuerte/débil" son **independientes**: Python es dinámico+fuerte, JavaScript es dinámico+débil, C es estático+débil, Java es estático+fuerte.
 
-> **[REFERENCIA CRUZADA]** La clasificación de datos conecta con el Tema 15 (Sistemas de gestión de bases de datos) — modelo relacional frente a NoSQL — y con el Tema 14 (Sistemas operativos) — gestión de ficheros y dispositivos de E/S. Los tipos abstractos se desarrollan en el Tema 13 (Tipos abstractos y Estructuras de datos).
+> **[RELACIÓN CON OTROS TEMAS]** La clasificación de datos conecta con el Tema 15 (Sistemas de gestión de bases de datos) — modelo relacional frente a NoSQL — y con el Tema 14 (Sistemas operativos) — gestión de ficheros y dispositivos de E/S. Los tipos abstractos se desarrollan en el Tema 13 (Tipos abstractos y Estructuras de datos).
 
 ---
 
@@ -331,7 +331,7 @@ Los sistemas de información se componen de tres partes principales: **personas,
 - *Dispositivos de salida*: monitores, impresoras, plotters, altavoces.
 - *Equipos de red*: routers, switches, firewalls, puntos de acceso WiFi, balanceadores de carga.
 
-**2. Software** — programas que operan sobre el hardware. Se clasifica en cuatro capas (modelo de capas software, [ISO/IEC 25010](https://www.iso.org/standard/35733.html)):
+**2. Software** — programas que operan sobre el hardware. Se clasifica en cuatro capas (modelo de capas software, [ISO/IEC 25010:2023](https://www.iso.org/standard/78176.html)):
 
 - *Software de sistema*: sistema operativo (Windows Server, Linux, AIX), drivers, firmware.
 - *Software de utilidad*: antivirus, herramientas de backup, monitorización, sistemas de gestión de configuración.
@@ -377,11 +377,11 @@ Los sistemas de información se componen de tres partes principales: **personas,
 - *Auditorías internas y externas*: detectan no conformidades y oportunidades.
 - *Ciclo PDCA / Deming* (Plan-Do-Check-Act): marco metodológico de mejora iterativa.
 
-> **[DATO CLAVE EXAMEN]** Los siete componentes pueden agruparse en tres bloques: **TI** (hardware, software, datos, red), **organización** (procedimientos, retroalimentación) y **personas** (usuarios). Esta visión tripartita es la usada en frameworks como **COBIT 2019** y en la gestión de servicios **ITIL v4** (las "cuatro dimensiones": organizaciones y personas, información y tecnología, partners y proveedores, flujos de valor y procesos).
+> **[DATO CLAVE]** Los siete componentes pueden agruparse en tres bloques: **TI** (hardware, software, datos, red), **organización** (procedimientos, retroalimentación) y **personas** (usuarios). Esta visión tripartita es la usada en frameworks como **COBIT 2019** y en la gestión de servicios **ITIL v4** (las "cuatro dimensiones": organizaciones y personas, información y tecnología, partners y proveedores, flujos de valor y procesos).
 
 ### 2.3. Características de un sistema de información
 
-Para que un sistema de información sea considerado como tal, debe cumplir las siguientes **diez características**. La norma de referencia para la calidad de los productos software (y por extensión de los SI) es la [**ISO/IEC 25010**](https://www.iso.org/standard/35733.html) (modelo de calidad SQuaRE — *Systems and software Quality Requirements and Evaluation*).
+Para que un sistema de información sea considerado como tal, debe cumplir las siguientes **diez características**. La norma de referencia para la calidad de los productos software (y por extensión de los SI) es la [**ISO/IEC 25010:2023**](https://www.iso.org/standard/78176.html) (modelo de calidad SQuaRE — *Systems and software Quality Requirements and Evaluation*).
 
 | # | Carácterística | Cómo se mide | Norma de referencia |
 |---|---|---|---|
@@ -418,9 +418,9 @@ Para que un sistema de información sea considerado como tal, debe cumplir las s
 
 **10. Copias de seguridad** — el SI dispone de copias periódicas que permiten recuperar la operación ante fallos, errores humanos o ciberataques. Las métricas son el **RPO** (*Recovery Point Objective*: cuántos datos se pueden perder) y el **RTO** (*Recovery Time Objective*: cuánto se puede tardar en restaurar). La norma [**ISO/IEC 27040**](https://www.iso.org/standard/80194.html) rige la seguridad del almacenamiento. **Ejemplo Ayto Madrid**: política de backups 3-2-1 — tres copias, en dos medios distintos, una de ellas externa (*off-site*) — con prueba mensual de restauración.
 
-> **[DATO CLAVE EXAMEN]** La **tríada CIA** (Confidencialidad, Integridad, Disponibilidad) es el principio fundamental de seguridad de la información, recogido en [**ISO/IEC 27001**](https://www.iso.org/standard/27001) y en el [**Esquema Nacional de Seguridad — RD 311/2022**](https://www.boe.es/eli/es/rd/2022/05/03/311). El ENS extiende la tríada con dos dimensiones adicionales: **Trazabilidad** y **Autenticidad**.
+> **[DATO CLAVE]** La **tríada CIA** (Confidencialidad, Integridad, Disponibilidad) es el principio fundamental de seguridad de la información, recogido en [**ISO/IEC 27001**](https://www.iso.org/standard/27001) y en el [**Esquema Nacional de Seguridad — RD 311/2022**](https://www.boe.es/eli/es/rd/2022/05/03/311). El ENS extiende la tríada con dos dimensiones adicionales: **Trazabilidad** y **Autenticidad**.
 
-> **[DATO CLAVE EXAMEN]** El modelo **ISO/IEC 25010 (SQuaRE)** distingue ocho características de calidad de software: adecuación funcional, eficiencia de desempeño, compatibilidad, **usabilidad**, **fiabilidad**, **seguridad**, mantenibilidad y portabilidad. Las negritas son las que coinciden con la lista de características del SI.
+> **[DATO CLAVE]** El modelo **ISO/IEC 25010:2023 (SQuaRE)** distingue nueve características de calidad del producto software: adecuación funcional, eficiencia de desempeño, compatibilidad, capacidad de interacción, **fiabilidad**, **seguridad**, mantenibilidad, **flexibilidad** y protección. Las negritas son las que coinciden con la lista de características del SI.
 
 ### 2.4. Elementos funcionales
 
@@ -466,7 +466,7 @@ Se distinguen **cuatro funciones básicas** (regla nemotécnica: **EAPS** — En
 - **Sistemas cooperativos**: soportan trabajo colaborativo (ej. Microsoft Teams, Google Workspace).
 - **Sistemas que modifican el estilo de operación del negocio**: transformación digital.
 
-**Clasificación por nivel organizacional** (la **más relevante** para examen):
+**Clasificación por nivel organizacional**:
 
 Esta clasificación, originada en la literatura clásica de gestión empresarial (Anthony, 1965; Laudon & Laudon, 2017), parte de una idea sencilla: dentro de cualquier organización conviven **cuatro niveles de decisión** que necesitan información de naturaleza distinta.
 
@@ -516,7 +516,7 @@ A cada nivel le corresponde un tipo de sistema de información, formando una pir
 | Sistema de Soporte a la Decisión | **DSS** | Analítico | Análisis exploratorio y simulación para decisiones no rutinarias | Simulación de impacto de subida de IBI |
 | Sistema de Información Ejecutiva | **EIS** | Estratégico | Cuadro de mando para alta dirección | Cuadro de mando integral del Alcalde |
 
-> **[EJEMPLO AYTO MADRID]** La arquitectura de sistemas del Ayuntamiento de Madrid combina los cuatro niveles: el **Padrón Municipal** funciona como TPS (procesa altas/bajas en tiempo real), alimenta un MIS estadístico (informes demográficos mensuales), que a su vez nutre un DSS de **planificación urbana** (¿dónde construir un nuevo colegio?), cuyos resultados llegan al EIS del **Cuadro de Mando Integral municipal** que consulta el equipo de gobierno.
+> **[EJEMPLO DE APLICACIÓN EN EL AYTO]** La arquitectura de sistemas del Ayuntamiento de Madrid combina los cuatro niveles: el **Padrón Municipal** funciona como TPS (procesa altas/bajas en tiempo real), alimenta un MIS estadístico (informes demográficos mensuales), que a su vez nutre un DSS de **planificación urbana** (¿dónde construir un nuevo colegio?), cuyos resultados llegan al EIS del **Cuadro de Mando Integral municipal** que consulta el equipo de gobierno.
 
 ### 2.7. SI empresariales transversales
 
@@ -576,7 +576,7 @@ También conocida como **modelo de Von Neumann** o **arquitectura Princeton**. P
 
 **Carácterística fundamental**: datos e instrucciones comparten la misma memoria y el mismo bus. Esto permite el concepto de **programa almacenado** — las instrucciones se pueden modificar como si fuesen datos (base de compiladores, ensambladores y sistemas operativos modernos).
 
-> **[DATO CLAVE EXAMEN]** El **cuello de botella de Von Neumann** (Von Neumann bottleneck): no pueden darse simultáneamente una búsqueda de instrucciones y una operación de datos, ya que comparten un bus común. La velocidad de la CPU ha crecido mucho más rápido que la velocidad de la memoria principal, amplíando este cuello de botella. Las caches y el pipelining lo mitigan parcialmente.
+> **[DATO CLAVE]** El **cuello de botella de Von Neumann** (Von Neumann bottleneck): no pueden darse simultáneamente una búsqueda de instrucciones y una operación de datos, ya que comparten un bus común. La velocidad de la CPU ha crecido mucho más rápido que la velocidad de la memoria principal, amplíando este cuello de botella. Las caches y el pipelining lo mitigan parcialmente.
 
 ### 3.2. Arquitectura Harvard
 
@@ -648,7 +648,7 @@ Características de la Harvard modificada:
 - Acceden a la CPU por **buses L1 distintos**, pero comparten bus en niveles inferiores.
 - Pueden ser accedidas de **diferente manera** (la cache L1i solo se lee, la L1d se lee y escribe).
 
-> **[DATO CLAVE EXAMEN]** En un examen C1, recordar esta jerarquía: **Von Neumann** (memoria única, histórico) vs **Harvard** (memorias separadas, microcontroladores) vs **Harvard modificada** (PCs actuales, híbrido).
+> **[DATO CLAVE]** Conviene recordar esta jerarquía: **Von Neumann** (memoria única, histórico) vs **Harvard** (memorias separadas, microcontroladores) vs **Harvard modificada** (PCs actuales, híbrido).
 
 ---
 
@@ -722,7 +722,7 @@ Las generaciones se definen por tres aspectos principales: la **tecnología vige
 | Otros avances | Circuitos impresos sustituyen al cableado; primeros periféricos modernos |
 | Ejemplos | **TRADIC** (Bell Labs 1954, primer ordenador con transistores), **IBM 1401** (1959), **IBM 7090** |
 
-> **[EJEMPLO AYTO MADRID]** El primer ordenador que llegó a España fue un **IBM 650** adquirido por **RENFE en 1959** para gestión de reservas. Con 2.000 válvulas (era un híbrido tardío de 1ª gen), ocupaba una sala de 50 m². En la administración pública española, la mecanización masiva llegaría en los años 70 con ordenadores IBM de 3ª gen.
+> **[EJEMPLO DE APLICACIÓN EN EL AYTO]** El primer ordenador que llegó a España fue un **IBM 650** adquirido por **RENFE en 1959** para gestión de reservas. Con 2.000 válvulas (era un híbrido tardío de 1ª gen), ocupaba una sala de 50 m². En la administración pública española, la mecanización masiva llegaría en los años 70 con ordenadores IBM de 3ª gen.
 
 ### 4.3. Tercera generación (1964-1970) — Circuitos integrados
 
@@ -769,7 +769,7 @@ Aunque la literatura clásica cierra las generaciones con la 5ª, la mayoría de
 - **Computación cuántica**: primeros ordenadores cuánticos comerciales (IBM Q 2016, Google Sycamore 2019). Potencial disruptivo.
 - **Computación neuromórfica**: chips inspirados en el cerebro (Intel Loihi 2017, IBM TrueNorth 2014). Muy eficientes energéticamente.
 
-> **[REFERENCIA CRUZADA]** La computación en la nube y los modelos IaaS / PaaS / SaaS se amplían en el **Tema 31** (Paradigmas de computación distribuida y servicios en Cloud). La virtualización se aborda en el **Tema 28**.
+> **[RELACIÓN CON OTROS TEMAS]** La computación en la nube y los modelos IaaS / PaaS / SaaS se amplían en el **Tema 31** (Paradigmas de computación distribuida y servicios en Cloud). La virtualización se aborda en el **Tema 28**.
 
 ---
 
@@ -862,7 +862,7 @@ Ventajas RISC:
 | Uso típico | PCs de escritorio, servidores | Móviles, consolas, servidores ARM, embebidos |
 | Ejemplos | Intel Core, AMD Ryzen | ARM Cortex-A, Apple M, AWS Graviton, RISC-V |
 
-> **[DATO CLAVE EXAMEN]** El procesador x86-64 (el más común en PCs de escritorio) es **CISC**, pero internamente traduce instrucciones CISC a microinstrucciones RISC (uops) antes de ejecutarlas. Este proceso se llama **decodificación x86** y ocupa hardware significativo (~15% del die).
+> **[DATO CLAVE]** El procesador x86-64 (el más común en PCs de escritorio) es **CISC**, pero internamente traduce instrucciones CISC a microinstrucciones RISC (uops) antes de ejecutarlas. Este proceso se llama **decodificación x86** y ocupa hardware significativo (~15% del die).
 
 #### 5.2.2. Medidas de potencia de la CPU
 
@@ -885,7 +885,7 @@ Tres conceptos que conviene no confundir:
   - AMD lo denomina **SMT (Simultaneous Multi-Threading)** — en Zen desde 2017.
   - Ambas tecnologías son virtualmente idénticas en concepto. Aportan ~20-30% rendimiento adicional con ~5% más silicio.
 
-> **[DATO CLAVE EXAMEN]** Un **Intel Core i9-14900K con 24 núcleos y HyperThreading** presenta al sistema operativo **32 hilos lógicos** (8 núcleos-P con HT×2 + 16 núcleos-E sin HT = 16 + 16 = 32). Los núcleos-E (Efficiency) no tienen HT para ahorrar energía.
+> **[DATO CLAVE]** Un **Intel Core i9-14900K con 24 núcleos y HyperThreading** presenta al sistema operativo **32 hilos lógicos** (8 núcleos-P con HT×2 + 16 núcleos-E sin HT = 16 + 16 = 32). Los núcleos-E (Efficiency) no tienen HT para ahorrar energía.
 
 #### 5.2.4. Pipelining (segmentación de instrucciones)
 
@@ -919,7 +919,7 @@ Soluciones modernas:
 - **Ejecución especulativa**: ejecuta instrucciones asumiendo una predicción de salto; si falla, descarta resultados.
 - **Ejecución fuera de orden** (*out-of-order execution*): reordena instrucciones para aprovechar huecos del pipeline.
 
-> **[DATO CLAVE EXAMEN]** Las **vulnerabilidades Spectre y Meltdown** (2018) aprovechan precisamente la **ejecución especulativa**: los efectos de instrucciones especulativas no se deshacen del todo (quedan rastros en cache), permitiendo leer memoria protegida. Afectaron a casi todos los procesadores Intel, AMD y ARM posteriores a 1995.
+> **[DATO CLAVE]** Las **vulnerabilidades Spectre y Meltdown** (2018) aprovechan precisamente la **ejecución especulativa**: los efectos de instrucciones especulativas no se deshacen del todo (quedan rastros en cache), permitiendo leer memoria protegida. Afectaron a casi todos los procesadores Intel, AMD y ARM posteriores a 1995.
 
 #### 5.2.5. CPU superescalar
 
@@ -1022,7 +1022,7 @@ Un **registro** es una pequeña zona de memoria de acceso muy rápido y directo 
 | Punto flotante | **Registros FP / SIMD** | Números reales IEEE-754 y operaciones vectoriales (XMM, YMM, ZMM, NEON) |
 | Constantes | **Registros constantes** | Valores de solo lectura: cero, uno, PI |
 
-> **[DATO CLAVE EXAMEN]** **Capacidad de direccionamiento**: si el MAR tiene **n bits**, se pueden direccionar un máximo de **2^n palabras** de memoria. Con MAR de 32 bits se direccionan 4 GB (2^32 = 4.294.967.296 bytes); con MAR de 64 bits se direccionan 16 EB (límite teórico prácticamente inalcanzable).
+> **[DATO CLAVE]** **Capacidad de direccionamiento**: si el MAR tiene **n bits**, se pueden direccionar un máximo de **2^n palabras** de memoria. Con MAR de 32 bits se direccionan 4 GB (2^32 = 4.294.967.296 bytes); con MAR de 64 bits se direccionan 16 EB (límite teórico prácticamente inalcanzable).
 
 #### 5.3.1.1. Registros FLAGS, EFLAGS y RFLAGS (x86)
 
@@ -1036,7 +1036,7 @@ El **registro FLAGS** es el registro de estado en la familia x86. Su evolución 
 
 Los tres son **retrocompatibles**: los bits bajos de RFLAGS son EFLAGS, y los bits bajos de EFLAGS son FLAGS. Los bits añadidos en cada ampliación se usan para características nuevas (virtualización, identificación CPUID, niveles de protección).
 
-**Bits principales del registro FLAGS** (los que aparecen en exámenes C1):
+**Bits principales del registro FLAGS**:
 
 | Bit | Nombre | Flag | Descripción |
 |---|---|---|---|
@@ -1057,7 +1057,7 @@ COMPARA A, B       ; resta A-B, actualiza ZF, SF, CF, OF
 SALTA_SI_IGUAL FIN ; salta a FIN si ZF=1 (eran iguales)
 ```
 
-> **[REFERENCIA CRUZADA]** Los registros FLAGS de ARM se llaman **APSR** (Application Program Status Register) y los de RISC-V están distribuidos en CSRs (Control and Status Registers). El concepto es equivalente.
+> **[RELACIÓN CON OTROS TEMAS]** Los registros FLAGS de ARM se llaman **APSR** (Application Program Status Register) y los de RISC-V están distribuidos en CSRs (Control and Status Registers). El concepto es equivalente.
 
 #### 5.3.2. Unidad de Control
 
@@ -1237,7 +1237,7 @@ Arquitecturas modernas añaden modos compuestos:
 - **Base-desplazamiento-escala** (x86): `[BP + IX*4 + 16]` — acceso a elemento de array de enteros de 32 bits con offset.
 - **Relativo al PC**: offset desde el contador de programa (saltos relativos, típicos en ARM/RISC-V).
 
-> **[DATO CLAVE EXAMEN]** En ARM la mayoría de instrucciones aritmético-lógicas operan solo sobre registros; para acceder a memoria se usan exclusivamente `LDR` (load) y `STR` (store) con modos relativo-base y relativo-índice. Es la **arquitectura load-store**, característica fundamental RISC.
+> **[DATO CLAVE]** En ARM la mayoría de instrucciones aritmético-lógicas operan solo sobre registros; para acceder a memoria se usan exclusivamente `LDR` (load) y `STR` (store) con modos relativo-base y relativo-índice. Es la **arquitectura load-store**, característica fundamental RISC.
 
 ---
 
@@ -1287,7 +1287,7 @@ Arquitecturas modernas añaden modos compuestos:
   <text x="500" y="292" class="jm-speed">~10 ms · 1-20 TB</text>
 </svg>
 
-> **[DATO CLAVE EXAMEN]** **Regla fundamental**: a mayor velocidad, menor capacidad y mayor coste por byte. Cada nivel de la jerarquía es ~10-100× más lento y ~10-100× más grande que el anterior.
+> **[DATO CLAVE]** **Regla fundamental**: a mayor velocidad, menor capacidad y mayor coste por byte. Cada nivel de la jerarquía es ~10-100× más lento y ~10-100× más grande que el anterior.
 
 ### 6.2. Memoria RAM
 
@@ -1304,7 +1304,7 @@ Dos tecnologías fundamentales de RAM:
 - **SRAM** (Static RAM): basada en biestables (6 transistores por bit). **Rápida** (~1-3 ns), **cara** (más transistores), **baja densidad**, no requiere refresco. Uso: **memoria cache** (L1, L2, L3) integrada en la CPU.
 - **DRAM** (Dynamic RAM): basada en un condensador + un transistor por bit. **Lenta** (~50-100 ns), **barata**, **alta densidad**, **requiere refresco** periódico (cada ~64 ms) porque los condensadores pierden carga. Uso: **memoria principal** del ordenador.
 
-> **[DATO CLAVE EXAMEN]** La **DRAM necesita refresco**: un circuito lee y reescribe cada celda cada pocos milisegundos para evitar que se pierda la información. Esto consume ancho de banda y energía. La SRAM no necesita refresco.
+> **[DATO CLAVE]** La **DRAM necesita refresco**: un circuito lee y reescribe cada celda cada pocos milisegundos para evitar que se pierda la información. Esto consume ancho de banda y energía. La SRAM no necesita refresco.
 
 #### 6.2.2. Evolución de la memoria RAM
 
@@ -1354,7 +1354,7 @@ Dos tecnologías fundamentales de RAM:
 | **DIMM** (Dual In-line Memory Module) | 1993 | Chips en ambas caras. 168 contactos, 2 muescas. **64 bits** |
 | **DDR DIMM** (Double Data Rate) | 2000 | Evolución DIMM con doble tasa de transferencia (flanco subida + bajada). 184 contactos |
 
-#### 6.2.3. Tabla comparativa DDR (la tabla que SIEMPRE aparece en exámenes)
+#### 6.2.3. Tabla comparativa DDR
 
 | Especificación | DDR | DDR2 | DDR3 | DDR4 | **DDR5** |
 |---|---|---|---|---|---|
@@ -1365,7 +1365,7 @@ Dos tecnologías fundamentales de RAM:
 | **Capacidad máxima por módulo** | 1 GB | 8 GB | 16 GB | 64 GB | **128 GB** |
 | **Pines (DIMM)** | 184 | 240 | 240 | 288 | 288 |
 
-> **[DATO CLAVE EXAMEN]** DDR2 y DDR3 tienen los **mismos 240 pines** pero son **física y eléctricamente incompatibles** (la muesca está en distinta posición, y el voltaje es distinto: 1,8 V vs 1,5 V). Análogamente, DDR4 y DDR5 tienen **los mismos 288 pines** pero son incompatibles (voltajes 1,2 V vs 1,1 V, topología distinta: DDR5 integra el PMIC en el módulo).
+> **[DATO CLAVE]** DDR2 y DDR3 tienen los **mismos 240 pines** pero son **física y eléctricamente incompatibles** (la muesca está en distinta posición, y el voltaje es distinto: 1,8 V vs 1,5 V). Análogamente, DDR4 y DDR5 tienen **los mismos 288 pines** pero son incompatibles (voltajes 1,2 V vs 1,1 V, topología distinta: DDR5 integra el PMIC en el módulo).
 
 #### 6.2.4. Tipos especiales de RAM
 
@@ -1403,7 +1403,7 @@ Almacena la **configuración del firmware**: velocidad de buses, discos instalad
 
 Si los datos son incorrectos, se genera un error. Para restaurar valores de fábrica: cortar la alimentación de la pila durante ~30 segundos (jumper CLRTC o retirar pila).
 
-> **[DATO CLAVE EXAMEN]** No confundir **RAM-CMOS** (memoria de configuración) con **BIOS/UEFI** (firmware en ROM): son entidades distintas, aunque la RAM-CMOS se configura desde la utilidad del BIOS/UEFI.
+> **[DATO CLAVE]** No confundir **RAM-CMOS** (memoria de configuración) con **BIOS/UEFI** (firmware en ROM): son entidades distintas, aunque la RAM-CMOS se configura desde la utilidad del BIOS/UEFI.
 
 #### 6.2.8. Memoria virtual y páginación
 
@@ -1420,7 +1420,7 @@ Conceptos clave:
 
 La **MMU** (Memory Management Unit) es el hardware dentro de la CPU que traduce direcciónes virtuales a físicas consultando la tabla de páginas (con cache en TLB).
 
-> **[REFERENCIA CRUZADA]** La memoria virtual se trata en profundidad en el **Tema 14** (Sistemas operativos).
+> **[RELACIÓN CON OTROS TEMAS]** La memoria virtual se trata en profundidad en el **Tema 14** (Sistemas operativos).
 
 ### 6.3. Memoria ROM
 
@@ -1527,7 +1527,7 @@ Ambos son **firmware**: código almacenado en memoria no volátil en la placa ba
 | Particiones | **4 particiones MBR** (max 2,2 TB) | **128 particiones GPT** (max 8 ZB) |
 | CSM | Nativo | Compatibilidad con BIOS legacy |
 
-> **[DATO CLAVE EXAMEN]** **Secure Boot** verifica la firma digital del bootloader antes de ejecutarlo. Impide el arranque de rootkits y bootkits. Es obligatorio para Windows 11. Se puede desactivar en UEFI para arrancar Linux no firmado (aunque Linux moderno ya soporta Secure Boot con claves de Microsoft o Red Hat).
+> **[DATO CLAVE]** **Secure Boot** verifica la firma digital del bootloader antes de ejecutarlo. Impide el arranque de rootkits y bootkits. Es obligatorio para Windows 11. Se puede desactivar en UEFI para arrancar Linux no firmado (aunque Linux moderno ya soporta Secure Boot con claves de Microsoft o Red Hat).
 
 ---
 
@@ -1597,7 +1597,7 @@ Un sistema de numeración es un conjunto de símbolos y reglas que permiten cons
 | **Octal** | 8 | 0-7 | Representación compacta de binario (permisos Unix) |
 | **Hexadecimal** | 16 | 0-9, A-F | Direcciónes de memoria, colores, MAC, código máquina |
 
-> **[DATO CLAVE EXAMEN]** El sistema **binario** es el utilizado por los ordenadores de forma interna para todos los procesos. Hexadecimal se usa como notación corta para binario (cada dígito hex = 4 bits).
+> **[DATO CLAVE]** El sistema **binario** es el utilizado por los ordenadores de forma interna para todos los procesos. Hexadecimal se usa como notación corta para binario (cada dígito hex = 4 bits).
 
 ### 8.1. Conversión entre bases
 
@@ -1670,7 +1670,7 @@ valor = (-1)^signo × mantisa × 2^exponente
 
 **Valores especiales**: +0, -0, +∞, -∞, NaN (Not a Number).
 
-> **[DATO CLAVE EXAMEN]** IEEE 754 single precisión (float 32 bits): **1 bit signo + 8 bits exponente + 23 bits mantisa**. Double precisión (64 bits): **1 + 11 + 52**.
+> **[DATO CLAVE]** IEEE 754 single precisión (float 32 bits): **1 bit signo + 8 bits exponente + 23 bits mantisa**. Double precisión (64 bits): **1 + 11 + 52**.
 
 ---
 
@@ -1813,7 +1813,7 @@ Un mismo carácter puede representarse de varías formas: "n" puede ser U+00F1 (
 - Existen **múltiples varíantes** (code pages) según idioma/entorno (EBCDIC-37 inglés, EBCDIC-500 internacional, EBCDIC-284 español).
 - **No es compatible con ASCII** — las letras A-Z no están en orden contiguo.
 
-> **[DATO CLAVE EXAMEN]** EBCDIC es **incompatible** con ASCII: las letras no están ordenadas de forma contigua (A=193, B=194... pero I=201 y J=209 — hay huecos). Esta particularidad causa problemas en migraciones mainframe-PC.
+> **[DATO CLAVE]** EBCDIC es **incompatible** con ASCII: las letras no están ordenadas de forma contigua (A=193, B=194... pero I=201 y J=209 — hay huecos). Esta particularidad causa problemas en migraciones mainframe-PC.
 
 ### 9.8. ISO/IEC 10646
 
@@ -1821,10 +1821,9 @@ Norma internacional **equivalente a Unicode** en términos de repertorio de cara
 
 Formalmente, Unicode es una **implementación más rica** de ISO/IEC 10646 — incluye propiedades de caracteres, algoritmos de normalización, ordenación, etc.
 
-> **[REFERENCIA CRUZADA]** La transmisión de información codificada sobre redes se trata en el **Tema 33** (Comunicaciones: medios y modos de transmisión) y la arquitectura de Internet, donde Unicode y UTF-8 son el estándar de facto, en el **Tema 35** (Internet: arquitectura, HTTP, HTTPS, SSL/TLS).
+> **[RELACIÓN CON OTROS TEMAS]** La transmisión de información codificada sobre redes se trata en el **Tema 33** (Comunicaciones: medios y modos de transmisión) y la arquitectura de Internet, donde Unicode y UTF-8 son el estándar de facto, en el **Tema 35** (Internet: arquitectura, HTTP, HTTPS, SSL/TLS).
 
 ---
 
-*Documento generado con asistencia de IA — Validación humana en curso (María / Ana / Jesús Cuadrado IAM)*
 *Fuentes: ver tema-11-fuentes.md · Diagramas: ver tema-11-diagramas.md · Cambios: ver tema-11-changelog.md*
 *Versión 3.1 — Fecha: 2026-05-05*

@@ -164,6 +164,5 @@ Alternativas descartadas:
 
 ---
 
-*Caso práctico generado con asistencia de IA — Pendiente validación humana*
 *Contexto: supuesto práctico de nivel C1 TIC para Ayuntamiento de Madrid*
 *Fecha: 2026-04-16*

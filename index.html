@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tema 11 v3.3 — Piloto | ETRIVIUM IAM</title>
+<title>Tema 11 v3.4 — Piloto | ETRIVIUM IAM</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -204,7 +204,7 @@ tr:hover td { background: var(--azul-05); }
   <button type="button" class="tab-btn" data-tab="caso">Caso Práctico</button>
   <button type="button" class="tab-btn" data-tab="fuentes">Fuentes</button>
   <button type="button" class="tab-btn" data-tab="validación">Validación</button>
-  <span class="versión-badge">v3.3</span>
+  <span class="versión-badge">v3.4</span>
 </nav>
 
 <!-- TAB 1: CONTENIDO -->
@@ -212,7 +212,7 @@ tr:hover td { background: var(--azul-05); }
 
 <div class="card-header">
   <div style="display:flex;align-items:center;gap:12px;margin-bottom:8px">
-    <span class="badge badge-v2">Piloto v3.3</span>
+    <span class="badge badge-v2">Piloto v3.4</span>
     <span style="font-size:12px;opacity:.7">2026-05-05</span>
   </div>
   <h1>Tema 11 — Informática básica</h1>
@@ -221,15 +221,15 @@ tr:hover td { background: var(--azul-05); }
 
 <div class="versión-banner">
   <strong>Versión 3.2 · 11 junio 2026</strong>
-  <small>Iteración tras feedback de Jesús Cuadrado (IAM): referencias cruzadas alineadas con el temario oficial BOAM 10.032, definición de DCAT-AP-ES, narrativa pirámide TPS/MIS, tildes corregidas en niveles organizacionales, accesibilidad de diagramas (contraste WCAG), enlaces inline a normas ISO/UNE/BOE/W3C, reescritura del bloque 1.7.6 (Tipos compuestos).</small>
+  <small>Referencias cruzadas alineadas con el temario oficial BOAM 10.032, definición de DCAT-AP-ES, narrativa pirámide TPS/MIS, tildes corregidas en niveles organizacionales, accesibilidad de diagramas (contraste WCAG), enlaces inline a normas ISO/UNE/BOE/W3C, reescritura del bloque 1.7.6 (Tipos compuestos).</small>
 </div>
 
 <h2>Convenciones del documento</h2>
 <p>Este tema incluye cuatro tipos de <strong>cajas callout</strong> para facilitar el estudio:</p>
-<div class="callout callout-dato"><span class="kicker">Dato clave examen</span>Información de alta densidad memorística, con alta probabilidad de aparecer en el test oficial.</div>
+<div class="callout callout-dato"><span class="kicker">Dato clave</span>Información de alta densidad memorística.</div>
 <div class="callout callout-ejercicio"><span class="kicker">Ejercicio resuelto</span>Problema + solución paso a paso. Útil para secciones con cálculos.</div>
-<div class="callout callout-ayto"><span class="kicker">Ejemplo Ayto Madrid</span>Aplicación real de la teoría al entorno municipal (SIMA, Padrón, sede electrónica, Portal del ciudadano).</div>
-<div class="callout callout-ref"><span class="kicker">Referencia cruzada</span>Enlace conceptual a otros temas del temario oficial.</div>
+<div class="callout callout-ayto"><span class="kicker">Ejemplo de aplicación en el Ayto</span>Aplicación real de la teoría al entorno municipal (SIMA, Padrón, sede electrónica, Portal del ciudadano).</div>
+<div class="callout callout-ref"><span class="kicker">Relación con otros temas</span>Enlace conceptual a otros temas del temario oficial.</div>
 <p>Los mnemónicos de instrucciones máquina se muestran en <strong>castellano</strong> (<code>SUMA A, B</code>). Los registros, estándares y productos se mantienen en su nomenclatura original (CP, MAR, FLAGS, DDR5...). Las fuentes se referencian con etiquetas breves tipo <code>[STALLINGS-COA, Cap. 2]</code> — el registro completo está en <code>tema-11-fuentes.md</code>.</p>
 <hr />
 <h2>1. Concepto de dato e información</h2>
@@ -287,7 +287,7 @@ tr:hover td { background: var(--azul-05); }
 <li><strong>Conocimiento</strong> — responde a <em>¿como funciona?</em>: patrones, relaciones, correlaciones.</li>
 <li><strong>Sabiduría</strong> — responde a <em>¿que hacemos?</em>: decisiones fundamentadas, principios de acción.</li>
 </ol>
-<div class="callout callout-ayto"><span class="kicker">Ejemplo Ayto Madrid</span>Aplicado al <strong>Padrón Municipal</strong>: el valor &quot;3.450.000&quot; es dato; &quot;3.450.000 habitantes empadronados a 31-12-2025&quot; es información; &quot;la población crece al 0,8% anual y envejece&quot; es conocimiento; &quot;hay que reforzar los servicios sociales en distritos envejecidos&quot; es sabiduría (decisión).</div>
+<div class="callout callout-ayto"><span class="kicker">Ejemplo de aplicación en el Ayto</span>Aplicado al <strong>Padrón Municipal</strong>: el valor &quot;3.450.000&quot; es dato; &quot;3.450.000 habitantes empadronados a 31-12-2025&quot; es información; &quot;la población crece al 0,8% anual y envejece&quot; es conocimiento; &quot;hay que reforzar los servicios sociales en distritos envejecidos&quot; es sabiduría (decisión).</div>
 <h3>1.4. Ciclo de vida del dato</h3>
 <p>Un dato no es un objeto estático: nace, se transforma, se almacena, se usa y en algún momento se archiva o elimina. El <strong>ciclo de vida del dato</strong> (Data Lifecycle Management, DLM) estructura estas etapas para garantizar gobernanza, trazabilidad y cumplimiento normativo.</p>
 <p>Las <strong>seis fases canónicas</strong> del ciclo de vida son:</p>
@@ -342,7 +342,7 @@ tr:hover td { background: var(--azul-05); }
 <li><strong>Oportunidad</strong> (<em>timeliness</em>): el dato está actualizado en el momento en que se usa. Una dirección desactualizada provoca notificaciones no entregadas.</li>
 </ul>
 <p>Normas adicionales como <strong>ISO 8000</strong> (Data Quality) amplían estas a 10-14 dimensiones (unicidad, validez, precisión, plausibilidad, etc.), usadas en auditorías de calidad masivas.</p>
-<div class="callout callout-dato"><span class="kicker">Dato clave examen</span>Las 4 dimensiones mínimas de calidad del dato son: <strong>exactitud, completitud, consistencia y oportunidad</strong>. La familia <a href="https://www.iso.org/standard/50798.html" target="_blank" rel="noopener">ISO 8000</a> (Data quality) amplía a 10+ dimensiones.</div>
+<div class="callout callout-dato"><span class="kicker">Dato clave</span>Las 4 dimensiones mínimas de calidad del dato son: <strong>exactitud, completitud, consistencia y oportunidad</strong>. La familia <a href="https://www.iso.org/standard/50798.html" target="_blank" rel="noopener">ISO 8000</a> (Data quality) amplía a 10+ dimensiones.</div>
 <h3>1.6. Metadatos</h3>
 <p>Los <strong>metadatos</strong> son &quot;datos sobre los datos&quot;: describen el contexto, contenido y estructura de un dato. Sin metadatos, un conjunto de datos es una secuencia de números sin significado documentado. [ISO-11179]</p>
 <p>Tres tipos principales:</p>
@@ -351,10 +351,10 @@ tr:hover td { background: var(--azul-05); }
 <li><strong>Metadatos estructurales</strong>: describen como se organiza el dato (relaciones, campos, tipos). Ej: esquema de tabla SQL, definición XML/JSON Schema.</li>
 <li><strong>Metadatos administrativos</strong>: gobiernan el uso, retención y acceso (permisos, copyright, fechas). Ej: nivel ENS, clasificación RGPD, retención legal.</li>
 </ul>
-<div class="callout callout-ayto"><span class="kicker">Ejemplo Ayto Madrid</span>En el portal <strong>Open Data Madrid</strong> (datos.madrid.es) cada dataset incluye metadatos estandarizados según <strong>DCAT-AP-ES</strong> — la adaptación española del <em>Data Catalog Vocabulary - Application Profile</em> europeo, vocabulario común que la Unión Europea exige para describir conjuntos de datos abiertos del sector público y permitir que sean catalogables e interoperables entre administraciones. Los metadatos cubren título, descripción, fecha de publicación, frecuencia de actualización, licencia (CC-BY 4.0), responsable del dato y formato (CSV, JSON, XML).</div>
+<div class="callout callout-ayto"><span class="kicker">Ejemplo de aplicación en el Ayto</span>En el portal <strong>Open Data Madrid</strong> (datos.madrid.es) cada dataset incluye metadatos estandarizados según <strong>DCAT-AP-ES</strong> — la adaptación española del <em>Data Catalog Vocabulary - Application Profile</em> europeo, vocabulario común que la Unión Europea exige para describir conjuntos de datos abiertos del sector público y permitir que sean catalogables e interoperables entre administraciones. Los metadatos cubren título, descripción, fecha de publicación, frecuencia de actualización, licencia (CC-BY 4.0), responsable del dato y formato (CSV, JSON, XML).</div>
 <h3>1.7. Tipos y clasificación de datos</h3>
 <p>La clasificación de los datos en informática no responde a un único criterio. Las clasificaciones son complementarias, no excluyentes. La norma de referencia para tipos de datos independientes del lenguaje es <a href="https://www.iso.org/standard/39479.html" target="_blank" rel="noopener"><strong>ISO/IEC 11404</strong></a> (<em>Language-independent datatypes</em>).</p>
-<h4>1.7.1. Según su función en el sistema de información (la más relevante para examen)</h4>
+<h4>1.7.1. Según su función en el sistema de información</h4>
 <table>
 <thead>
 <tr>
@@ -471,7 +471,7 @@ tr:hover td { background: var(--azul-05); }
 </tr>
 </tbody>
 </table>
-<div class="callout callout-dato"><span class="kicker">Dato clave examen</span>Los reales se almacenan en formato <strong>IEEE-754</strong> (estándar internacional de coma flotante): 1 bit de signo + exponente sesgado + mantisa normalizada. <strong>Float</strong>: 1+8+23 bits = 32 bits. <strong>Double</strong>: 1+11+52 bits = 64 bits. Ver §8 (Sistemas de numeración) para el detalle del formato.</div>
+<div class="callout callout-dato"><span class="kicker">Dato clave</span>Los reales se almacenan en formato <strong>IEEE-754</strong> (estándar internacional de coma flotante): 1 bit de signo + exponente sesgado + mantisa normalizada. <strong>Float</strong>: 1+8+23 bits = 32 bits. <strong>Double</strong>: 1+11+52 bits = 64 bits. Ver §8 (Sistemas de numeración) para el detalle del formato.</div>
 <h4>1.7.6. Tipos de datos compuestos</h4>
 <p>Los <strong>tipos compuestos</strong> son construcciones del lenguaje que agrupan múltiples valores bajo una única entidad lógica. Permiten al programador trabajar con conjuntos de datos relacionados como si fueran un solo elemento, simplificando el diseño y el mantenimiento del software.</p>
 <ul>
@@ -552,7 +552,7 @@ tr:hover td { background: var(--azul-05); }
 </tr>
 </tbody>
 </table>
-<div class="callout callout-ref"><span class="kicker">Referencia cruzada</span>Los TAD se desarrollan en profundidad en el <strong>Tema 13</strong> (Tipos abstractos y Estructuras de datos) y son la base teórica de las <strong>bases de datos</strong> (Tema 15) y de la planificación de procesos en los <strong>sistemas operativos</strong> (Tema 14).</div>
+<div class="callout callout-ref"><span class="kicker">Relación con otros temas</span>Los TAD se desarrollan en profundidad en el <strong>Tema 13</strong> (Tipos abstractos y Estructuras de datos) y son la base teórica de las <strong>bases de datos</strong> (Tema 15) y de la planificación de procesos en los <strong>sistemas operativos</strong> (Tema 14).</div>
 <h4>1.7.8. Tipos de datos en SQL</h4>
 <p>El estándar <strong>SQL:2016</strong> (<a href="https://www.iso.org/standard/63555.html" target="_blank" rel="noopener">ISO/IEC 9075</a>) define el catálogo de tipos para bases de datos relacionales. Los principales:</p>
 <table>
@@ -680,8 +680,8 @@ tr:hover td { background: var(--azul-05); }
 </tr>
 </tbody>
 </table>
-<div class="callout callout-dato"><span class="kicker">Dato clave examen</span>Los ejes &quot;estático/dinámico&quot; y &quot;fuerte/débil&quot; son <strong>independientes</strong>: Python es dinámico+fuerte, JavaScript es dinámico+débil, C es estático+débil, Java es estático+fuerte.</div>
-<div class="callout callout-ref"><span class="kicker">Referencia cruzada</span>La clasificación de datos conecta con el Tema 15 (Sistemas de gestión de bases de datos) — modelo relacional frente a NoSQL — y con el Tema 14 (Sistemas operativos) — gestión de ficheros y dispositivos de E/S. Los tipos abstractos se desarrollan en el Tema 13 (Tipos abstractos y Estructuras de datos).</div>
+<div class="callout callout-dato"><span class="kicker">Dato clave</span>Los ejes &quot;estático/dinámico&quot; y &quot;fuerte/débil&quot; son <strong>independientes</strong>: Python es dinámico+fuerte, JavaScript es dinámico+débil, C es estático+débil, Java es estático+fuerte.</div>
+<div class="callout callout-ref"><span class="kicker">Relación con otros temas</span>La clasificación de datos conecta con el Tema 15 (Sistemas de gestión de bases de datos) — modelo relacional frente a NoSQL — y con el Tema 14 (Sistemas operativos) — gestión de ficheros y dispositivos de E/S. Los tipos abstractos se desarrollan en el Tema 13 (Tipos abstractos y Estructuras de datos).</div>
 <hr />
 <h2>2. Sistemas de información</h2>
 <h3>2.1. Definición y concepto</h3>
@@ -772,7 +772,7 @@ tr:hover td { background: var(--azul-05); }
 <li><em>Dispositivos de salida</em>: monitores, impresoras, plotters, altavoces.</li>
 <li><em>Equipos de red</em>: routers, switches, firewalls, puntos de acceso WiFi, balanceadores de carga.</li>
 </ul>
-<p><strong>2. Software</strong> — programas que operan sobre el hardware. Se clasifica en cuatro capas (modelo de capas software, <a href="https://www.iso.org/standard/35733.html" target="_blank" rel="noopener">ISO/IEC 25010</a>):</p>
+<p><strong>2. Software</strong> — programas que operan sobre el hardware. Se clasifica en cuatro capas (modelo de capas software, <a href="https://www.iso.org/standard/78176.html" target="_blank" rel="noopener">ISO/IEC 25010:2023</a>):</p>
 <ul>
 <li><em>Software de sistema</em>: sistema operativo (Windows Server, Linux, AIX), drivers, firmware.</li>
 <li><em>Software de utilidad</em>: antivirus, herramientas de backup, monitorización, sistemas de gestión de configuración.</li>
@@ -818,9 +818,9 @@ tr:hover td { background: var(--azul-05); }
 <li><em>Auditorías internas y externas</em>: detectan no conformidades y oportunidades.</li>
 <li><em>Ciclo PDCA / Deming</em> (Plan-Do-Check-Act): marco metodológico de mejora iterativa.</li>
 </ul>
-<div class="callout callout-dato"><span class="kicker">Dato clave examen</span>Los siete componentes pueden agruparse en tres bloques: <strong>TI</strong> (hardware, software, datos, red), <strong>organización</strong> (procedimientos, retroalimentación) y <strong>personas</strong> (usuarios). Esta visión tripartita es la usada en frameworks como <strong>COBIT 2019</strong> y en la gestión de servicios <strong>ITIL v4</strong> (las &quot;cuatro dimensiones&quot;: organizaciones y personas, información y tecnología, partners y proveedores, flujos de valor y procesos).</div>
+<div class="callout callout-dato"><span class="kicker">Dato clave</span>Los siete componentes pueden agruparse en tres bloques: <strong>TI</strong> (hardware, software, datos, red), <strong>organización</strong> (procedimientos, retroalimentación) y <strong>personas</strong> (usuarios). Esta visión tripartita es la usada en frameworks como <strong>COBIT 2019</strong> y en la gestión de servicios <strong>ITIL v4</strong> (las &quot;cuatro dimensiones&quot;: organizaciones y personas, información y tecnología, partners y proveedores, flujos de valor y procesos).</div>
 <h3>2.3. Características de un sistema de información</h3>
-<p>Para que un sistema de información sea considerado como tal, debe cumplir las siguientes <strong>diez características</strong>. La norma de referencia para la calidad de los productos software (y por extensión de los SI) es la <a href="https://www.iso.org/standard/35733.html" target="_blank" rel="noopener"><strong>ISO/IEC 25010</strong></a> (modelo de calidad SQuaRE — <em>Systems and software Quality Requirements and Evaluation</em>).</p>
+<p>Para que un sistema de información sea considerado como tal, debe cumplir las siguientes <strong>diez características</strong>. La norma de referencia para la calidad de los productos software (y por extensión de los SI) es la <a href="https://www.iso.org/standard/78176.html" target="_blank" rel="noopener"><strong>ISO/IEC 25010:2023</strong></a> (modelo de calidad SQuaRE — <em>Systems and software Quality Requirements and Evaluation</em>).</p>
 <table>
 <thead>
 <tr>
@@ -904,8 +904,8 @@ tr:hover td { background: var(--azul-05); }
 <p><strong>8. Fiabilidad</strong> — el SI funciona de forma correcta y continua. Se mide por el <strong>MTTR</strong> (tiempo medio de reparación), la tasa de fallos y los defectos por mil líneas de código. La fiabilidad incluye la <strong>tolerancia a fallos</strong>: redundancia de hardware, replicación de datos, balanceadores activo-activo. <strong>Ejemplo Ayto Madrid</strong>: el sistema de cita previa debe poder seguir operando aunque uno de los servidores caiga — la replicación en tiempo real de la base de datos es el mecanismo habitual.</p>
 <p><strong>9. Seguridad</strong> — la información está protegida frente a accesos no autorizados, modificaciones indebidas y pérdida. La <strong>tríada CIA</strong> (Confidencialidad, Integridad, Disponibilidad) se complementa con dos atributos adicionales en el modelo <strong>AAA</strong> (<em>Authentication, Authorization, Accounting</em>) y con la <strong>trazabilidad</strong> y la <strong>autenticidad</strong> del <a href="https://www.boe.es/eli/es/rd/2022/05/03/311" target="_blank" rel="noopener"><strong>Esquema Nacional de Seguridad — RD 311/2022</strong></a>. <strong>Ejemplo Ayto Madrid</strong>: el acceso al Padrón requiere autenticación fuerte (certificado digital o cl@ve), autorización según rol y registro de toda acción en logs auditables (trazabilidad).</p>
 <p><strong>10. Copias de seguridad</strong> — el SI dispone de copias periódicas que permiten recuperar la operación ante fallos, errores humanos o ciberataques. Las métricas son el <strong>RPO</strong> (<em>Recovery Point Objective</em>: cuántos datos se pueden perder) y el <strong>RTO</strong> (<em>Recovery Time Objective</em>: cuánto se puede tardar en restaurar). La norma <a href="https://www.iso.org/standard/80194.html" target="_blank" rel="noopener"><strong>ISO/IEC 27040</strong></a> rige la seguridad del almacenamiento. <strong>Ejemplo Ayto Madrid</strong>: política de backups 3-2-1 — tres copias, en dos medios distintos, una de ellas externa (<em>off-site</em>) — con prueba mensual de restauración.</p>
-<div class="callout callout-dato"><span class="kicker">Dato clave examen</span>La <strong>tríada CIA</strong> (Confidencialidad, Integridad, Disponibilidad) es el principio fundamental de seguridad de la información, recogido en <a href="https://www.iso.org/standard/27001" target="_blank" rel="noopener"><strong>ISO/IEC 27001</strong></a> y en el <a href="https://www.boe.es/eli/es/rd/2022/05/03/311" target="_blank" rel="noopener"><strong>Esquema Nacional de Seguridad — RD 311/2022</strong></a>. El ENS extiende la tríada con dos dimensiones adicionales: <strong>Trazabilidad</strong> y <strong>Autenticidad</strong>.</div>
-<div class="callout callout-dato"><span class="kicker">Dato clave examen</span>El modelo <strong>ISO/IEC 25010 (SQuaRE)</strong> distingue ocho características de calidad de software: adecuación funcional, eficiencia de desempeño, compatibilidad, <strong>usabilidad</strong>, <strong>fiabilidad</strong>, <strong>seguridad</strong>, mantenibilidad y portabilidad. Las negritas son las que coinciden con la lista de características del SI.</div>
+<div class="callout callout-dato"><span class="kicker">Dato clave</span>La <strong>tríada CIA</strong> (Confidencialidad, Integridad, Disponibilidad) es el principio fundamental de seguridad de la información, recogido en <a href="https://www.iso.org/standard/27001" target="_blank" rel="noopener"><strong>ISO/IEC 27001</strong></a> y en el <a href="https://www.boe.es/eli/es/rd/2022/05/03/311" target="_blank" rel="noopener"><strong>Esquema Nacional de Seguridad — RD 311/2022</strong></a>. El ENS extiende la tríada con dos dimensiones adicionales: <strong>Trazabilidad</strong> y <strong>Autenticidad</strong>.</div>
+<div class="callout callout-dato"><span class="kicker">Dato clave</span>El modelo <strong>ISO/IEC 25010:2023 (SQuaRE)</strong> distingue nueve características de calidad del producto software: adecuación funcional, eficiencia de desempeño, compatibilidad, capacidad de interacción, <strong>fiabilidad</strong>, <strong>seguridad</strong>, mantenibilidad, <strong>flexibilidad</strong> y protección. Las negritas son las que coinciden con la lista de características del SI.</div>
 <h3>2.4. Elementos funcionales</h3>
 <p>Un sistema de información estándar se estructura en los siguientes elementos:</p>
 <ul>
@@ -975,7 +975,7 @@ tr:hover td { background: var(--azul-05); }
 <li><strong>Sistemas cooperativos</strong>: soportan trabajo colaborativo (ej. Microsoft Teams, Google Workspace).</li>
 <li><strong>Sistemas que modifican el estilo de operación del negocio</strong>: transformación digital.</li>
 </ul>
-<p><strong>Clasificación por nivel organizacional</strong> (la <strong>más relevante</strong> para examen):</p>
+<p><strong>Clasificación por nivel organizacional</strong>:</p>
 <p>Esta clasificación, originada en la literatura clásica de gestión empresarial (Anthony, 1965; Laudon &amp; Laudon, 2017), parte de una idea sencilla: dentro de cualquier organización conviven <strong>cuatro niveles de decisión</strong> que necesitan información de naturaleza distinta.</p>
 <ul>
 <li><strong>Nivel operativo</strong> — el día a día. Operarios y personal de ventanilla ejecutan transacciones individuales (alta de un empadronamiento, cobro de un tributo, registro de una incidencia). Necesitan datos en bruto, en tiempo real y en alto volumen.</li>
@@ -1056,7 +1056,7 @@ tr:hover td { background: var(--azul-05); }
 </tr>
 </tbody>
 </table>
-<div class="callout callout-ayto"><span class="kicker">Ejemplo Ayto Madrid</span>La arquitectura de sistemas del Ayuntamiento de Madrid combina los cuatro niveles: el <strong>Padrón Municipal</strong> funciona como TPS (procesa altas/bajas en tiempo real), alimenta un MIS estadístico (informes demográficos mensuales), que a su vez nutre un DSS de <strong>planificación urbana</strong> (¿dónde construir un nuevo colegio?), cuyos resultados llegan al EIS del <strong>Cuadro de Mando Integral municipal</strong> que consulta el equipo de gobierno.</div>
+<div class="callout callout-ayto"><span class="kicker">Ejemplo de aplicación en el Ayto</span>La arquitectura de sistemas del Ayuntamiento de Madrid combina los cuatro niveles: el <strong>Padrón Municipal</strong> funciona como TPS (procesa altas/bajas en tiempo real), alimenta un MIS estadístico (informes demográficos mensuales), que a su vez nutre un DSS de <strong>planificación urbana</strong> (¿dónde construir un nuevo colegio?), cuyos resultados llegan al EIS del <strong>Cuadro de Mando Integral municipal</strong> que consulta el equipo de gobierno.</div>
 <h3>2.7. SI empresariales transversales</h3>
 <p>Más allá de la clasificación por nivel, existen sistemas que atraviesan todos los niveles organizacionales:</p>
 <ul>
@@ -1110,7 +1110,7 @@ tr:hover td { background: var(--azul-05); }
 <li><strong>Buses</strong> que conectan los elementos anteriores.</li>
 </ul>
 <p><strong>Característica fundamental</strong>: datos e instrucciones comparten la misma memoria y el mismo bus. Esto permite el concepto de <strong>programa almacenado</strong> — las instrucciones se pueden modificar como si fuesen datos (base de compiladores, ensambladores y sistemas operativos modernos).</p>
-<div class="callout callout-dato"><span class="kicker">Dato clave examen</span>El <strong>cuello de botella de Von Neumann</strong> (Von Neumann bottleneck): no pueden darse simultáneamente una búsqueda de instrucciones y una operación de datos, ya que comparten un bus común. La velocidad de la CPU ha crecido mucho más rápido que la velocidad de la memoria principal, ampliando este cuello de botella. Las caches y el pipelining lo mitigan parcialmente.</div>
+<div class="callout callout-dato"><span class="kicker">Dato clave</span>El <strong>cuello de botella de Von Neumann</strong> (Von Neumann bottleneck): no pueden darse simultáneamente una búsqueda de instrucciones y una operación de datos, ya que comparten un bus común. La velocidad de la CPU ha crecido mucho más rápido que la velocidad de la memoria principal, ampliando este cuello de botella. Las caches y el pipelining lo mitigan parcialmente.</div>
 <h3>3.2. Arquitectura Harvard</h3>
 <p>Debe su nombre al ordenador <strong>Harvard Mark I</strong> (Howard Aiken, 1944), anterior incluso a la formalización de Von Neumann. Contiene los mismos elementos que el modelo Von Neumann, pero con una <strong>diferencia fundamental</strong>: la memoria principal se divide en <strong>memoria de instrucciones</strong> y <strong>memoria de datos</strong>, cada una con su propio bus exclusivo. [STALLINGS-COA, Cap. 2]</p>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-label="Comparativa Von Neumann vs Harvard">
@@ -1208,7 +1208,7 @@ tr:hover td { background: var(--azul-05); }
 <li>Acceden a la CPU por <strong>buses L1 distintos</strong>, pero comparten bus en niveles inferiores.</li>
 <li>Pueden ser accedidas de <strong>diferente manera</strong> (la cache L1i solo se lee, la L1d se lee y escribe).</li>
 </ul>
-<div class="callout callout-dato"><span class="kicker">Dato clave examen</span>En un examen C1, recordar está jerarquía: <strong>Von Neumann</strong> (memoria única, histórico) vs <strong>Harvard</strong> (memorias separadas, microcontroladores) vs <strong>Harvard modificada</strong> (PCs actuales, híbrido).</div>
+<div class="callout callout-dato"><span class="kicker">Dato clave</span>Conviene recordar esta jerarquía: <strong>Von Neumann</strong> (memoria única, histórico) vs <strong>Harvard</strong> (memorias separadas, microcontroladores) vs <strong>Harvard modificada</strong> (PCs actuales, híbrido).</div>
 <hr />
 <h2>4. Generaciones de ordenadores</h2>
 <p>Las generaciones se definen por tres aspectos principales: la <strong>tecnología vigente</strong> (componente electrónico principal), las <strong>técnicas de programación</strong> y el <strong>impacto en la sociedad</strong>. [TANENBAUM-SO, Cap. 1]</p>
@@ -1334,7 +1334,7 @@ tr:hover td { background: var(--azul-05); }
 </tr>
 </tbody>
 </table>
-<div class="callout callout-ayto"><span class="kicker">Ejemplo Ayto Madrid</span>El primer ordenador que llegó a España fue un <strong>IBM 650</strong> adquirido por <strong>RENFE en 1959</strong> para gestión de reservas. Con 2.000 válvulas (era un híbrido tardío de 1ª gen), ocupaba una sala de 50 m². En la administración pública española, la mecanización masiva llegaría en los años 70 con ordenadores IBM de 3ª gen.</div>
+<div class="callout callout-ayto"><span class="kicker">Ejemplo de aplicación en el Ayto</span>El primer ordenador que llegó a España fue un <strong>IBM 650</strong> adquirido por <strong>RENFE en 1959</strong> para gestión de reservas. Con 2.000 válvulas (era un híbrido tardío de 1ª gen), ocupaba una sala de 50 m². En la administración pública española, la mecanización masiva llegaría en los años 70 con ordenadores IBM de 3ª gen.</div>
 <h3>4.3. Tercera generación (1964-1970) — Circuitos integrados</h3>
 <table>
 <thead>
@@ -1454,7 +1454,7 @@ tr:hover td { background: var(--azul-05); }
 <li><strong>Computación cuántica</strong>: primeros ordenadores cuánticos comerciales (IBM Q 2016, Google Sycamore 2019). Potencial disruptivo.</li>
 <li><strong>Computación neuromórfica</strong>: chips inspirados en el cerebro (Intel Loihi 2017, IBM TrueNorth 2014). Muy eficientes energéticamente.</li>
 </ul>
-<div class="callout callout-ref"><span class="kicker">Referencia cruzada</span>La computación en la nube y los modelos IaaS / PaaS / SaaS se amplían en el <strong>Tema 31</strong> (Paradigmas de computación distribuida y servicios en Cloud). La virtualización se aborda en el <strong>Tema 28</strong>.</div>
+<div class="callout callout-ref"><span class="kicker">Relación con otros temas</span>La computación en la nube y los modelos IaaS / PaaS / SaaS se amplían en el <strong>Tema 31</strong> (Paradigmas de computación distribuida y servicios en Cloud). La virtualización se aborda en el <strong>Tema 28</strong>.</div>
 <hr />
 <h2>5. Componentes internos de los equipos microinformáticos</h2>
 <p>El hardware de un ordenador se estructura en tres subsistemas: [STALLINGS-COA, Cap. 3]</p>
@@ -1598,7 +1598,7 @@ tr:hover td { background: var(--azul-05); }
 </tr>
 </tbody>
 </table>
-<div class="callout callout-dato"><span class="kicker">Dato clave examen</span>El procesador x86-64 (el más común en PCs de escritorio) es <strong>CISC</strong>, pero internamente traduce instrucciones CISC a microinstrucciones RISC (uops) antes de ejecutarlas. Este proceso se llama <strong>decodificación x86</strong> y ocupa hardware significativo (~15% del die).</div>
+<div class="callout callout-dato"><span class="kicker">Dato clave</span>El procesador x86-64 (el más común en PCs de escritorio) es <strong>CISC</strong>, pero internamente traduce instrucciones CISC a microinstrucciones RISC (uops) antes de ejecutarlas. Este proceso se llama <strong>decodificación x86</strong> y ocupa hardware significativo (~15% del die).</div>
 <h4>5.2.2. Medidas de potencia de la CPU</h4>
 <ul>
 <li><strong>FLOPS</strong> (<em>Floating-Point Operations Per Second</em>): número de operaciones de coma flotante por segundo. Relevante para cálculo científico, IA, gráficos. Superordenador El Capitan (2024): 1,74 <strong>ExaFLOPS</strong> (10^18 FLOPS).</li>
@@ -1625,7 +1625,7 @@ tr:hover td { background: var(--azul-05); }
 </ul>
 </li>
 </ul>
-<div class="callout callout-dato"><span class="kicker">Dato clave examen</span>Un <strong>Intel Core i9-14900K con 24 núcleos y HyperThreading</strong> presenta al sistema operativo <strong>32 hilos lógicos</strong> (8 núcleos-P con HT×2 + 16 núcleos-E sin HT = 16 + 16 = 32). Los núcleos-E (Efficiency) no tienen HT para ahorrar energía.</div>
+<div class="callout callout-dato"><span class="kicker">Dato clave</span>Un <strong>Intel Core i9-14900K con 24 núcleos y HyperThreading</strong> presenta al sistema operativo <strong>32 hilos lógicos</strong> (8 núcleos-P con HT×2 + 16 núcleos-E sin HT = 16 + 16 = 32). Los núcleos-E (Efficiency) no tienen HT para ahorrar energía.</div>
 <h4>5.2.4. Pipelining (segmentación de instrucciones)</h4>
 <p>El <strong>pipelining</strong> es la técnica fundamental para acelerar una CPU sin aumentar su frecuencia. Divide la ejecución de cada instrucción en <strong>etapas</strong> y permite que varias instrucciones se solapen en distintas etapas simultáneamente. Es análoga a una cadena de montaje industrial.</p>
 <p><strong>Pipeline RISC clásico de 5 etapas</strong> (modelo MIPS, base de muchos libros de texto):</p>
@@ -1656,7 +1656,7 @@ tr:hover td { background: var(--azul-05); }
 <li><strong>Ejecución especulativa</strong>: ejecuta instrucciones asumiendo una predicción de salto; si falla, descarta resultados.</li>
 <li><strong>Ejecución fuera de orden</strong> (<em>out-of-order execution</em>): reordena instrucciones para aprovechar huecos del pipeline.</li>
 </ul>
-<div class="callout callout-dato"><span class="kicker">Dato clave examen</span>Las <strong>vulnerabilidades Spectre y Meltdown</strong> (2018) aprovechan precisamente la <strong>ejecución especulativa</strong>: los efectos de instrucciones especulativas no se deshacen del todo (quedan rastros en cache), permitiendo leer memoria protegida. Afectaron a casi todos los procesadores Intel, AMD y ARM posteriores a 1995.</div>
+<div class="callout callout-dato"><span class="kicker">Dato clave</span>Las <strong>vulnerabilidades Spectre y Meltdown</strong> (2018) aprovechan precisamente la <strong>ejecución especulativa</strong>: los efectos de instrucciones especulativas no se deshacen del todo (quedan rastros en cache), permitiendo leer memoria protegida. Afectaron a casi todos los procesadores Intel, AMD y ARM posteriores a 1995.</div>
 <h4>5.2.5. CPU superescalar</h4>
 <p>Una CPU <strong>escalar</strong> ejecuta una instrucción por ciclo en el mejor caso. Una CPU <strong>superescalar</strong> ejecuta <strong>varias instrucciones por ciclo</strong> replicando unidades funcionales (múltiples ALUs, múltiples unidades de punto flotante, etc.).</p>
 <p>El procesador despacha instrucciones a las unidades disponibles en paralelo, respetando las dependencias de datos. Intel Golden Cove despacha hasta <strong>6 instrucciones por ciclo</strong>; Apple M3 hasta <strong>8</strong>.</p>
@@ -1843,7 +1843,7 @@ tr:hover td { background: var(--azul-05); }
 </tr>
 </tbody>
 </table>
-<div class="callout callout-dato"><span class="kicker">Dato clave examen</span><strong>Capacidad de direccionamiento</strong>: si el MAR tiene <strong>n bits</strong>, se pueden direccionar un máximo de <strong>2^n palabras</strong> de memoria. Con MAR de 32 bits se direccionan 4 GB (2^32 = 4.294.967.296 bytes); con MAR de 64 bits se direccionan 16 EB (límite teórico prácticamente inalcanzable).</div>
+<div class="callout callout-dato"><span class="kicker">Dato clave</span><strong>Capacidad de direccionamiento</strong>: si el MAR tiene <strong>n bits</strong>, se pueden direccionar un máximo de <strong>2^n palabras</strong> de memoria. Con MAR de 32 bits se direccionan 4 GB (2^32 = 4.294.967.296 bytes); con MAR de 64 bits se direccionan 16 EB (límite teórico prácticamente inalcanzable).</div>
 <h4>5.3.1.1. Registros FLAGS, EFLAGS y RFLAGS (x86)</h4>
 <p>El <strong>registro FLAGS</strong> es el registro de estado en la familia x86. Su evolución acompaña a la de la propia arquitectura:</p>
 <table>
@@ -1877,7 +1877,7 @@ tr:hover td { background: var(--azul-05); }
 </tbody>
 </table>
 <p>Los tres son <strong>retrocompatibles</strong>: los bits bajos de RFLAGS son EFLAGS, y los bits bajos de EFLAGS son FLAGS. Los bits añadidos en cada ampliación se usan para características nuevas (virtualización, identificación CPUID, niveles de protección).</p>
-<p><strong>Bits principales del registro FLAGS</strong> (los que aparecen en exámenes C1):</p>
+<p><strong>Bits principales del registro FLAGS</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -1948,7 +1948,7 @@ tr:hover td { background: var(--azul-05); }
 <pre><code>COMPARA A, B       ; resta A-B, actualiza ZF, SF, CF, OF
 SALTA_SI_IGUAL FIN ; salta a FIN si ZF=1 (eran iguales)
 </code></pre>
-<div class="callout callout-ref"><span class="kicker">Referencia cruzada</span>Los registros FLAGS de ARM se llaman <strong>APSR</strong> (Application Program Status Register) y los de RISC-V están distribuidos en CSRs (Control and Status Registers). El concepto es equivalente.</div>
+<div class="callout callout-ref"><span class="kicker">Relación con otros temas</span>Los registros FLAGS de ARM se llaman <strong>APSR</strong> (Application Program Status Register) y los de RISC-V están distribuidos en CSRs (Control and Status Registers). El concepto es equivalente.</div>
 <h4>5.3.2. Unidad de Control</h4>
 <p>La Unidad de Control es la <strong>parte más importante del microprocesador</strong> desde el punto de vista funcional. Controla el funcionamiento de todo el conjunto excepto las operaciones aritméticas (gestionadas por la ALU). [STALLINGS-COA, Cap. 20]</p>
 <p><strong>Componentes</strong>:</p>
@@ -2271,7 +2271,7 @@ SALTA_SI_IGUAL FIN ; salta a FIN si ZF=1 (eran iguales)
 <li><strong>Base-desplazamiento-escala</strong> (x86): <code>[BP + IX*4 + 16]</code> — acceso a elemento de array de enteros de 32 bits con offset.</li>
 <li><strong>Relativo al PC</strong>: offset desde el contador de programa (saltos relativos, típicos en ARM/RISC-V).</li>
 </ul>
-<div class="callout callout-dato"><span class="kicker">Dato clave examen</span>En ARM la mayoría de instrucciones aritmético-lógicas operan solo sobre registros; para acceder a memoria se usan exclusivamente <code>LDR</code> (load) y <code>STR</code> (store) con modos relativo-base y relativo-índice. Es la <strong>arquitectura load-store</strong>, característica fundamental RISC.</div>
+<div class="callout callout-dato"><span class="kicker">Dato clave</span>En ARM la mayoría de instrucciones aritmético-lógicas operan solo sobre registros; para acceder a memoria se usan exclusivamente <code>LDR</code> (load) y <code>STR</code> (store) con modos relativo-base y relativo-índice. Es la <strong>arquitectura load-store</strong>, característica fundamental RISC.</div>
 <hr />
 <h2>6. Memoria</h2>
 <h3>6.1. Clasificaciones</h3>
@@ -2318,7 +2318,7 @@ SALTA_SI_IGUAL FIN ; salta a FIN si ZF=1 (eran iguales)
   <text x="500" y="240" class="jm-speed">~50 µs · 1-4 TB</text>
   <text x="500" y="292" class="jm-speed">~10 ms · 1-20 TB</text>
 </svg>
-<div class="callout callout-dato"><span class="kicker">Dato clave examen</span><strong>Regla fundamental</strong>: a mayor velocidad, menor capacidad y mayor coste por byte. Cada nivel de la jerarquía es ~10-100× más lento y ~10-100× más grande que el anterior.</div>
+<div class="callout callout-dato"><span class="kicker">Dato clave</span><strong>Regla fundamental</strong>: a mayor velocidad, menor capacidad y mayor coste por byte. Cada nivel de la jerarquía es ~10-100× más lento y ~10-100× más grande que el anterior.</div>
 <h3>6.2. Memoria RAM</h3>
 <p>La <strong>memoria RAM</strong> (<em>Random Access Memory</em>) es memoria principal de tipo <strong>volátil</strong>: su contenido se pierde al apagar el sistema. [JEDEC-DDR]</p>
 <p><strong>Función</strong>: almacenar temporalmente los datos e instrucciones que utiliza el procesador durante la ejecución de programas. Actúa como espacio de trabajo intermedio entre la CPU (muy rápida, poca capacidad) y la memoria secundaria (lenta, mucha capacidad).</p>
@@ -2329,7 +2329,7 @@ SALTA_SI_IGUAL FIN ; salta a FIN si ZF=1 (eran iguales)
 <li><strong>SRAM</strong> (Static RAM): basada en biestables (6 transistores por bit). <strong>Rápida</strong> (~1-3 ns), <strong>cara</strong> (más transistores), <strong>baja densidad</strong>, no requiere refresco. Uso: <strong>memoria cache</strong> (L1, L2, L3) integrada en la CPU.</li>
 <li><strong>DRAM</strong> (Dynamic RAM): basada en un condensador + un transistor por bit. <strong>Lenta</strong> (~50-100 ns), <strong>barata</strong>, <strong>alta densidad</strong>, <strong>requiere refresco</strong> periódico (cada ~64 ms) porque los condensadores pierden carga. Uso: <strong>memoria principal</strong> del ordenador.</li>
 </ul>
-<div class="callout callout-dato"><span class="kicker">Dato clave examen</span>La <strong>DRAM necesita refresco</strong>: un circuito lee y reescribe cada celda cada pocos milisegundos para evitar que se pierda la información. Esto consume ancho de banda y energía. La SRAM no necesita refresco.</div>
+<div class="callout callout-dato"><span class="kicker">Dato clave</span>La <strong>DRAM necesita refresco</strong>: un circuito lee y reescribe cada celda cada pocos milisegundos para evitar que se pierda la información. Esto consume ancho de banda y energía. La SRAM no necesita refresco.</div>
 <h4>6.2.2. Evolución de la memoria RAM</h4>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 340" role="img" aria-label="Evolucion de la memoria RAM">
   <style>
@@ -2408,7 +2408,7 @@ SALTA_SI_IGUAL FIN ; salta a FIN si ZF=1 (eran iguales)
 </tr>
 </tbody>
 </table>
-<h4>6.2.3. Tabla comparativa DDR (la tabla que SIEMPRE aparece en exámenes)</h4>
+<h4>6.2.3. Tabla comparativa DDR</h4>
 <table>
 <thead>
 <tr>
@@ -2471,7 +2471,7 @@ SALTA_SI_IGUAL FIN ; salta a FIN si ZF=1 (eran iguales)
 </tr>
 </tbody>
 </table>
-<div class="callout callout-dato"><span class="kicker">Dato clave examen</span>DDR2 y DDR3 tienen los <strong>mismos 240 pines</strong> pero son <strong>física y eléctricamente incompatibles</strong> (la muesca está en distinta posición, y el voltaje es distinto: 1,8 V vs 1,5 V). Análogamente, DDR4 y DDR5 tienen <strong>los mismos 288 pines</strong> pero son incompatibles (voltajes 1,2 V vs 1,1 V, topología distinta: DDR5 integra el PMIC en el módulo).</div>
+<div class="callout callout-dato"><span class="kicker">Dato clave</span>DDR2 y DDR3 tienen los <strong>mismos 240 pines</strong> pero son <strong>física y eléctricamente incompatibles</strong> (la muesca está en distinta posición, y el voltaje es distinto: 1,8 V vs 1,5 V). Análogamente, DDR4 y DDR5 tienen <strong>los mismos 288 pines</strong> pero son incompatibles (voltajes 1,2 V vs 1,1 V, topología distinta: DDR5 integra el PMIC en el módulo).</div>
 <h4>6.2.4. Tipos especiales de RAM</h4>
 <table>
 <thead>
@@ -2563,7 +2563,7 @@ SALTA_SI_IGUAL FIN ; salta a FIN si ZF=1 (eran iguales)
 <p>Memoria de entre <strong>64 y 256 bytes</strong> vinculada al reloj de tiempo real del sistema. Alimentada por la <strong>pila de la placa base</strong> (tecnología CMOS de bajo consumo).</p>
 <p>Almacena la <strong>configuración del firmware</strong>: velocidad de buses, discos instalados, secuencia de arranque, contraseña, overclock, activación de dispositivos. La información es usada por el BIOS/UEFI durante el arranque.</p>
 <p>Si los datos son incorrectos, se genera un error. Para restaurar valores de fábrica: cortar la alimentación de la pila durante ~30 segundos (jumper CLRTC o retirar pila).</p>
-<div class="callout callout-dato"><span class="kicker">Dato clave examen</span>No confundir <strong>RAM-CMOS</strong> (memoria de configuración) con <strong>BIOS/UEFI</strong> (firmware en ROM): son entidades distintas, aunque la RAM-CMOS se configura desde la utilidad del BIOS/UEFI.</div>
+<div class="callout callout-dato"><span class="kicker">Dato clave</span>No confundir <strong>RAM-CMOS</strong> (memoria de configuración) con <strong>BIOS/UEFI</strong> (firmware en ROM): son entidades distintas, aunque la RAM-CMOS se configura desde la utilidad del BIOS/UEFI.</div>
 <h4>6.2.8. Memoria virtual y paginación</h4>
 <p>La <strong>memoria virtual</strong> es un mecanismo que permite a un proceso usar más memoria de la físicamente disponible, combinando RAM con disco como &quot;memoria secundaria virtual&quot;. [TANENBAUM-SO, Cap. 3]</p>
 <p>Conceptos clave:</p>
@@ -2576,7 +2576,7 @@ SALTA_SI_IGUAL FIN ; salta a FIN si ZF=1 (eran iguales)
 <li><strong>Swap / fichero de paginación</strong>: espacio en disco para páginas expulsadas de RAM.</li>
 </ul>
 <p>La <strong>MMU</strong> (Memory Management Unit) es el hardware dentro de la CPU que traduce direcciones virtuales a físicas consultando la tabla de páginas (con cache en TLB).</p>
-<div class="callout callout-ref"><span class="kicker">Referencia cruzada</span>La memoria virtual se trata en profundidad en el <strong>Tema 14</strong> (Sistemas operativos).</div>
+<div class="callout callout-ref"><span class="kicker">Relación con otros temas</span>La memoria virtual se trata en profundidad en el <strong>Tema 14</strong> (Sistemas operativos).</div>
 <h3>6.3. Memoria ROM</h3>
 <p>La <strong>memoria ROM</strong> (<em>Read Only Memory</em>) es memoria principal de tipo <strong>no volátil</strong>: conserva la información almacenada al apagar el sistema.</p>
 <p><strong>Función</strong>: almacenar de forma permanente programas e instrucciones esenciales, como el <strong>firmware</strong>. Destaca la <strong>BIOS/UEFI</strong>, ubicada en la placa base, con las rutinas básicas de arranque e inicialización.</p>
@@ -2780,7 +2780,7 @@ SALTA_SI_IGUAL FIN ; salta a FIN si ZF=1 (eran iguales)
 </tr>
 </tbody>
 </table>
-<div class="callout callout-dato"><span class="kicker">Dato clave examen</span><strong>Secure Boot</strong> verifica la firma digital del bootloader antes de ejecutarlo. Impide el arranque de rootkits y bootkits. Es obligatorio para Windows 11. Se puede desactivar en UEFI para arrancar Linux no firmado (aunque Linux moderno ya soporta Secure Boot con claves de Microsoft o Red Hat).</div>
+<div class="callout callout-dato"><span class="kicker">Dato clave</span><strong>Secure Boot</strong> verifica la firma digital del bootloader antes de ejecutarlo. Impide el arranque de rootkits y bootkits. Es obligatorio para Windows 11. Se puede desactivar en UEFI para arrancar Linux no firmado (aunque Linux moderno ya soporta Secure Boot con claves de Microsoft o Red Hat).</div>
 <hr />
 <h2>7. Medidas de capacidad de memoria</h2>
 <table>
@@ -2975,7 +2975,7 @@ SALTA_SI_IGUAL FIN ; salta a FIN si ZF=1 (eran iguales)
 </tr>
 </tbody>
 </table>
-<div class="callout callout-dato"><span class="kicker">Dato clave examen</span>El sistema <strong>binario</strong> es el utilizado por los ordenadores de forma interna para todos los procesos. Hexadecimal se usa como notación corta para binario (cada dígito hex = 4 bits).</div>
+<div class="callout callout-dato"><span class="kicker">Dato clave</span>El sistema <strong>binario</strong> es el utilizado por los ordenadores de forma interna para todos los procesos. Hexadecimal se usa como notación corta para binario (cada dígito hex = 4 bits).</div>
 <h3>8.1. Conversión entre bases</h3>
 <p><strong>Decimal a binario</strong> (divisiones sucesivas):</p>
 <div class="callout callout-ejercicio"><span class="kicker">Ejercicio resuelto</span>Convertir 25 decimal a binario: <pre><code>25 ÷ 2 = 12 resto 1  ←
@@ -3061,7 +3061,7 @@ SALTA_SI_IGUAL FIN ; salta a FIN si ZF=1 (eran iguales)
 </tbody>
 </table>
 <p><strong>Valores especiales</strong>: +0, -0, +∞, -∞, NaN (Not a Number).</p>
-<div class="callout callout-dato"><span class="kicker">Dato clave examen</span>IEEE 754 single precisión (float 32 bits): <strong>1 bit signo + 8 bits exponente + 23 bits mantisa</strong>. Double precisión (64 bits): <strong>1 + 11 + 52</strong>.</div>
+<div class="callout callout-dato"><span class="kicker">Dato clave</span>IEEE 754 single precisión (float 32 bits): <strong>1 bit signo + 8 bits exponente + 23 bits mantisa</strong>. Double precisión (64 bits): <strong>1 + 11 + 52</strong>.</div>
 <hr />
 <h2>9. Juegos de caracteres</h2>
 <h3>9.1. ASCII</h3>
@@ -3279,14 +3279,13 @@ SALTA_SI_IGUAL FIN ; salta a FIN si ZF=1 (eran iguales)
 <li>Existen <strong>múltiples variantes</strong> (code pages) según idioma/entorno (EBCDIC-37 inglés, EBCDIC-500 internacional, EBCDIC-284 español).</li>
 <li><strong>No es compatible con ASCII</strong> — las letras A-Z no están en orden contiguo.</li>
 </ul>
-<div class="callout callout-dato"><span class="kicker">Dato clave examen</span>EBCDIC es <strong>incompatible</strong> con ASCII: las letras no están ordenadas de forma contigua (A=193, B=194... pero I=201 y J=209 — hay huecos). Esta particularidad causa problemas en migraciones mainframe-PC.</div>
+<div class="callout callout-dato"><span class="kicker">Dato clave</span>EBCDIC es <strong>incompatible</strong> con ASCII: las letras no están ordenadas de forma contigua (A=193, B=194... pero I=201 y J=209 — hay huecos). Esta particularidad causa problemas en migraciones mainframe-PC.</div>
 <h3>9.8. ISO/IEC 10646</h3>
 <p>Norma internacional <strong>equivalente a Unicode</strong> en términos de repertorio de caracteres, mantenida por ISO/IEC. Originalmente eran proyectos separados (ISO empezó en 1984, Unicode Consortium en 1987), pero en 1991 se fusionaron en un estándar unificado.</p>
 <p>Formalmente, Unicode es una <strong>implementación más rica</strong> de ISO/IEC 10646 — incluye propiedades de caracteres, algoritmos de normalización, ordenación, etc.</p>
-<div class="callout callout-ref"><span class="kicker">Referencia cruzada</span>La transmisión de información codificada sobre redes se trata en el <strong>Tema 33</strong> (Comunicaciones: medios y modos de transmisión) y la arquitectura de Internet, donde Unicode y UTF-8 son el estándar de facto, en el <strong>Tema 35</strong> (Internet: arquitectura, HTTP, HTTPS, SSL/TLS).</div>
+<div class="callout callout-ref"><span class="kicker">Relación con otros temas</span>La transmisión de información codificada sobre redes se trata en el <strong>Tema 33</strong> (Comunicaciones: medios y modos de transmisión) y la arquitectura de Internet, donde Unicode y UTF-8 son el estándar de facto, en el <strong>Tema 35</strong> (Internet: arquitectura, HTTP, HTTPS, SSL/TLS).</div>
 <hr />
-<p><em>Documento generado con asistencia de IA — Pendiente validación humana (María / Ana)</em>
-<em>Fuentes: ver tema-11-fuentes.md · Diagramas: ver tema-11-diagramas.md · Cambios: ver tema-11-changelog.md</em>
+<p><em>Fuentes: ver tema-11-fuentes.md · Diagramas: ver tema-11-diagramas.md · Cambios: ver tema-11-changelog.md</em>
 <em>Versión 2.0 — Fecha: 2026-04-23</em></p>
 
 

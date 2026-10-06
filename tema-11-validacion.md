@@ -15,7 +15,7 @@
 - [ ] El contenido se ha ampliado respecto a v1.0 (objetivo 14K-16K palabras, actual: 14.3K)
 - [ ] La ampliación es focalizada (mas en CPU y memoria), NO uniforme x2
 - [ ] Hay ejemplos Ayto Madrid en secciones clave (Padrón, SIMA, Open Data, etc.)
-- [ ] Están presentes los 4 tipos de callout: DATO CLAVE EXAMEN, EJERCICIO RESUELTO, EJEMPLO AYTO MADRID, REFERENCIA CRUZADA
+- [ ] Están presentes los 4 tipos de callout: DATO CLAVE, EJERCICIO RESUELTO, EJEMPLO DE APLICACIÓN EN EL AYTO, RELACIÓN CON OTROS TEMAS
 - [ ] Los mnemónicos de código están en castellano (`SUMA A, B`, `SALTA_SI_IGUAL`, etc.)
 - [ ] Se ha ampliado la profundidad en FLAGS/EFLAGS/RFLAGS, modos de direccionamiento y pipelining
 - [ ] Existe versión PDF A4 light imprimible (tema-11-piloto.pdf)

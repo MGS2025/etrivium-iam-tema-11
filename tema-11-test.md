@@ -563,6 +563,5 @@ Secure Boot es una funcionalidad de UEFI que verifica la firma digital del bootl
 
 ---
 
-*Test v2.0 generado con asistencia de IA — Pendiente validación humana (María / Ana)*
 *25 preguntas cubriendo base (15) + contenido ampliado (10)*
 *Fecha: 2026-04-23*
