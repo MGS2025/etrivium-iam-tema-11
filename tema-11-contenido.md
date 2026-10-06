@@ -77,18 +77,18 @@ La clasificación tradicional en informática opera sobre dato e información, p
   <text x="305" y="99" text-anchor="middle" class="dikw-label">Conocimiento</text>
   <text x="305" y="155" text-anchor="middle" class="dikw-label">Información</text>
   <text x="305" y="220" text-anchor="middle" class="dikw-label-dark">Dato</text>
-  <line x1="420" y1="50" x2="470" y2="50" stroke="#0055a0" stroke-width="1"/>
-  <line x1="420" y1="99" x2="470" y2="99" stroke="#0055a0" stroke-width="1"/>
-  <line x1="420" y1="155" x2="470" y2="155" stroke="#0055a0" stroke-width="1"/>
-  <line x1="420" y1="220" x2="470" y2="220" stroke="#0055a0" stroke-width="1"/>
-  <text x="480" y="40" class="dikw-title">Decisión</text>
-  <text x="480" y="55" class="dikw-example">"subir el IBI?"</text>
-  <text x="480" y="94" class="dikw-title">Tendencia</text>
-  <text x="480" y="109" class="dikw-example">"crece la población"</text>
-  <text x="480" y="150" class="dikw-title">Contexto</text>
-  <text x="480" y="165" class="dikw-example">"3,45 M habitantes"</text>
-  <text x="480" y="215" class="dikw-title">Bruto</text>
-  <text x="480" y="230" class="dikw-example">"3.450.000"</text>
+  <line x1="420" y1="50" x2="458" y2="50" stroke="#0055a0" stroke-width="1"/>
+  <line x1="420" y1="99" x2="458" y2="99" stroke="#0055a0" stroke-width="1"/>
+  <line x1="420" y1="155" x2="458" y2="155" stroke="#0055a0" stroke-width="1"/>
+  <line x1="420" y1="220" x2="458" y2="220" stroke="#0055a0" stroke-width="1"/>
+  <text x="466" y="40" class="dikw-title">Decisión</text>
+  <text x="466" y="55" class="dikw-example">"subir el IBI?"</text>
+  <text x="466" y="94" class="dikw-title">Tendencia</text>
+  <text x="466" y="109" class="dikw-example">"crece la población"</text>
+  <text x="466" y="150" class="dikw-title">Contexto</text>
+  <text x="466" y="165" class="dikw-example">"3,45 M habitantes"</text>
+  <text x="466" y="215" class="dikw-title">Bruto</text>
+  <text x="466" y="230" class="dikw-example">"3.450.000"</text>
   <text x="305" y="285" text-anchor="middle" font="italic 11px system-ui,sans-serif" fill="#666">+ contexto, + análisis, + experiencia</text>
 </svg>
 
@@ -220,7 +220,7 @@ Un **Tipo Abstracto de Datos** define un conjunto de valores y las operaciones q
 
 #### 1.7.8. Tipos de datos en SQL
 
-El estándar **SQL:2016** ([ISO/IEC 9075](https://www.iso.org/standard/63555.html)) define el catálogo de tipos para bases de datos relacionales. Los principales:
+El estándar **SQL:2023** ([ISO/IEC 9075:2023](https://www.iso.org/standard/76583.html), que anula y sustituye a la edición de 2016) define el catálogo de tipos para bases de datos relacionales. Los principales:
 
 | Categoría | Tipo SQL | Descripción |
 |---|---|---|
@@ -331,7 +331,7 @@ Los sistemas de información se componen de tres partes principales: **personas,
 - *Dispositivos de salida*: monitores, impresoras, plotters, altavoces.
 - *Equipos de red*: routers, switches, firewalls, puntos de acceso WiFi, balanceadores de carga.
 
-**2. Software** — programas que operan sobre el hardware. Se clasifica en cuatro capas (modelo de capas software, [ISO/IEC 25010:2023](https://www.iso.org/standard/78176.html)):
+**2. Software** — programas que operan sobre el hardware. Se clasifica habitualmente en cuatro capas:
 
 - *Software de sistema*: sistema operativo (Windows Server, Linux, AIX), drivers, firmware.
 - *Software de utilidad*: antivirus, herramientas de backup, monitorización, sistemas de gestión de configuración.
@@ -597,13 +597,13 @@ Debe su nombre al ordenador **Harvard Mark I** (Howard Aiken, 1944), anterior in
   <text x="285" y="101" class="arch-label">Memoria única</text>
   <text x="285" y="117" class="arch-sub">datos + instrucciones</text>
   <line x1="160" y1="105" x2="220" y2="105" stroke="#0055a0" stroke-width="3"/>
-  <text x="190" y="97" class="arch-sub">bus compartido</text>
+  <text x="190" y="74" class="arch-sub">bus compartido</text>
   <rect x="60" y="160" width="290" height="60" rx="4" fill="#fce4e4" stroke="#d13c3c" stroke-width="1.5" stroke-dasharray="5 3"/>
   <text x="205" y="185" class="arch-label" fill="#d13c3c">Cuello de botella Von Neumann</text>
   <text x="205" y="205" class="arch-sub">no se lee dato e instrucción a la vez</text>
   <line x1="360" y1="40" x2="360" y2="320" stroke="#c0c7cf" stroke-width="1" stroke-dasharray="3 3"/>
   <text x="510" y="32" class="arch-title" fill="#2d8659">Arquitectura Harvard</text>
-  <text x="510" y="50" class="arch-sub">Harvard Mark I 1944</text>
+  <text x="495" y="50" class="arch-sub">Harvard Mark I 1944</text>
   <rect x="400" y="80" width="100" height="50" rx="4" fill="#d8f0dc" stroke="#2d8659" stroke-width="1.5"/>
   <text x="450" y="103" class="arch-label">CPU</text>
   <text x="450" y="118" class="arch-sub">fetch || exec</text>
@@ -613,14 +613,14 @@ Debe su nombre al ordenador **Harvard Mark I** (Howard Aiken, 1944), anterior in
   <text x="615" y="140" class="arch-label">Mem. datos</text>
   <line x1="500" y1="95" x2="560" y2="70" stroke="#2d8659" stroke-width="3"/>
   <line x1="500" y1="115" x2="560" y2="140" stroke="#2d8659" stroke-width="3"/>
-  <text x="540" y="82" class="arch-sub">bus I</text>
-  <text x="540" y="134" class="arch-sub">bus D</text>
+  <text x="525" y="74" class="arch-sub">bus I</text>
+  <text x="525" y="146" class="arch-sub">bus D</text>
   <rect x="400" y="180" width="270" height="60" rx="4" fill="#d8f0dc" stroke="#2d8659" stroke-width="1.5" stroke-dasharray="5 3"/>
   <text x="535" y="205" class="arch-label" fill="#2d8659">Acceso paralelo</text>
   <text x="535" y="225" class="arch-sub">instrucción y dato simultáneos</text>
   <rect x="60" y="295" width="610" height="50" rx="4" fill="#f5f5f5" stroke="#c0c7cf"/>
-  <text x="70" y="314" font="600 12px system-ui,sans-serif" fill="#0055a0">Harvard modificada (actual):</text>
-  <text x="70" y="332" font="11px system-ui,sans-serif" fill="#555">x86-64, ARM · cache L1 separada (I/D) pero memoria principal única · combina lo mejor</text>
+  <text x="70" y="314" style="font:600 12px system-ui,sans-serif" fill="#0055a0">Harvard modificada (actual):</text>
+  <text x="70" y="332" style="font:11px system-ui,sans-serif" fill="#555">x86-64, ARM · cache L1 separada (I/D) pero memoria principal única · combina lo mejor</text>
 </svg>
 
 **Ventaja clave de Harvard**: al tener buses separados, se pueden simultánear operaciones sobre datos e instrucciones, eliminando el cuello de botella de Von Neumann y aumentando el rendimiento.
@@ -693,7 +693,7 @@ Las generaciones se definen por tres aspectos principales: la **tecnología vige
   <circle cx="640" cy="170" r="18" fill="#2d8659" stroke="#2d8659" stroke-width="2" stroke-dasharray="2 2"/>
   <text x="640" y="175" class="gen-num">6ª</text>
   <text x="640" y="130" class="gen-year" fill="#2d8659">1991 → hoy</text>
-  <text x="640" y="200" class="gen-tech">Cuantica</text>
+  <text x="640" y="200" class="gen-tech">Cuántica</text>
   <text x="640" y="240" class="gen-ex">IBM Q</text>
 </svg>
 
@@ -963,7 +963,7 @@ La CPU está formada por tres subsistemas principales: [STALLINGS-COA, Cap. 12]
 2. **Unidad de Control (UC)**
 3. **Unidad Aritmético-Lógica (ALU/UAL)**
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Bloques internos de la CPU: ALU, Unidad de Control y Banco de Registros, conectados con Memoria RAM, E/S y ROM/BIOS mediante buses de control, direcciones y datos">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 360" role="img" aria-label="Bloques internos de la CPU: ALU, Unidad de Control y Banco de Registros, conectados con Memoria RAM, E/S y ROM/BIOS mediante buses de control, direcciones y datos">
   <style>
     .cpu-heading{font:700 14px system-ui,sans-serif;fill:#fff;text-anchor:middle}
     .cpu-heading-dark{font:700 14px system-ui,sans-serif;fill:#0a2540;text-anchor:middle}
@@ -986,18 +986,18 @@ La CPU está formada por tres subsistemas principales: [STALLINGS-COA, Cap. 12]
   <text x="245" y="215" class="cpu-heading">Banco de Registros</text>
   <text x="245" y="237" class="cpu-sub-light">MAR · MBR · CP · RI · ACC</text>
   <text x="245" y="253" class="cpu-sub-light">FLAGS · SP · GPRs · SPRs</text>
-  <rect x="470" y="80" width="140" height="50" rx="4" fill="#d6e4f0" stroke="#0055a0" stroke-width="1.5"/>
-  <text x="540" y="110" class="cpu-heading-dark">Memoria RAM</text>
-  <rect x="470" y="150" width="140" height="50" rx="4" fill="#d6e4f0" stroke="#0055a0" stroke-width="1.5"/>
-  <text x="540" y="180" class="cpu-heading-dark">E/S</text>
-  <rect x="470" y="220" width="140" height="50" rx="4" fill="#d6e4f0" stroke="#0055a0" stroke-width="1.5"/>
-  <text x="540" y="250" class="cpu-heading-dark">ROM / BIOS</text>
-  <line x1="430" y1="120" x2="470" y2="105" stroke="#a82828" stroke-width="2.5"/>
-  <text x="450" y="100" class="cpu-bus" fill="#a82828">control</text>
-  <line x1="430" y1="170" x2="470" y2="175" stroke="#1f6644" stroke-width="2.5"/>
-  <text x="450" y="166" class="cpu-bus" fill="#1f6644">direcciones</text>
-  <line x1="430" y1="240" x2="470" y2="245" stroke="#003d73" stroke-width="2.5"/>
-  <text x="450" y="236" class="cpu-bus" fill="#003d73">datos</text>
+  <rect x="530" y="80" width="140" height="50" rx="4" fill="#d6e4f0" stroke="#0055a0" stroke-width="1.5"/>
+  <text x="600" y="110" class="cpu-heading-dark">Memoria RAM</text>
+  <rect x="530" y="150" width="140" height="50" rx="4" fill="#d6e4f0" stroke="#0055a0" stroke-width="1.5"/>
+  <text x="600" y="180" class="cpu-heading-dark">E/S</text>
+  <rect x="530" y="220" width="140" height="50" rx="4" fill="#d6e4f0" stroke="#0055a0" stroke-width="1.5"/>
+  <text x="600" y="250" class="cpu-heading-dark">ROM / BIOS</text>
+  <line x1="430" y1="120" x2="530" y2="105" stroke="#a82828" stroke-width="2.5"/>
+  <text x="480" y="104" class="cpu-bus" fill="#a82828">control</text>
+  <line x1="430" y1="170" x2="530" y2="175" stroke="#1f6644" stroke-width="2.5"/>
+  <text x="480" y="164" class="cpu-bus" fill="#1f6644">direcciones</text>
+  <line x1="430" y1="240" x2="530" y2="245" stroke="#003d73" stroke-width="2.5"/>
+  <text x="480" y="234" class="cpu-bus" fill="#003d73">datos</text>
 </svg>
 
 #### 5.3.1. Registros
@@ -1115,9 +1115,9 @@ El **ciclo de instrucción** (*instruction cycle* o *fetch-execute cycle*) es el
 
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Ciclo Fetch-Execute de instrucciones">
   <style>
-    .fe-step{font:600 12px system-ui,sans-serif;fill:#fff;text-anchor:middle}
+    .fe-step{font:600 11px system-ui,sans-serif;fill:#fff;text-anchor:middle}
     .fe-desc{font:10px system-ui,sans-serif;fill:#cde4f0;text-anchor:middle}
-    .fe-phase{font:700 12px system-ui,sans-serif;letter-spacing:2px}
+    .fe-phase{font:700 11px system-ui,sans-serif;letter-spacing:1px}
   </style>
   <text x="320" y="28" text-anchor="middle" font="700 16px system-ui,sans-serif" fill="#0055a0">Ciclo Fetch-Execute</text>
   <rect x="30" y="50" width="330" height="150" rx="6" fill="#eef4fa" stroke="#0055a0" stroke-width="1.5" stroke-dasharray="4 3"/>
@@ -1126,8 +1126,8 @@ El **ciclo de instrucción** (*instruction cycle* o *fetch-execute cycle*) es el
   <text x="95" y="110" class="fe-step">1. CP → MAR</text>
   <rect x="160" y="90" width="90" height="45" rx="3" fill="#0055a0"/>
   <text x="205" y="110" class="fe-step">2. MAR → Mem</text>
-  <rect x="270" y="90" width="85" height="45" rx="3" fill="#0055a0"/>
-  <text x="312" y="110" class="fe-step">3. Mem → MBR</text>
+  <rect x="265" y="90" width="90" height="45" rx="3" fill="#0055a0"/>
+  <text x="310" y="110" class="fe-step">3. Mem → MBR</text>
   <rect x="110" y="150" width="90" height="40" rx="3" fill="#0055a0"/>
   <text x="155" y="170" class="fe-step">4. MBR → RI</text>
   <rect x="220" y="150" width="120" height="40" rx="3" fill="#0055a0"/>
@@ -1193,20 +1193,20 @@ Se clasifican en:
   <text x="340" y="48" text-anchor="middle" font="11px system-ui,sans-serif" fill="#666">operando objetivo: 42</text>
   <text x="80" y="75" class="md-title">1. Inmediato</text>
   <rect x="25" y="90" width="110" height="30" fill="#d8f0dc" stroke="#2d8659" stroke-width="1.5"/>
-  <text x="40" y="110" font="600 11px system-ui,sans-serif" fill="#555">SUMA #42</text>
+  <text x="35" y="110" style="font:600 11px system-ui,sans-serif" fill="#555">SUMA #42</text>
   <text x="115" y="110" class="md-op">← 42</text>
   <text x="80" y="176" class="md-note" fill="#2d8659" font-weight="600">1 acceso</text>
   <text x="210" y="75" class="md-title">2. Directo</text>
   <rect x="155" y="90" width="110" height="30" fill="#eef4fa" stroke="#0055a0" stroke-width="1.5"/>
-  <text x="170" y="110" font="600 11px system-ui,sans-serif" fill="#555">SUMA [100]</text>
+  <text x="170" y="110" style="font:600 11px system-ui,sans-serif" fill="#555">SUMA [100]</text>
   <rect x="155" y="135" width="110" height="30" fill="#d8f0dc" stroke="#2d8659" stroke-width="1.5"/>
   <text x="230" y="155" class="md-op">42</text>
   <text x="210" y="200" class="md-note" fill="#0055a0" font-weight="600">2 accesos</text>
   <text x="340" y="75" class="md-title">3. Indirecto</text>
   <rect x="285" y="90" width="110" height="30" fill="#eef4fa" stroke="#0055a0" stroke-width="1.5"/>
-  <text x="297" y="110" font="600 11px system-ui,sans-serif" fill="#555">SUMA [[500]]</text>
+  <text x="297" y="110" style="font:600 11px system-ui,sans-serif" fill="#555">SUMA [[500]]</text>
   <rect x="285" y="135" width="110" height="30" fill="#f5f5f5" stroke="#666" stroke-width="1.5"/>
-  <text x="360" y="155" font="600 12px system-ui,sans-serif" fill="#1a1a1a">100</text>
+  <text x="360" y="155" style="font:600 12px system-ui,sans-serif" fill="#1a1a1a">100</text>
   <rect x="285" y="180" width="110" height="30" fill="#d8f0dc" stroke="#2d8659" stroke-width="1.5"/>
   <text x="360" y="200" class="md-op">42</text>
   <text x="340" y="245" class="md-note" fill="#d13c3c" font-weight="600">3 accesos</text>
