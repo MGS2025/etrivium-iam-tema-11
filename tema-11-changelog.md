@@ -9,6 +9,19 @@
 
 ---
 
+## v3.6 — 2026-10-09 — Enunciados del test
+
+**Motivo**: revisión de la plataforma por el Ayuntamiento (09-10-2026): diez preguntas del test mostraban la etiqueta interna «[v2]».
+
+### Cambios
+
+- Fuera la etiqueta «[v2]» de las preguntas 16-25.
+- Signo de apertura «¿» en las 25 preguntas y tildes que faltaban («cuál», «qué», «precisión»).
+- «Ayto Madrid» → «Ayuntamiento de Madrid» y «Decisión Support System» → «Decision Support System» en la pregunta del Padrón.
+- Sin cambios de respuestas ni de contenido.
+
+---
+
 ## v3.5 — 2026-10-06 — Revisión de diagramas
 
 **Motivo**: barrido de los diagramas de los 40 temas tras la revisión jurídica y de normas.
